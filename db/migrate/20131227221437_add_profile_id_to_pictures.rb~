@@ -1,0 +1,4 @@
+class AddProfileIdToPictures < ActiveRecord::Migration
+  def change
+  end
+end

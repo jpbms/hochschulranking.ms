@@ -1,0 +1,2 @@
+class UniversitySection < ActiveRecord::Base
+end

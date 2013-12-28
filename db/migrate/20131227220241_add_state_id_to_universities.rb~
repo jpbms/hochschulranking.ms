@@ -1,0 +1,4 @@
+class AddStateIdToUniversities < ActiveRecord::Migration
+  def change
+  end
+end

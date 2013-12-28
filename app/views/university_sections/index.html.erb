@@ -1,0 +1,33 @@
+<h1>Listing university_sections</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>University</th>
+      <th></th>
+      <th>Section</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @university_sections.each do |university_section| %>
+      <tr>
+        <td><%= university_section.university_id %></td>
+        <td><%= university_section. %></td>
+        <td><%= university_section.section_id %></td>
+        <td><%= university_section. %></td>
+        <td><%= link_to 'Show', university_section %></td>
+        <td><%= link_to 'Edit', edit_university_section_path(university_section) %></td>
+        <td><%= link_to 'Destroy', university_section, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New University section', new_university_section_path %>

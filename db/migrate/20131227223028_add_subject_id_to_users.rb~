@@ -1,0 +1,4 @@
+class AddSubjectIdToUsers < ActiveRecord::Migration
+  def change
+  end
+end

@@ -1,0 +1,4 @@
+class AddCityIdToAddresses < ActiveRecord::Migration
+  def change
+  end
+end

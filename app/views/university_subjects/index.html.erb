@@ -1,0 +1,33 @@
+<h1>Listing university_subjects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>University</th>
+      <th></th>
+      <th>Subject</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @university_subjects.each do |university_subject| %>
+      <tr>
+        <td><%= university_subject.university_id %></td>
+        <td><%= university_subject. %></td>
+        <td><%= university_subject.subject_id %></td>
+        <td><%= university_subject. %></td>
+        <td><%= link_to 'Show', university_subject %></td>
+        <td><%= link_to 'Edit', edit_university_subject_path(university_subject) %></td>
+        <td><%= link_to 'Destroy', university_subject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New University subject', new_university_subject_path %>
