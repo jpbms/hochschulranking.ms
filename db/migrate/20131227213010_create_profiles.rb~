@@ -7,8 +7,6 @@ class CreateProfiles < ActiveRecord::Migration
       t.string :
       t.string :last_name
       t.string :
-      t.string :university
-      t.string :
       t.string :phonenumber
       t.string :
       t.string :city
