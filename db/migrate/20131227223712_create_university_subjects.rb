@@ -1,10 +1,8 @@
 class CreateUniversitySubjects < ActiveRecord::Migration
   def change
     create_table :university_subjects do |t|
-      t.string :university_id
-      t.integer :
-      t.string :subject_id
-      t.integer :
+      t.integer :university_id
+      t.integer :subject_id
 
       t.timestamps
     end
