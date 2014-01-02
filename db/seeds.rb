@@ -74,23 +74,3 @@ Evaluation.create({"evaluation"=>1, "section_id"=>1})
 Evaluation.create({"evaluation"=>5, "section_id"=>1})
 Evaluation.create({"evaluation"=>2, "section_id"=>1})
 Evaluation.create({"evaluation"=>4, "section_id"=>1})
-
-#---------------------------------------------------------------------------------
-# UniversitySection
-#---------------------------------------------------------------------------------
-UniversitySection.create({"university_id"=>1, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
-UniversitySection.create({"university_id"=>3, "section_id"=>1})
