@@ -1,0 +1,7 @@
+Assoziation
+Warning: Ignoring invalid association :students on Subject (uninitialized constant Subject::Student)
+ --> /app/models/subject.rb - haas_many :students  -> Wirft Warning - Wozu ist die Assoziation?
+
+
+Und Role belongs to resource? Warum? Devise? - DAFUQ
+Warning: Ignoring invalid association :resource on Role (polymorphic interface Resource does not exist

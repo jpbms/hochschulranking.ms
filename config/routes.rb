@@ -3,8 +3,6 @@ HochschulrankingMs::Application.routes.draw do
   
 
   get "index/index"
-  resources :university_sections
-
   resources :university_subjects
 
   devise_for :users
