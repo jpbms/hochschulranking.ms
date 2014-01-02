@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131227224832) do
+ActiveRecord::Schema.define(version: 20140102101740) do
 
   create_table "addresses", force: true do |t|
     t.string   "street"
@@ -41,6 +41,8 @@ ActiveRecord::Schema.define(version: 20131227224832) do
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "page"
+    t.integer  "pageId"
   end
 
   create_table "evaluations", force: true do |t|
