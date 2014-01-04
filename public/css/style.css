@@ -535,9 +535,32 @@ form {
 .pagechange a{
 	margin-right: 5px;
 }
+
 .pageArrow {
 	margin-right: 3px;
 	margin-left: 3px;
+}
+
+#error_explanation{
+    margin-bottom: 15px;
+    color: red;
+}
+
+#error_explanation h2{
+    font-size: 16px;
+    line-height: 34px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+#error_explanation ul li{
+    padding-left: 30px;
+}
+
+.hiddenform {
+	margin-left: 50px !important;
+	padding-left: 50px !important;
+	all: none;
 }
 
 /* ==================================================================

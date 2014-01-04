@@ -1,7 +1,6 @@
 HochschulrankingMs::Application.routes.draw do
 
   
-  get "login/login"
   get "index/index"
   resources :university_subjects
 
@@ -35,9 +34,6 @@ HochschulrankingMs::Application.routes.draw do
   #index
   root 'index#index'
   get 'index' => 'index#index'
-
-  #login
-  get 'login' => 'login#login'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
