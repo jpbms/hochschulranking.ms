@@ -42,7 +42,6 @@ ActiveRecord::Schema.define(version: 20140102151311) do
 
   create_table "cities", force: true do |t|
     t.string   "name"
-    t.integer  "postal"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "state_id"
@@ -58,9 +57,9 @@ ActiveRecord::Schema.define(version: 20140102151311) do
 
   create_table "contents", force: true do |t|
     t.text     "content"
-    t.string   "page"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "page"
     t.integer  "pageId"
   end
 
