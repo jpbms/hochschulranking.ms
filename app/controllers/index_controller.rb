@@ -10,8 +10,10 @@ class IndexController < ApplicationController
   	@contentHeadline3 = content.find_by_pageId(6).content
   	@content3 = content.find_by_pageId(7).content
 
-    @test = University.joins("left outer join evaluations where evaluations.university_id = universities.id").first
-    @test = UniversityFunctions.getRating(1)
+    #@test = University.joins("left outer join evaluations where evaluations.university_id = universities.id").first
+    #@test = Evaluation.joins(:universities).where(universities: {university_id: university_id})
+    @test = University.joins(:evaluations)
+    #@test = UniversityFunctions.getRating(1)
 
   end
 end
