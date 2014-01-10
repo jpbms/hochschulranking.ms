@@ -28,16 +28,16 @@ Content.create({"content"=>"Lorem ipsum dolor sit amet, consetetur sadipscing el
 #---------------------------------------------------------------------------------
 # Hochschulen
 #---------------------------------------------------------------------------------
-University.create({"name"=>"TU Berlin", "website"=>""})
-University.create({"name"=>"FH Berlin", "website"=>""})
-University.create({"name"=>"Uni Münster", "website"=>""})
-University.create({"name"=>"FH Münster", "website"=>""})
-University.create({"name"=>"Uni Frankfurt", "website"=>""})
-University.create({"name"=>"FH Frankfurt", "website"=>""})
-University.create({"name"=>"Uni Osnabrück", "website"=>""})
-University.create({"name"=>"FH Osnabrück", "website"=>""})
-University.create({"name"=>"Uni Beilefeld", "website"=>""})
-University.create({"name"=>"FH Beilefeld", "website"=>""})
+University.create({"name"=>"TU Berlin", "website"=>"", "hs_type"=>"Uni"})
+University.create({"name"=>"FH Berlin", "website"=>"", "hs_type"=>"FH"})
+University.create({"name"=>"Uni Münster", "website"=>"", "hs_type"=>"Uni"})
+University.create({"name"=>"FH Münster", "website"=>"", "hs_type"=>"FH" })
+University.create({"name"=>"Uni Frankfurt", "website"=>"", "hs_type"=>"Uni" })
+University.create({"name"=>"FH Frankfurt", "website"=>"", "hs_type"=>"FH" })
+University.create({"name"=>"Uni Osnabrück", "website"=>"", "hs_type"=>"Uni" })
+University.create({"name"=>"FH Osnabrück", "website"=>"", "hs_type"=>"FH" })
+University.create({"name"=>"Uni Beilefeld", "website"=>"", "hs_type"=>"Uni" })
+University.create({"name"=>"FH Beilefeld", "website"=>"", "hs_type"=>"FH" })
 
 
 #---------------------------------------------------------------------------------
