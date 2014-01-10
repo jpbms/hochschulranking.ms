@@ -11,12 +11,12 @@ class IndexController < ApplicationController
   	@content3 = content.find_by_pageId(7).content
 
     #@test = University.joins("left outer join evaluations where evaluations.university_id = universities.id").first
-    #@test = Evaluation.joins(:universities).where(universities: {university_id: university_id})
+    @test = University.joins(:evaluations).includes(:evaluations).first
     #.select("universities.id", :name, :evaluation)
     #orderedUniversities = University.includes(:evaluations).order("evaluations.evaluation desc").first
     #unis = University.includes(:evaluations).order("evaluations.evaluation desc").first
     #unis = University.select("*").joins("left outer join evaluations where evaluations.university_id = universities.id").order("evaluations.evaluation desc").first
-    @test = UniversityFunctions.getRatedList()
+    #@test = UniversityFunctions.getRatedList()
     #@test = unis.attributes;
     #@test = Evaluation.where(evaluations.university_id = orderedUniversities.id)
     #@test = UniversityFunctions.getRating(1)

@@ -1,7 +1,11 @@
 HochschulrankingMs::Application.routes.draw do
 
   
+  get "toplist/index"
+  get 'toplist' => 'toplist#index'
   get "index/index"
+  get 'index' => 'index#index'
+
   resources :university_subjects
 
   devise_for :users
@@ -33,8 +37,7 @@ HochschulrankingMs::Application.routes.draw do
   # You can have the root of your site routed with "root"
   #index
   root 'index#index'
-  get 'index' => 'index#index'
-
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
