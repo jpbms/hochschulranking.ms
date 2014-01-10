@@ -1,1 +1,8 @@
-P: <%= @ajax %>
+<% @unis.each do |uni| %>
+<tr> 
+	<td><%= i++ %></td>
+	<td><a href="/University/page/<%= uni.id %>"><%= uni.name %></a></td>
+	<td>Münster</td>
+	<td>4</td>
+</tr>
+<% end %>

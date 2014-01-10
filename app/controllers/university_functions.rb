@@ -11,6 +11,8 @@ class UniversityFunctions
    	##SQL Statement
     #select university_id,sum(evaluation), count(evaluation), avg(evaluation) from evaluations group by university_id;
     #todo bauen
+
+    return University.all
   end
 
  def self.toFivePointRating(percent)

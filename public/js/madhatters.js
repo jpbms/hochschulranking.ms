@@ -342,7 +342,7 @@ $(document).ready(function() {
     });
 
     $("#toplistSearch").keyup(function() {
-        if ($("#toplistSearch").val().length > 2) {
+        if ($("#toplistSearch").val().length > 1) {
 
             $.ajax({
                 url: '/toplist/ajaxsearch',

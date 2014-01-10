@@ -7,7 +7,9 @@ class ToplistController < ApplicationController
 
   def ajaxsearch
   	puts "aufruf"
-  	@ajax = "param:" + params[:search]
+
+  	search = "%"+params[:search]+"%"
+  	@unis = UniversityFunctions.getRatedList.where("Name like ?",search)
   	render :layout => false
   end
 end
