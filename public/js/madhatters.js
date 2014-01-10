@@ -29,7 +29,7 @@ $(document).ready(function() {
                 $(scrollElement).stop().animate({
                     scrollLeft: wWidth * eq
                 }, 300, 'easeOutCubic');
-    
+
             }
         });
     }
@@ -57,11 +57,11 @@ $(document).ready(function() {
             scroll = $(window).scrollLeft(),
             wWidth = $(window).width();
 
-        if(scroll >= wWidth) {
+        if (scroll >= wWidth) {
             nav.css({
                 'left': 0
             });
-        } 
+        }
     }
 
     $(document).scroll(function() {
@@ -76,26 +76,26 @@ $(document).ready(function() {
     Mobile Navigation
     =============================================== */
 
-    $(function() {  
-        var trigger = $('#responsive-nav');  
-            menu = $('#main-nav ul');  
-            menuHeight = menu.height();  
-      
-        $(trigger).on('click', function(e) {  
-            e.preventDefault();  
+    $(function() {
+        var trigger = $('#responsive-nav');
+        menu = $('#main-nav ul');
+        menuHeight = menu.height();
+
+        $(trigger).on('click', function(e) {
+            e.preventDefault();
             menu.slideToggle();
             console.log('trigger click');
             $(this).toggleClass('nav-visible');
-        }); 
+        });
 
-        $(window).resize(function(){  
-            var windowW = $(window).width();  
+        $(window).resize(function() {
+            var windowW = $(window).width();
             //if(windowW > 767 && menu.is(':hidden')) {  
-            if(windowW > 767 && menu.is(':hidden')) {  
+            if (windowW > 767 && menu.is(':hidden')) {
                 menu.removeAttr('style');
-            }  
-        }); 
-    });  
+            }
+        });
+    });
 
     /* ==============================================
     Smooth Scrolling
@@ -104,15 +104,15 @@ $(document).ready(function() {
         $scrollElement;
 
     $(function() {
-        $('html, body').each(function () {
+        $('html, body').each(function() {
             var initScrollLeft = $(this).attr('scrollLeft');
-      
+
             $(this).attr('scrollLeft', initScrollLeft + 1);
             if ($(this).attr('scrollLeft') == initScrollLeft + 1) {
                 scrollElement = this.nodeName.toLowerCase();
                 $(this).attr('scrollLeft', initScrollLeft);
                 return false;
-            }    
+            }
         });
         $scrollElement = $(scrollElement);
     });
@@ -121,7 +121,7 @@ $(document).ready(function() {
         var $sections = $('section.section');
 
         //ON LOAD OPTIMIERUNG
-        $('section.section').show();      
+        $('section.section').show();
         $('#main-nav').show();
 
         $sections.each(function() {
@@ -129,17 +129,17 @@ $(document).ready(function() {
             var hash = '#' + this.id;
 
 
-            
+
 
             $('a[href="' + hash + '"]').click(function(event) {
-                
+
                 $scrollElement.stop().animate({
                     scrollLeft: $section.offset().left
                 }, 1200, 'easeOutCubic', function() {
                     window.location.hash = hash;
                 });
                 $('nav#main-nav a').removeClass('active');
-                if($(this).hasClass('content-menu-link')) {
+                if ($(this).hasClass('content-menu-link')) {
                     var link = $(this).attr('href');
                     $('a[href="' + hash + '"]').addClass('active');
                 } else {
@@ -147,9 +147,9 @@ $(document).ready(function() {
                 }
 
                 var trigger = $('#responsive-nav'),
-                    menu = $('#main-nav ul'); 
+                    menu = $('#main-nav ul');
 
-                if(trigger.hasClass('nav-visible')) {
+                if (trigger.hasClass('nav-visible')) {
                     menu.slideToggle();
                     trigger.toggleClass('nav-visible');
                 }
@@ -183,8 +183,10 @@ $(document).ready(function() {
             return;
         }
 
-        if (link.substring(0,1) == '#') {
-            $('html, body').animate({scrollTop: $(link).offset().top - 74}, 750);
+        if (link.substring(0, 1) == '#') {
+            $('html, body').animate({
+                scrollTop: $(link).offset().top - 74
+            }, 750);
         } else {
             document.location.href = link;
         }
@@ -195,9 +197,9 @@ $(document).ready(function() {
     =============================================== */
     function bindFancybox() {
         $("a.fancybox").fancybox({
-            'overlayShow'   : false,
-            'transitionIn'  : 'elastic',
-            'transitionOut' : 'elastic'
+            'overlayShow': false,
+            'transitionIn': 'elastic',
+            'transitionOut': 'elastic'
         });
     }
 
@@ -207,7 +209,7 @@ $(document).ready(function() {
     Input Placeholder for IE
     =============================================== */
 
-    if(Modernizr.input && !Modernizr.input.placeholder){
+    if (Modernizr.input && !Modernizr.input.placeholder) {
 
         $('[placeholder]').focus(function() {
             var input = $(this);
@@ -265,14 +267,14 @@ $(document).ready(function() {
                 success: function(data) {
                     $responseMessage.html(data);
                 }
-             });
+            });
 
         },
         highlight: function(input) {
-                $(input).addClass(formErrorClass);
+            $(input).addClass(formErrorClass);
         },
         unhighlight: function(input) {
-                $(input).removeClass(formErrorClass);
+            $(input).removeClass(formErrorClass);
         }
     });
 
@@ -290,40 +292,40 @@ $(document).ready(function() {
     /* ==============================================
     Form Beautifying
     =============================================== */
-    
+
     $('input[type="checkbox"]').checkbox();
 
     /* ==============================================
     Our Services
     =============================================== */
 
-    function sizeContentboxHeight(){
-        if($(window).width() > 767){
+    function sizeContentboxHeight() {
+        if ($(window).width() > 767) {
             var biggestBox = 0;
-            $(".feature-box .box-content").css("height","");
-            $(".feature-box .box-content").each(function(index, value){
+            $(".feature-box .box-content").css("height", "");
+            $(".feature-box .box-content").each(function(index, value) {
                 //alert("Height:"+$(value).height()+" Box: "+biggestBox);
-               // if($(value).height() > biggestBox){
-               //     biggestBox = $(value).height();
-               // }
+                // if($(value).height() > biggestBox){
+                //     biggestBox = $(value).height();
+                // }
             });
-            if(biggestBox != 0){
-                $(".feature-box .box-content").css("height",biggestBox);
+            if (biggestBox != 0) {
+                $(".feature-box .box-content").css("height", biggestBox);
             }
         } else {
-            $(".feature-box .box-content").css("height","");
+            $(".feature-box .box-content").css("height", "");
         }
     }
 
     //Box Sizing
-    $(function() {   
-        $(window).resize(function(){
+    $(function() {
+        $(window).resize(function() {
             sizeContentboxHeight();
         });
     });
 
-    $(function() {   
-        $(window).load(function(){
+    $(function() {
+        $(window).load(function() {
             sizeContentboxHeight();
         });
     });
@@ -331,9 +333,27 @@ $(document).ready(function() {
 
 
     $(function() {
-        $( "#tabs" ).tabs();
+        $("#tabs").tabs();
     });
-    
 
+    $(document).ajaxSend(function(e, xhr, options) {
+        var token = $("meta[name='csrf-token']").attr("content");
+        xhr.setRequestHeader("X-CSRF-Token", token);
+    });
 
+    $("#toplistSearch").keyup(function() {
+        if ($("#toplistSearch").val().length > 2) {
+
+            $.ajax({
+                url: '/toplist/ajaxsearch',
+                type: "POST",
+                data: ({
+                    search: $("#toplistSearch").val()
+                }),
+                success: function(data) {
+                    $("#list #innerlist").html(data);
+                }
+            });
+        }
+    })
 });

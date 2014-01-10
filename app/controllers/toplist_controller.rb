@@ -4,4 +4,10 @@ class ToplistController < ApplicationController
   	search = "%"+search+"%"
   	@test = University.all.where("Name like ?",search)
   end
+
+  def ajaxsearch
+  	puts "aufruf"
+  	@ajax = "param:" + params[:search]
+  	render :layout => false
+  end
 end

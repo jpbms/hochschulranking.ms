@@ -1,10 +1,11 @@
 HochschulrankingMs::Application.routes.draw do
 
   
-  get "toplist/index"
-  get 'toplist' => 'toplist#index'
   get "index/index"
   get 'index' => 'index#index'
+
+  get 'toplist' => 'toplist#index'
+  post "toplist/ajaxsearch" => "toplist#ajaxsearch"
 
   resources :university_subjects
 
