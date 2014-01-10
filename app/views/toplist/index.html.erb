@@ -1,7 +1,6 @@
 <div class="container">
 			<div class="row">
 				<div class="span8">
-					<h2 id="test"><%= @test.inspect %></h2>
 					<h1>Liste</h1>
 
 					<table id="list" class="table table-striped table-bordered">
@@ -11,24 +10,14 @@
 					    <th>Ort</th>
 					    <th>Rating</th>
 					  </tr><tbody id="innerlist">
-					  <tr>
-					    <td>1</td>
-					    <td><a href="index.html">FH Muenster</a></td>
-					    <td>Muenster</td>
-					    <td>1</td>
-					  </tr>
-					  <tr>
-					    <td>2</td>
-					    <td><a href="index.html">FH Osnabrueck</a></td>
-					    <td>Osnabrueck</td>
-					    <td>4</td>
-					  </tr>
-					  <tr>
-					    <td>3</td>
-					    <td><a href="index.html">FH Berlin</a></td>
-					    <td>Berlin</td>
-					    <td>4</td>					    
-					  </tr></tbody>
+					  <% @unis.each_with_index do |uni, i| %>
+						<tr> 
+							<td><%= i+1 %></td>
+							<td><a href="/University/page/<%= uni.id %>"><%= uni.name %></a></td>
+							<td>Münster</td>
+							<td>4</td>
+						</tr>
+					  <% end %></tbody>
 					</table>
 
 				</div>

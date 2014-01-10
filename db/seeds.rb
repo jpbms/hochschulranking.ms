@@ -28,16 +28,32 @@ Content.create({"content"=>"Lorem ipsum dolor sit amet, consetetur sadipscing el
 #---------------------------------------------------------------------------------
 # Hochschulen
 #---------------------------------------------------------------------------------
-University.create({"name"=>"TU Berlin", "website"=>"", "hs_type"=>"Uni"})
-University.create({"name"=>"FH Berlin", "website"=>"", "hs_type"=>"FH"})
-University.create({"name"=>"Uni Münster", "website"=>"", "hs_type"=>"Uni"})
-University.create({"name"=>"FH Münster", "website"=>"", "hs_type"=>"FH" })
-University.create({"name"=>"Uni Frankfurt", "website"=>"", "hs_type"=>"Uni" })
-University.create({"name"=>"FH Frankfurt", "website"=>"", "hs_type"=>"FH" })
-University.create({"name"=>"Uni Osnabrück", "website"=>"", "hs_type"=>"Uni" })
-University.create({"name"=>"FH Osnabrück", "website"=>"", "hs_type"=>"FH" })
-University.create({"name"=>"Uni Beilefeld", "website"=>"", "hs_type"=>"Uni" })
-University.create({"name"=>"FH Beilefeld", "website"=>"", "hs_type"=>"FH" })
+University.create({"id"=>1, "name"=>"TU Berlin", "website"=>"", "hs_type"=>"Uni", "address_id"=> 1})
+University.create({"id"=>2, "name"=>"FH Berlin", "website"=>"", "hs_type"=>"FH", "address_id"=> 1})
+University.create({"id"=>3, "name"=>"Uni Münster", "website"=>"", "hs_type"=>"Uni", "address_id"=> 1})
+University.create({"id"=>4, "name"=>"FH Münster", "website"=>"", "hs_type"=>"FH" , "address_id"=> 1})
+University.create({"id"=>5, "name"=>"Uni Frankfurt", "website"=>"", "hs_type"=>"Uni" , "address_id"=> 1})
+University.create({"id"=>6, "name"=>"FH Frankfurt", "website"=>"", "hs_type"=>"FH" , "address_id"=> 1})
+University.create({"id"=>7, "name"=>"Uni Osnabrück", "website"=>"", "hs_type"=>"Uni" , "address_id"=> 1})
+University.create({"id"=>8, "name"=>"FH Osnabrück", "website"=>"", "hs_type"=>"FH" , "address_id"=> 1})
+University.create({"id"=>9, "name"=>"Uni Beilefeld", "website"=>"", "hs_type"=>"Uni" , "address_id"=> 1})
+University.create({"id"=>10, "name"=>"FH Beilefeld", "website"=>"", "hs_type"=>"FH" , "address_id"=> 1})
+
+#---------------------------------------------------------------------------------
+# City
+#---------------------------------------------------------------------------------
+City.create({"id"=>1, "name"=>"Testhausen"})
+
+#---------------------------------------------------------------------------------
+# State
+#---------------------------------------------------------------------------------
+
+
+#---------------------------------------------------------------------------------
+# Address
+#---------------------------------------------------------------------------------
+Address.create({"id"=>1, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
+
 
 
 #---------------------------------------------------------------------------------

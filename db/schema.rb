@@ -42,9 +42,9 @@ ActiveRecord::Schema.define(version: 20140110124456) do
 
   create_table "cities", force: true do |t|
     t.string   "name"
+    t.integer  "postal"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "state_id"
   end
 
   create_table "comments", force: true do |t|
@@ -126,13 +126,6 @@ ActiveRecord::Schema.define(version: 20140110124456) do
     t.integer  "picture_id"
     t.string   "hs_type"
     t.integer  "address_id"
-  end
-
-  create_table "university_subjects", force: true do |t|
-    t.integer  "university_id"
-    t.integer  "subject_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|

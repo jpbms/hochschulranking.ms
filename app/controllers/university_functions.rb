@@ -10,9 +10,11 @@ class UniversityFunctions
     #Evaluation.joins(:universities)
    	##SQL Statement
     #select university_id,sum(evaluation), count(evaluation), avg(evaluation) from evaluations group by university_id;
+    
     #todo bauen
 
-    return University.all
+
+    return University.all.sort_by{|u| u.avg_evaluation.to_f}
   end
 
  def self.toFivePointRating(percent)

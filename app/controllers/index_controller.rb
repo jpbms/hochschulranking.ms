@@ -11,7 +11,7 @@ class IndexController < ApplicationController
   	@content3 = content.find_by_pageId(7).content
 
     #@test = University.joins("left outer join evaluations where evaluations.university_id = universities.id").first
-    @test = University.joins(:evaluations).includes(:evaluations).first
+    @test = University.joins(:evaluations)
     #.select("universities.id", :name, :evaluation)
     #orderedUniversities = University.includes(:evaluations).order("evaluations.evaluation desc").first
     #unis = University.includes(:evaluations).order("evaluations.evaluation desc").first
@@ -20,6 +20,9 @@ class IndexController < ApplicationController
     #@test = unis.attributes;
     #@test = Evaluation.where(evaluations.university_id = orderedUniversities.id)
     #@test = UniversityFunctions.getRating(1)
+
+
+    ####University.joins(:evaluations).includes(:evaluations).first.evaluations.first.evaluation
 
   end
 end

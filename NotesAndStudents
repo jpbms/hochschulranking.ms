@@ -5,3 +5,8 @@ Warning: Ignoring invalid association :students on Subject (uninitialized consta
 
 Und Role belongs to resource? Warum? Devise? - DAFUQ
 Warning: Ignoring invalid association :resource on Role (polymorphic interface Resource does not exist
+
+
+gem will_paginate
+
+Tabellen mit Werten vorbelegen -> Default - 0
