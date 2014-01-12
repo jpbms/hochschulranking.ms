@@ -4,7 +4,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="span12">
-						<h2><%= @test.inspect %></h2>
 						<h1><%= @headline %></h1>
 						<hr class="fancy-hr">
 						<div class="row">
@@ -25,42 +24,18 @@
 								</div>
 							</div> <!-- End Span8 -->
 							<div class="span4">
-								<h3>Progress Bars</h3>
-								<div class="progress">
-									<div class="bar" style="width: 95%;">
-										Eins
+								<h3>Top Hochschulen</h3>
+								<% @unis.each do |uni| %>
+									<% if uni.avg_evaluation_in_percent %>
+									<div class="progress"> 
+										<a href="/University/page/<%= uni.id %>">
+											<div class="bar" style="width: <%= uni.avg_evaluation_in_percent %>%;">
+												<%= uni.name %>
+											</div>
+										</a>
 									</div>
-								</div>
-								<div class="progress">
-									<div class="bar" style="width: 80%;">
-										Zwei
-									</div>
-								</div>
-								<div class="progress">
-									<div class="bar" style="width: 83%;">
-										Drei
-									</div>
-								</div>
-								<div class="progress">
-									<div class="bar" style="width: 85%;">
-										Vier
-									</div>
-								</div>
-								<div class="progress">
-									<div class="bar" style="width: 70%;">
-										Fuenf
-									</div>
-								</div>
-								<div class="progress">
-									<div class="bar" style="width: 87%;">
-										Sechs
-									</div>
-								</div >
-								<div class="progress">
-									<div class="bar" style="width: 100%; background-color:#f7f7f7 !important;;">
-										<img src="/images/glyphicons/icon_more.png">
-									</div>
-								</div >
+									<% end %>
+								<% end %>
 								</div>
 							</div> <!-- End Span4 -->
 						</div> <!-- End Row -->

@@ -1,4 +1,4 @@
 class Address < ActiveRecord::Base
-  has_one :city
-  belongs_to :university
+  belongs_to :city
+  has_one :university
 end

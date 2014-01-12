@@ -10,8 +10,10 @@ class IndexController < ApplicationController
   	@contentHeadline3 = content.find_by_pageId(6).content
   	@content3 = content.find_by_pageId(7).content
 
+    @unis = UniversityFunctions.getRatedList
+
     #@test = University.joins("left outer join evaluations where evaluations.university_id = universities.id").first
-    @test = University.joins(:evaluations)
+    #@test = University.joins(:evaluations)
     #.select("universities.id", :name, :evaluation)
     #orderedUniversities = University.includes(:evaluations).order("evaluations.evaluation desc").first
     #unis = University.includes(:evaluations).order("evaluations.evaluation desc").first
