@@ -1,6 +1,7 @@
 HochschulrankingMs::Application.routes.draw do
 
   
+  devise_for :userclears
   get "index/index"
   get 'index' => 'index#index'
 
