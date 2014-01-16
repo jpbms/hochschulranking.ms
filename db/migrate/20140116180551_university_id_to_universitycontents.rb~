@@ -1,0 +1,5 @@
+class UniversityIdToUniversitycontents < ActiveRecord::Migration
+  def change
+    add_coloumn :universitycontents, :university_id, :integer
+  end
+end
