@@ -43,6 +43,9 @@ University.create({"id"=>10, "name"=>"FH Beilefeld", "website"=>"", "hs_type"=>"
 # City
 #---------------------------------------------------------------------------------
 City.create({"id"=>1, "name"=>"Testhausen"})
+City.create({"id"=>2, "name"=>"Testcity"})
+City.create({"id"=>3, "name"=>"Testtown"})
+City.create({"id"=>4, "name"=>"Townsend"})
 
 #---------------------------------------------------------------------------------
 # State

@@ -1,7 +1,7 @@
 HochschulrankingMs::Application.routes.draw do
 
   
-  get "search" => "search#quickSearch"
+  post "search" => "search#quickSearch"
   get "search/quickSearch"
 
   get "search/advancedSearch"

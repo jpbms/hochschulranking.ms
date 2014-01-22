@@ -30,6 +30,7 @@ gem 'cancan'
 gem 'rolify'
 gem 'geokit'
 gem 'paperclip'
+gem 'ransack'
 
 #for development
 gem 'thin'
