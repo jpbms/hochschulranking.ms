@@ -6,8 +6,10 @@ class UniversitiesController < ApplicationController
   def show
      @university = University.find(params[:id])
      @unicontent = @university.universitycontents.all
-     @unisection =Section.all
-     end
+     
+     @unisection = Section.all
+     @unicomment = @university.comments.find(:all, :include => :section)
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

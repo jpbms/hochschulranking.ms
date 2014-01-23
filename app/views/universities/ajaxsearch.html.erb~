@@ -1,0 +1,17 @@
+<% @unisection.each do|uni| %>	
+				<% @unicomment=Comment.where("university_id = ? AND section_id = ?", params[uni],params[:id]) %>
+				<% @unicomment.each do|unicomment| %>
+					<form method="post" class="form">
+						<img src="http://placehold.it/60x60" class="commentPic float-left" />
+						<h3 class="no-bottom-margin">John Doe</h3>
+						Kommentar vom: 31.12.2013
+						<hr class="fancy-hr no-top-margin no-bottom-margin">
+						<div class="clear"></div>
+						<p>unicomment.comment</p>
+						<input type="submit" value="L&ouml;schen" formaction="#delete" name="submit" class="float-right commentButton no-bottom-margin">
+						<input type="submit" value="Editieren" formaction="#edit" name="submit" class="float-right commentButton no-bottom-margin">
+						<div class="clear"></div>
+					</form>
+					<p>
+				<%end%>
+				<%end%>	

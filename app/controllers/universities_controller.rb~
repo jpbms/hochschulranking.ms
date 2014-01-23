@@ -6,9 +6,9 @@ class UniversitiesController < ApplicationController
   def show
      @university = University.find(params[:id])
      @unicontent = @university.universitycontents.all
-     @unisection =Section.all
-     @unievaluation = Evaluation.find(:conditions=>["section_id=? and university_id=?", params[@unisection], params[@university]])
-     #@content = @search.result
+     
+     @unisection = Section.all
+     @unicomment = @university.comments.find(:all, :include => :sections)
   end
 
   private

@@ -110,5 +110,11 @@ Evaluation.create({"evaluation"=>5, "section_id"=>1, "university_id"=>1})
 Evaluation.create({"evaluation"=>2, "section_id"=>1, "university_id"=>3})
 Evaluation.create({"evaluation"=>4, "section_id"=>2, "university_id"=>3})
 
-
+#---------------------------------------------------------------------------------
+# Comments
+#---------------------------------------------------------------------------------
+Comment.create({"comment"=>"Tolle Mensa", "section_id"=>5, "university_id"=>1})
+Comment.create({"comment"=>"Super Professoren", "section_id"=>2, "university_id"=>1})
+Comment.create({"comment"=>"Gute Einrichtung", "section_id"=>1, "university_id"=>2})
+Comment.create({"comment"=>"Geilste Stadt", "section_id"=>5, "university_id"=>3})
 

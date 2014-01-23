@@ -30,6 +30,8 @@ gem 'cancan'
 gem 'rolify'
 gem 'geokit'
 gem 'paperclip'
+gem 'ransack'
+gem 'will_paginate'
 
 #for development
 gem 'thin'
