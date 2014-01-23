@@ -28,9 +28,9 @@ Content.create({"content"=>"Lorem ipsum dolor sit amet, consetetur sadipscing el
 #---------------------------------------------------------------------------------
 # Hochschulen
 #---------------------------------------------------------------------------------
-University.create({"id"=>1, "name"=>"TU Berlin", "website"=>"", "hs_type"=>"Uni", "address_id"=> 1})
-University.create({"id"=>2, "name"=>"FH Berlin", "website"=>"", "hs_type"=>"FH", "address_id"=> 2})
-University.create({"id"=>3, "name"=>"Uni Münster", "website"=>"", "hs_type"=>"Uni", "address_id"=> 3})
+University.create({"id"=>1, "name"=>"TU Berlin", "website"=>"http://www.tu-berlin.de/", "hs_type"=>"Uni", "address_id"=> 1})
+University.create({"id"=>2, "name"=>"FH Berlin", "website"=>"http://www.fh-berlin.de/", "hs_type"=>"FH", "address_id"=> 2})
+University.create({"id"=>3, "name"=>"Uni Münster", "website"=>"http://www.uni-muenster.de/de/", "hs_type"=>"Uni", "address_id"=> 3})
 University.create({"id"=>4, "name"=>"FH Münster", "website"=>"", "hs_type"=>"FH" , "address_id"=> 4})
 University.create({"id"=>5, "name"=>"Uni Frankfurt", "website"=>"", "hs_type"=>"Uni" , "address_id"=> 5})
 University.create({"id"=>6, "name"=>"FH Frankfurt", "website"=>"", "hs_type"=>"FH" , "address_id"=> 6})
@@ -73,8 +73,15 @@ Address.create({"id"=>10, "postalcode"=>48159, "street"=>"Test-Street", "street_
 # Aber hier Folgen Testdaten! - Nicht mehr für eine Neuinitialisierung der Seite notwendig
 #---------------------------------------------------------------------------------
 #---------------------------------------------------------------------------------
-
-
+#---------------------------------------------------------------------------------
+# UniversityContent
+#---------------------------------------------------------------------------------
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Uni liegt im Herzen der Stadt","university_id"=>1})
+Universitycontent.create({"title"=>"Mensen","content"=>"Die Mensa ist in der Uni mit integriert","university_id"=>1})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Uni liegt auf einem Berg","university_id"=>2})
+Universitycontent.create({"title"=>"Mensen","content"=>"Die Mensa ist von der Uni aus zu Fuß in 5 Minuten zu erreichen","university_id"=>2})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Uni zerstreut in der Stadt","university_id"=>3})
+Universitycontent.create({"title"=>"Mensen","content"=>"Es gibt gleich 2 Mensen die in der Stadt verteilt sind","university_id"=>3})
 #---------------------------------------------------------------------------------
 # Section
 #---------------------------------------------------------------------------------

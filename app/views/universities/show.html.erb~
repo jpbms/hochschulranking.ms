@@ -31,7 +31,7 @@
 							<li><img src="http://ranking.zeit.de/che2013/images/logos/bhft_berlin.gif" /></li>
 							<li><%= @university.address.street%> <%= @university.address.street_number%></li>
 							<li>D-<%= @university.address.postalcode%> <%= @university.address.city.name%></li>
-							<li><i class="icon-phone"></i>Telefon: +49 30 45041</li>
+							#<li><i class="icon-phone"></i>Telefon: +49 30 45041</li>
 							<li><i class="icon-home"></i><%= link_to(@university.website, @university.website) %></li>
 						</ul>
 					</div>
