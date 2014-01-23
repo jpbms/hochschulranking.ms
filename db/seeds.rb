@@ -109,3 +109,6 @@ Evaluation.create({"evaluation"=>1, "section_id"=>3, "university_id"=>4})
 Evaluation.create({"evaluation"=>5, "section_id"=>1, "university_id"=>1})
 Evaluation.create({"evaluation"=>2, "section_id"=>1, "university_id"=>3})
 Evaluation.create({"evaluation"=>4, "section_id"=>2, "university_id"=>3})
+
+
+

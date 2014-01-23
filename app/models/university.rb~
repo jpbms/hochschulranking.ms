@@ -5,6 +5,7 @@ class University < ActiveRecord::Base
   has_many :university_subjects
   has_many :subjects, through: :university_subjects
   has_many :evaluations
+  has_many :universitycontents
 
   def avg_evaluation
   	if evaluations.present?
