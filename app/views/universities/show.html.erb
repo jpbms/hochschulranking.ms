@@ -22,7 +22,7 @@
 						<%end%>
 						<div class="tab" id="tabs-100">
 						    <% @unisubject.each do|uni|%>
-						    <p><%= uni.subject.name%></p>
+						    <p><%= uni.subject_type.name %> im Bereich <%= uni.subject.name%> </p>
 						    <%end%>
 						</div>
 						
@@ -49,13 +49,11 @@
 					  <tr>
 					    <th>Kriterium</th>
 					    <th>Rating</th>
-					    <th>Kommentare</th>
 					  </tr>
 					  <% @unisection.each do|uni| %>
 					  <tr>
 					    <td><%= uni.section %></td>
 					    <td>to do</td>
-					    <td><a href="#comments">4</a></td>
 					  </tr>
 					  <%end%>
 					</table>

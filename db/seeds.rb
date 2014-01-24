@@ -121,25 +121,26 @@ Comment.create({"comment"=>"Geilste Stadt", "section_id"=>5, "university_id"=>3}
 #---------------------------------------------------------------------------------
 # Subjects
 #---------------------------------------------------------------------------------
-Subject.create({"name"=>"Bachelor Wirtschaftsinformatik"})
-Subject.create({"name"=>"Bachelor BWL"})
-Subject.create({"name"=>"Master Wirtschaftsinformatik"})
-Subject.create({"name"=>"Bachelor Maschinenbau"})
-Subject.create({"name"=>"Bachelor Elektrotechnik"})
-Subject.create({"name"=>"Bachelor Angewandte Informatik"})
-
+Subject.create({"name"=>"BWL"})
+Subject.create({"name"=>"Wirtschaftsinformatik"})
+Subject.create({"name"=>"Maschinenbau"})
+Subject.create({"name"=>"Elektrotechnik"})
+Subject.create({"name"=>"Angewandte Informatik"})
+#---------------------------------------------------------------------------------
+# SubjectTypes
+#---------------------------------------------------------------------------------
+SubjectType.create({"name"=>"Bachelor of Science"})
+SubjectType.create({"name"=>"Master of Science"})
+SubjectType.create({"name"=>"Diplom"})
+SubjectType.create({"name"=>"Master of Arts"})
 #---------------------------------------------------------------------------------
 # Subjects_University
 #---------------------------------------------------------------------------------
-UniversitySubject.create({"subject_id"=>1,"university_id"=>1})
-UniversitySubject.create({"subject_id"=>1,"university_id"=>3})
-UniversitySubject.create({"subject_id"=>2,"university_id"=>1})
-UniversitySubject.create({"subject_id"=>1,"university_id"=>2})
-UniversitySubject.create({"subject_id"=>2,"university_id"=>3})
-UniversitySubject.create({"subject_id"=>3,"university_id"=>3})
-UniversitySubject.create({"subject_id"=>4,"university_id"=>1})
-UniversitySubject.create({"subject_id"=>5,"university_id"=>3})
-UniversitySubject.create({"subject_id"=>6,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>1,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>1,"university_id"=>2})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>2,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>3,"subject_type_id"=>3,"university_id"=>3})
+SubjectSubjectType.create({"subject_id"=>5,"subject_type_id"=>4,"university_id"=>2})
 
 
 

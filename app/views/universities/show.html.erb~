@@ -22,7 +22,7 @@
 						<%end%>
 						<div class="tab" id="tabs-100">
 						    <% @unisubject.each do|uni|%>
-						    <p><%= uni.subject.name%></p>
+						    <p><%= uni.subject_type.name %> im Bereich <%= uni.subject.name%> </p>
 						    <%end%>
 						</div>
 						
