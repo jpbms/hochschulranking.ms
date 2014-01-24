@@ -118,3 +118,29 @@ Comment.create({"comment"=>"Super Professoren", "section_id"=>2, "university_id"
 Comment.create({"comment"=>"Gute Einrichtung", "section_id"=>1, "university_id"=>2})
 Comment.create({"comment"=>"Geilste Stadt", "section_id"=>5, "university_id"=>3})
 
+#---------------------------------------------------------------------------------
+# Subjects
+#---------------------------------------------------------------------------------
+Subject.create({"name"=>"Bachelor Wirtschaftsinformatik"})
+Subject.create({"name"=>"Bachelor BWL"})
+Subject.create({"name"=>"Master Wirtschaftsinformatik"})
+Subject.create({"name"=>"Bachelor Maschinenbau"})
+Subject.create({"name"=>"Bachelor Elektrotechnik"})
+Subject.create({"name"=>"Bachelor Angewandte Informatik"})
+
+#---------------------------------------------------------------------------------
+# Subjects_University
+#---------------------------------------------------------------------------------
+UniversitySubject.create({"subject_id"=>1,"university_id"=>1})
+UniversitySubject.create({"subject_id"=>1,"university_id"=>3})
+UniversitySubject.create({"subject_id"=>2,"university_id"=>1})
+UniversitySubject.create({"subject_id"=>1,"university_id"=>2})
+UniversitySubject.create({"subject_id"=>2,"university_id"=>3})
+UniversitySubject.create({"subject_id"=>3,"university_id"=>3})
+UniversitySubject.create({"subject_id"=>4,"university_id"=>1})
+UniversitySubject.create({"subject_id"=>5,"university_id"=>3})
+UniversitySubject.create({"subject_id"=>6,"university_id"=>1})
+
+
+
+

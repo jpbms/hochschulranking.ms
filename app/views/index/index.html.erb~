@@ -28,10 +28,11 @@
 								<% @unis.each do |uni| %>
 									<% if uni.avg_evaluation_in_percent %>
 									<div class="progress"> 
-											
-											<div class="bar" style="width: <%= uni.avg_evaluation_in_percent %>%;">							<%= link_to(uni.name, uni) %>
-							
+										<a href="/University/page/<%= uni.id %>">
+											<div class="bar" style="width: <%= uni.avg_evaluation_in_percent %>%;">
+												<%= uni.name %>
 											</div>
+										</a>
 									</div>
 									<% end %>
 								<% end %>

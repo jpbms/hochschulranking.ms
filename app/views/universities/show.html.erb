@@ -13,12 +13,18 @@
 						    <% @unicontent.each_with_index do |uni, i| %>
 						    <li><a href="#tabs-<%=i%>"><%=uni.title%></a></li>
 						    <%end%>
+						    <li><a href="#tabs-100">Studiengänge</a></li>
 						</ul>
 						<% @unicontent.each_with_index do |uni, i| %>
 						<div class="tab" id="tabs-<%=i%>">
 						    <p><%=uni.content%></p>
 						</div>
 						<%end%>
+						<div class="tab" id="tabs-100">
+						    <% @unisubject.each do|uni|%>
+						    <p><%= uni.subject.name%></p>
+						    <%end%>
+						</div>
 						
 					</div>
 				</div>
