@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20140124184358) do
     t.string   "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "section_id"
     t.integer  "user_id"
     t.integer  "university_id"
   end
