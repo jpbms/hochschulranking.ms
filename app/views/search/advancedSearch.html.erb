@@ -6,7 +6,8 @@
 					<%= search_form_for @searc,  url: search_advancedSearch_path do |g| %>
 					<%= g.label :name_cont, "Hochschule:" %>
 					<%= g.text_field :name_or_address_city_name_cont, :class => "span3" %>
-					
+					<%= g.label :subjects_name_cont, "Studiengang:" %>
+					<%= g.text_field :subjects_name_cont, :class => "span3" %>
 					<%= g.label :state_id_gteq, "Rating over" %>
 					<%= g.text_field :state_id_gteq, :class => "span3" %>					
 					<%= check_box_tag("q[hs_type_in][]", "FH") %>FH

@@ -24,11 +24,13 @@
 				<div class="span4">
 					<div class="feature-box">
 						<div class="box-content">
-							<%= search_form_for @search , :id =>"quick_Search", url: search_quickSearch_path do |f| %>
+							<div class="form-group no-padding text-left">
+							<%= search_form_for @search , url: search_quickSearch_path do |f| %>
 							 <%= f.text_field :name_or_address_city_name_cont, :class => "span3" %> </div>
 					 			<div class="actions" ><%= f.submit "Search" %></div>
 								<p><%= link_to "Erweiterte Suche", search_advancedSearch_path %></p>
 							<% end %>
+</div>
 						</div>
 					</div>
 	
