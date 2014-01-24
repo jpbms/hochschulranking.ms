@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140123183852) do
+ActiveRecord::Schema.define(version: 20140124181450) do
 
   create_table "addresses", force: true do |t|
     t.string   "street"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20140123183852) do
     t.string   "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "section_id"
     t.integer  "user_id"
     t.integer  "university_id"
   end
@@ -97,6 +98,17 @@ ActiveRecord::Schema.define(version: 20140123183852) do
   end
 
   create_table "states", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subject_subject_types", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subject_types", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
