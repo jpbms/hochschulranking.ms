@@ -6,8 +6,8 @@ class SearchController < ApplicationController
   end
 
   def advancedSearch
-	@searc = University.search(params[:q])
-	@university = @searc.result
+	@search = University.search(params[:q])
+	@universities = @search.result
   end
 
   def mapSearch
