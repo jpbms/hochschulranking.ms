@@ -4,10 +4,11 @@
 				<h4>Filtern</h4><p>
 				<div class="form-group no-padding text-left">
 					<%= search_form_for @searc,  url: search_advancedSearch_path do |g| %>
-					<%= g.label :name_cont, "Name:" %>
+					<%= g.label :name_cont, "Hochschule:" %>
 					<%= g.text_field :name_or_address_city_name_cont, :class => "span3" %>
-					<%= g.label :university.avg_evaluation_gtec, "Rating over" %>
-					<%= g.text_field :university.avg_evaluation_gtec, :class => "span3" %>					
+					
+					<%= g.label :state_id_gteq, "Rating over" %>
+					<%= g.text_field :state_id_gteq, :class => "span3" %>					
 					<%= check_box_tag("q[hs_type_in][]", "FH") %>FH
 					<p><%= check_box_tag("q[hs_type_in][]", "Uni") %>Uni</p>
 					<div class="actions"><%= g.submit "Search" %></div>

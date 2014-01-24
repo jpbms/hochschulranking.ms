@@ -356,5 +356,11 @@ $(document).ready(function() {
             });
         }
     })
+	// Search form.
+  $('#quick_Search input').keyup(function () {
+  	$.get($('#quick_Search').attr('action'), &crarr; 
+    	$('#quick_Search').serialize(), null, 'script');
+  	return false;
+  });
 	
 });

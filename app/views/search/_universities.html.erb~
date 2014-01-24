@@ -1,16 +1,16 @@
-<div id="universities">
-<table id="quickList" class="table table-striped table-bordered">
-					  <tr>
-					    <th>Hochschule</th>
-					    <th>Ort</th>
-					    <th>Rating</th>
-					  </tr><tbody id="innerlist">
-					  <% @universities.each do |university| %>
-						<tr> 
-							<td><%= link_to(university.name, university) %></td>
-							<td><%= university.address.city.name %></td>
-							<td><%= university.avg_evaluation %></td>
-						</tr>
-					  <% end %></tbody>
-					</table>
-</div>
+
+<table id="list" class="table table-striped table-bordered">
+  <tr>
+    <th>Hochschule</th>
+    <th>Ort</th>
+    <th>Rating</th>
+  </tr><tbody id="innerlist">
+  <% @universities.each do |university| %>
+	<tr> 
+		<td><%= link_to(university.name, university) %></td>
+		<td><%= university.address.city.name %></td>
+		<td><%= university.avg_evaluation %></td>
+	</tr>
+  <% end %></tbody>
+</table>
+

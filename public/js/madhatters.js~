@@ -356,17 +356,11 @@ $(document).ready(function() {
             });
         }
     })
-	$("#comment").onclick(function() {
-		$.ajax({
-		        url: '/university/ajaxsearch',
-		        type: "POST",
-		        data: ({
-		            search: $("#comment").val()
-		        }),
-		        success: function(data) {
-		            $("#comments").html(data);
-		        }
-		    });
-		}
-	    })
-	});
+	// Search form.
+  $('#quick_Search input').keyup(function () {
+  	$.get($('#quick_Search').attr('action'), &crarr; 
+    	$('#quick_Search').serialize(), null, 'script');
+  	return false;
+  });
+	
+});

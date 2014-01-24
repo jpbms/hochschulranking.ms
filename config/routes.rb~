@@ -1,13 +1,12 @@
 HochschulrankingMs::Application.routes.draw do
-<<<<<<< HEAD
 
 
-=======
+
   get "universities" => "universities#index"
   
->>>>>>> 86de1fe7ee8426d086c3ca7705fd8449a6011fee
+
   get "search" => "search#quickSearch"
-  get "search/quickSearch"
+  post "search/quickSearch" => "search#quickSearch"
  
   get "search/advancedSearch" => "search#advancedSearch"
 
