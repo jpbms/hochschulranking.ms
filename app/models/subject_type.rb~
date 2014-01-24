@@ -1,3 +1,8 @@
 class SubjectType < ActiveRecord::Base
+<<<<<<< HEAD
 has_many :subjects, through: => :subject_subject_types
+=======
+has_many :subject_types
+has_many :subjects, through: :subject_subject_types
+>>>>>>> 984c6485642f0db761645dcda05d5d41be1a09d5
 end
