@@ -8,7 +8,7 @@ class UniversitiesController < ApplicationController
      @unicontent = @university.universitycontents.all
      
      @unisection = Section.all
-     @unicomment = @university.comments.find(:all, :include => :section)
+     @unicomment = @university.comments.find(:all, :include => :sections)
   end
 
   private

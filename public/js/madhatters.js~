@@ -356,5 +356,17 @@ $(document).ready(function() {
             });
         }
     })
-	
-});
+	$("#comment").onclick(function() {
+		$.ajax({
+		        url: '/university/ajaxsearch',
+		        type: "POST",
+		        data: ({
+		            search: $("#comment").val()
+		        }),
+		        success: function(data) {
+		            $("#comments").html(data);
+		        }
+		    });
+		}
+	    })
+	});

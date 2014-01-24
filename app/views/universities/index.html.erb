@@ -1,33 +1,122 @@
-<h1>Listing universities</h1>
+<div class="container" id="hochschule">
+			<div class="row">
+				<div class="span12">
+					<hr class="fancy-hr">
+				</div>
+				<div class="span12">
+					<h1>Beuth Hochschule für Technik Berlin</h1>
+				</div>
+					
+				<div class="span8">
+					<div id="tabs">
+						<ul class="nav nav-tabs">
+							<li><a href="#tabs-1">Nunc tincidunt</a></li>
+						    <li><a href="#tabs-2">Proin dolor</a></li>
+						    <li><a href="#tabs-3">Aenean lacinia</a></li>
+						</ul>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th></th>
-      <th>Website</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+						<div class="tab" id="tabs-1">
+						    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+						</div>
+						<div class="tab" id="tabs-2">
+						    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+						</div>
+						<div class="tab" id="tabs-3">
+						    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+						    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+						</div>
+					</div>
+				</div>
+					
+				<div class="span4">
+					<div class="contact-info">
+						<h2  class="no-bottom-margin">Allgemeines</h2>
+						<hr class="fancy-hr">
+						<ul class="custom-icon-list">
+							<li><img src="http://ranking.zeit.de/che2013/images/logos/bhft_berlin.gif" /></li>
+							<li>Luxemburger Straße 1</li>
+							<li>D-13353 Berlin</li>
+							<li class="bottom-margin">Telefon: +49 30 45041 </li>
+							<li><i class="icon-phone"></i>Telefon: +49 30 45041</li>
+							<li><i class="icon-home"></i><a href="www.beuth-hochschule.de">www.beuth-hochschule.de</a></li>
+						</ul>
+					</div>
+				</div>
 
-  <tbody>
-    <% @universities.each do |university| %>
-      <tr>
-        <td><%= university.name %></td>
+				<div class="span8">
+					<p>
+					<h2 class="no-bottom-margin">Bewertungen</h2>
+					<table class="table table-striped table-bordered">
+					  <tr>
+					    <th>Kriterium</th>
+					    <th>Rating</th>
+					    <th>Kommentare</th>
+					  </tr>
+					  <tr>
+					    <td>Gesamt</td>
+					    <td>4 / 5</td>
+					    <td><a>16 Kommentare</a></td>
+					  </tr>
+					  <tr>
+					    <td>Tutoren</td>
+					    <td>5 / 5</td>
+					    <td><a>200 Kommentare</a></td>
+					  </tr>					  <tr>
+					    <td>Professoren</td>
+					    <td>3 / 5</td>
+					    <td><a>16 Kommentare</a></td>
+					  </tr>
+					</table>
+				</div>
 
-        <td><%= university.website %></td>
+				<div class="span8"><!-- Kommentar abgeben -->
+					<form action="#123" method="post" class="form">
+						<h3>Hinterlassen sie einen Kommentar</h3>
+						<textarea name="message" placeholder="Insert your message" class="required"></textarea>
+						<div class="response-message"></div>
+						<input type="submit" value="Absenden" name="submit" class="float-right">
+						<div class="clear"></div>
+					</form><p>
+				</div> 
 
-        <td><%= link_to 'Show', university %></td>
-        <td><%= link_to 'Edit', edit_university_path(university) %></td>
-        <td><%= link_to 'Destroy', university, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+				<div class="span8"><!-- Eigener KommentarKommentare -->
+					<form method="post" class="form">
+						<img src="http://placehold.it/60x60" class="commentPic float-left" />
+						<h3 class="no-bottom-margin">John Doe</h3>
+						Kommentar vom: 31.12.2013
+						<hr class="fancy-hr no-top-margin no-bottom-margin">
+						<div class="clear"></div>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+						<input type="submit" value="L&ouml;schen" formaction="#delete" name="submit" class="float-right commentButton no-bottom-margin">
+						<input type="submit" value="Editieren" formaction="#edit" name="submit" class="float-right commentButton no-bottom-margin">
+						<div class="clear"></div>
+					</form>
+					<p>
+				</div> 
 
-<br>
+				<div class="span8"><!-- Eigener KommentarKommentare -->
+					<form method="post" class="form">
+						<img src="http://placehold.it/60x60" class="commentPic float-left" />
+						<h3 class="no-bottom-margin">John Doe</h3>
+						Kommentar vom: 31.12.2013
+						<hr class="fancy-hr no-top-margin no-bottom-margin">
+						<div class="clear"></div>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+						<input type="submit" value="L&ouml;schen" formaction="#delete" name="submit" class="float-right commentButton no-bottom-margin">
+						<input type="submit" value="Editieren" formaction="#edit" name="submit" class="float-right commentButton no-bottom-margin">
+						<div class="clear"></div>
+					</form>
+					<p>
+				</div>
 
-<%= link_to 'New University', new_university_path %>
+				<div class=" span8 pagechange"><!-- SEITENWECHSELN -->
+					<center>
+						<a><i class="icon-circle-arrow-left pageArrow"></i>Vorherige</a>
+						<a>1</a>
+						<a>2</a>
+						<a>3</a>
+						<a>N&auml;chste<i class="icon-circle-arrow-right pageArrow"></i></a>
+					</center>
+				</div>
+			</div> <!-- End Row -->
+		</div>
