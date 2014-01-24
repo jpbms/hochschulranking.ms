@@ -1,0 +1,5 @@
+class AddCampusToUniversities < ActiveRecord::Migration
+  def change
+	add_column :universities, :campus, :boolean
+  end
+end
