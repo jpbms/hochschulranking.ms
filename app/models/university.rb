@@ -2,8 +2,7 @@ class University < ActiveRecord::Base
   has_one :picture
   belongs_to :address
   has_many :users
-  has_many :university_subjects
-  has_many :subjects, through: :university_subjects
+  has_many :subject_subject_types
   has_many :evaluations
   has_many :universitycontents
   has_many :comments
