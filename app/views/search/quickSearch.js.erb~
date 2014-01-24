@@ -1,0 +1,1 @@
+$('#universities').html('<%= escape_javascript(render("universities")) %>');

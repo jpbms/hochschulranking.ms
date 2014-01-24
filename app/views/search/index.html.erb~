@@ -24,8 +24,8 @@
 				<div class="span4">
 					<div class="feature-box">
 						<div class="box-content">
-							<%= search_form_for @search, :id => "universities_search", url: search_quickSearch_path do |f| %>
-								<%= f.text_field :name_or_address_city_name_cont, :class => "span3" %> 
+							<%= search_form_for @search, :id => "universities_search", url: search_index_path do |f| %>
+								<%= f.text_field :name_or_address_city_name_cont, :class => "span3" %>  
 					 			<div class="actions"><%= f.submit "Search" %></div>
 								<p><%= link_to "Erweiterte Suche", search_advancedSearch_path %></p>
 							<% end %>
@@ -35,5 +35,3 @@
 				</div>
 		</div>
 </div>
-
-
