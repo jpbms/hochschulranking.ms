@@ -2,6 +2,7 @@ HochschulrankingMs::Application.routes.draw do
 
 
 
+  post '/rate' => 'rater#create', :as => 'rate'
   get "universities" => "universities#index"
   
 

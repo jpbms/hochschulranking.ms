@@ -32,6 +32,7 @@ gem 'geokit'
 gem 'paperclip'
 gem 'ransack'
 gem 'will_paginate', '~> 3.0'
+gem "letsrate"
 
 #for development
 gem 'thin'

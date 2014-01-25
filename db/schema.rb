@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140124184358) do
+ActiveRecord::Schema.define(version: 20140125181558) do
 
   create_table "addresses", force: true do |t|
     t.string   "street"
@@ -52,7 +52,6 @@ ActiveRecord::Schema.define(version: 20140124184358) do
     t.string   "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "section_id"
     t.integer  "user_id"
     t.integer  "university_id"
   end
@@ -63,14 +62,6 @@ ActiveRecord::Schema.define(version: 20140124184358) do
     t.datetime "updated_at"
     t.string   "page"
     t.integer  "pageId"
-  end
-
-  create_table "evaluations", force: true do |t|
-    t.integer  "evaluation"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "section_id"
-    t.integer  "university_id"
   end
 
   create_table "pictures", force: true do |t|
@@ -91,6 +82,31 @@ ActiveRecord::Schema.define(version: 20140124184358) do
     t.integer  "user_id"
   end
 
+  create_table "rates", force: true do |t|
+    t.integer  "rater_id"
+    t.integer  "rateable_id"
+    t.string   "rateable_type"
+    t.float    "stars",         null: false
+    t.string   "dimension"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "rates", ["rateable_id", "rateable_type"], name: "index_rates_on_rateable_id_and_rateable_type"
+  add_index "rates", ["rater_id"], name: "index_rates_on_rater_id"
+
+  create_table "rating_caches", force: true do |t|
+    t.integer  "cacheable_id"
+    t.string   "cacheable_type"
+    t.float    "avg",            null: false
+    t.integer  "qty",            null: false
+    t.string   "dimension"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "rating_caches", ["cacheable_id", "cacheable_type"], name: "index_rating_caches_on_cacheable_id_and_cacheable_type"
+
   create_table "roles", force: true do |t|
     t.string   "name"
     t.integer  "resource_id"
@@ -102,12 +118,6 @@ ActiveRecord::Schema.define(version: 20140124184358) do
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
   add_index "roles", ["name"], name: "index_roles_on_name"
 
-  create_table "sections", force: true do |t|
-    t.string   "section"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "states", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
@@ -117,9 +127,9 @@ ActiveRecord::Schema.define(version: 20140124184358) do
   create_table "subject_subject_types", force: true do |t|
     t.integer  "subject_id"
     t.integer  "subject_type_id"
-    t.integer  "university_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "university_id"
   end
 
   create_table "subject_types", force: true do |t|

@@ -1,7 +1,7 @@
 <% @unis.each_with_index do |uni, i| %>
 <tr> 
 	<td><%= i+1 %></td>
-	<td><a href="/University/page/<%= uni.id %>"><%= uni.name %></a></td>
+	<td><%= link_to(uni.name, uni) %></td>
 	<td><%= uni.address.city.name %></td>
 	<td><%= uni.avg_evaluation %></td>
 </tr>
