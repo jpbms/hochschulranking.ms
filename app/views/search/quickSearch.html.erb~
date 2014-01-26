@@ -3,7 +3,7 @@
 			<div class="box-content">
 				<h4>Filtern</h4><p>
 				<div class="form-group no-padding text-left">
-					<%= search_form_for @search,  url: search_quickSearch_path do |g| %>
+					<%= search_form_for @search,  url: search_quickSearch_path, id="quickSearchList" do |g| %>
 					<%= g.label :name_cont, "Hochschule:" %>
 					<%= g.text_field :name_or_address_city_name_cont, :class => "span3" %>
 					<%= g.label :subjects_name_cont, "Studiengang:" %>
