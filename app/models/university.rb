@@ -5,7 +5,11 @@ class University < ActiveRecord::Base
   has_many :subject_subject_types
   has_many :universitycontents
   has_many :comments
-  letsrate_rateable "allgemein", "professoren", "tutoren"
+  DIMENSIONS = ["allgemein", "professoren", "tutoren"]
+  letsrate_rateable *DIMENSIONS
+DIMENSIONS.each do |dimension|
+  has_one :"#{dimension}_average", :as => :cacheable, :class_name => "RatingCache", :dependent => :destroy, :conditions => {:dimension => dimension.to_s}
+end
 
   #def avg_evaluation
   #	if evaluations.present?

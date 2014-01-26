@@ -11,7 +11,8 @@
 #password_confirmation: pass
 #admin.add_role :admin
 #puts "Admin password is #{pass}"
-
+user = User.create!(email: 'user@example.com', password: 'password', password_confirmation: 'password')
+other = User.create!(email: 'other@example.com', password: 'password', password_confirmation: 'password')
 
 #---------------------------------------------------------------------------------
 # Content
@@ -28,16 +29,21 @@ Content.create({"content"=>"Lorem ipsum dolor sit amet, consetetur sadipscing el
 #---------------------------------------------------------------------------------
 # Hochschulen
 #---------------------------------------------------------------------------------
-University.create({"id"=>1, "name"=>"TU Berlin", "website"=>"http://www.tu-berlin.de/", "hs_type"=>"Uni", "address_id"=> 1})
-University.create({"id"=>2, "name"=>"FH Berlin", "website"=>"http://www.fh-berlin.de/", "hs_type"=>"FH", "address_id"=> 2})
+fh =University.create({"id"=>1, "campus"=>true, "name"=>"TU Berlin", "website"=>"http://www.tu-berlin.de/", "hs_type"=>"Uni", "address_id"=> 1})
+uni = University.create({"id"=>2, "campus"=>true, "name"=>"FH Berlin", "website"=>"http://www.fh-berlin.de/", "hs_type"=>"FH", "address_id"=> 2})
 University.create({"id"=>3, "name"=>"Uni Münster", "website"=>"http://www.uni-muenster.de/de/", "hs_type"=>"Uni", "address_id"=> 3})
-University.create({"id"=>4, "name"=>"FH Münster", "website"=>"", "hs_type"=>"FH" , "address_id"=> 4})
+University.create({"id"=>4, "campus"=>true, "name"=>"FH Münster", "website"=>"", "hs_type"=>"FH" , "address_id"=> 4})
 University.create({"id"=>5, "name"=>"Uni Frankfurt", "website"=>"", "hs_type"=>"Uni" , "address_id"=> 5})
-University.create({"id"=>6, "name"=>"FH Frankfurt", "website"=>"", "hs_type"=>"FH" , "address_id"=> 6})
+University.create({"id"=>6, "campus"=>true, "name"=>"FH Frankfurt", "website"=>"", "hs_type"=>"FH" , "address_id"=> 6})
 University.create({"id"=>7, "name"=>"Uni Osnabrück", "website"=>"", "hs_type"=>"Uni" , "address_id"=> 7})
-University.create({"id"=>8, "name"=>"FH Osnabrück", "website"=>"", "hs_type"=>"FH" , "address_id"=> 8})
+University.create({"id"=>8, "campus"=>true, "name"=>"FH Osnabrück", "website"=>"", "hs_type"=>"FH" , "address_id"=> 8})
 University.create({"id"=>9, "name"=>"Uni Beilefeld", "website"=>"", "hs_type"=>"Uni" , "address_id"=> 9})
 University.create({"id"=>10, "name"=>"FH Beilefeld", "website"=>"", "hs_type"=>"FH" , "address_id"=> 10})
+
+fh.rate 2, user.id, 'allgemein'
+fh.rate 3, other.id, 'allgemein'
+uni.rate 1, user.id, 'allgemein'
+fh.rate 5, user.id, 'allgemein'
 
 #---------------------------------------------------------------------------------
 # City
