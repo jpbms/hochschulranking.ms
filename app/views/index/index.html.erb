@@ -26,14 +26,12 @@
 							<div class="span4">
 								<h3>Top Hochschulen</h3>
 								<% @unis.each do |uni| %>
-									<% if uni.avg_evaluation_in_percent %>
 									<div class="progress"> 
 											
-											<div class="bar" style="width: <%= uni.avg_evaluation_in_percent %>%;">							<%= link_to(uni.name, uni) %>
+											<div class="bar">							<%= link_to(uni.name, uni) %>
 							
 											</div>
 									</div>
-									<% end %>
 								<% end %>
 								</div>
 							</div> <!-- End Span4 -->

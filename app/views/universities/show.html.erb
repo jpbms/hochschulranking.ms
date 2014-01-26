@@ -1,3 +1,6 @@
+<% content_for :javascript_includes do %>
+  <%= javascript_include_tag 'jquery.raty.js','letsrate.js'%>
+<% end %> 
 <div class="container" id="hochschule">
 			<div class="row">
 				<div class="span12">
@@ -22,7 +25,7 @@
 						<%end%>
 						<div class="tab" id="tabs-100">
 						    <% @unisubject.each do|uni|%>
-						    <p><%= uni.subject.name%></p>
+						    <p><%= uni.subject_type.name %> im Bereich <%= uni.subject.name%> </p>
 						    <%end%>
 						</div>
 						
@@ -40,7 +43,8 @@
 							<li><i class="icon-home"></i><%= link_to(@university.website, @university.website) %></li>
 						</ul>
 					</div>
-				</div>
+	
+			</div>
 
 				<div class="span8">
 					<p>
@@ -49,15 +53,27 @@
 					  <tr>
 					    <th>Kriterium</th>
 					    <th>Rating</th>
-					    <th>Kommentare</th>
 					  </tr>
-					  <% @unisection.each do|uni| %>
 					  <tr>
-					    <td><%= uni.section %></td>
-					    <td>to do</td>
-					    <td><a href="#comments">4</a></td>
+					    <td>Allgemeines</td>
+					    <%= javascript_include_tag 'application'%>           
+					    <%= yield :javascript_includes %>
+					    <td><%= rating_for @university, "allgemein", :star => 5%></td>
 					  </tr>
-					  <%end%>
+<tr>
+					    <td>Professoren</td>
+					    <%= javascript_include_tag 'application'%>           
+					    <%= yield :javascript_includes %>
+					    <td><%= rating_for @university, "professoren", :star => 5%></td>
+					  </tr>
+<tr>
+					    <td>Tutoren</td>
+					    <%= javascript_include_tag 'application'%>           
+					    <%= yield :javascript_includes %>
+					    <td><%= rating_for @university, "tutoren", :star => 5%></td>
+					  </tr>
+
+					  
 					</table>
 				</div>
 

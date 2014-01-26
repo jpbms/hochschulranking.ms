@@ -8,4 +8,5 @@ class User < ActiveRecord::Base
   has_one :profile
   belongs_to :university 
   belongs_to :subject
+  letsrate_rater
 end

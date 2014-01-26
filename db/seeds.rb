@@ -82,64 +82,38 @@ Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Uni liegt auf e
 Universitycontent.create({"title"=>"Mensen","content"=>"Die Mensa ist von der Uni aus zu Fuß in 5 Minuten zu erreichen","university_id"=>2})
 Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Uni zerstreut in der Stadt","university_id"=>3})
 Universitycontent.create({"title"=>"Mensen","content"=>"Es gibt gleich 2 Mensen die in der Stadt verteilt sind","university_id"=>3})
-#---------------------------------------------------------------------------------
-# Section
-#---------------------------------------------------------------------------------
-Section.create({"section"=>"Allgemein"})
-Section.create({"section"=>"Professoren"})
-Section.create({"section"=>"Betreuung"})
-Section.create({"section"=>"Stadt"})
-Section.create({"section"=>"Mensa"})
-
-#---------------------------------------------------------------------------------
-# Evaluation
-#---------------------------------------------------------------------------------
-Evaluation.create({"evaluation"=>3, "section_id"=>1, "university_id"=>1})
-Evaluation.create({"evaluation"=>4, "section_id"=>2, "university_id"=>2})
-Evaluation.create({"evaluation"=>2, "section_id"=>3, "university_id"=>3})
-Evaluation.create({"evaluation"=>5, "section_id"=>1, "university_id"=>4})
-Evaluation.create({"evaluation"=>1, "section_id"=>1, "university_id"=>1})
-Evaluation.create({"evaluation"=>5, "section_id"=>1, "university_id"=>2})
-Evaluation.create({"evaluation"=>2, "section_id"=>1, "university_id"=>3})
-Evaluation.create({"evaluation"=>4, "section_id"=>1, "university_id"=>4})
-Evaluation.create({"evaluation"=>4, "section_id"=>2, "university_id"=>1})
-Evaluation.create({"evaluation"=>2, "section_id"=>1, "university_id"=>2})
-Evaluation.create({"evaluation"=>5, "section_id"=>1, "university_id"=>3})
-Evaluation.create({"evaluation"=>1, "section_id"=>3, "university_id"=>4})
-Evaluation.create({"evaluation"=>5, "section_id"=>1, "university_id"=>1})
-Evaluation.create({"evaluation"=>2, "section_id"=>1, "university_id"=>3})
-Evaluation.create({"evaluation"=>4, "section_id"=>2, "university_id"=>3})
 
 #---------------------------------------------------------------------------------
 # Comments
 #---------------------------------------------------------------------------------
-Comment.create({"comment"=>"Tolle Mensa", "section_id"=>5, "university_id"=>1})
-Comment.create({"comment"=>"Super Professoren", "section_id"=>2, "university_id"=>1})
-Comment.create({"comment"=>"Gute Einrichtung", "section_id"=>1, "university_id"=>2})
-Comment.create({"comment"=>"Geilste Stadt", "section_id"=>5, "university_id"=>3})
+Comment.create({"comment"=>"Tolle Mensa", "university_id"=>1})
+Comment.create({"comment"=>"Super Professoren",  "university_id"=>1})
+Comment.create({"comment"=>"Gute Einrichtung",  "university_id"=>2})
+Comment.create({"comment"=>"Geilste Stadt", "university_id"=>3})
 
 #---------------------------------------------------------------------------------
 # Subjects
 #---------------------------------------------------------------------------------
-Subject.create({"name"=>"Bachelor Wirtschaftsinformatik"})
-Subject.create({"name"=>"Bachelor BWL"})
-Subject.create({"name"=>"Master Wirtschaftsinformatik"})
-Subject.create({"name"=>"Bachelor Maschinenbau"})
-Subject.create({"name"=>"Bachelor Elektrotechnik"})
-Subject.create({"name"=>"Bachelor Angewandte Informatik"})
-
+Subject.create({"name"=>"BWL"})
+Subject.create({"name"=>"Wirtschaftsinformatik"})
+Subject.create({"name"=>"Maschinenbau"})
+Subject.create({"name"=>"Elektrotechnik"})
+Subject.create({"name"=>"Angewandte Informatik"})
+#---------------------------------------------------------------------------------
+# SubjectTypes
+#---------------------------------------------------------------------------------
+SubjectType.create({"name"=>"Bachelor of Science"})
+SubjectType.create({"name"=>"Master of Science"})
+SubjectType.create({"name"=>"Diplom"})
+SubjectType.create({"name"=>"Master of Arts"})
 #---------------------------------------------------------------------------------
 # Subjects_University
 #---------------------------------------------------------------------------------
-UniversitySubject.create({"subject_id"=>1,"university_id"=>1})
-UniversitySubject.create({"subject_id"=>1,"university_id"=>3})
-UniversitySubject.create({"subject_id"=>2,"university_id"=>1})
-UniversitySubject.create({"subject_id"=>1,"university_id"=>2})
-UniversitySubject.create({"subject_id"=>2,"university_id"=>3})
-UniversitySubject.create({"subject_id"=>3,"university_id"=>3})
-UniversitySubject.create({"subject_id"=>4,"university_id"=>1})
-UniversitySubject.create({"subject_id"=>5,"university_id"=>3})
-UniversitySubject.create({"subject_id"=>6,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>1,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>1,"university_id"=>2})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>2,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>3,"subject_type_id"=>3,"university_id"=>3})
+SubjectSubjectType.create({"subject_id"=>5,"subject_type_id"=>4,"university_id"=>2})
 
 
 

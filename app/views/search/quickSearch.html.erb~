@@ -1,3 +1,6 @@
+<% content_for :javascript_includes do %>
+  <%= javascript_include_tag 'jquery.raty.js','letsrate.js'%>
+<% end %>
 <div class="span4">
 		<div class="feature-box">
 			<div class="box-content">
@@ -34,7 +37,9 @@
 				<tr> 
 					<td><%= link_to(university.name, university) %></td>
 					<td><%= university.address.city.name %></td>
-					<td><%= university.avg_evaluation %></td>
+					<%= javascript_include_tag 'application'%>           
+					    <%= yield :javascript_includes %>
+					<td><%= rating_for university, "allgemein", :star => 5%></td>
 				</tr>
 			  <% end %></tbody>
 			</table>
