@@ -56,15 +56,15 @@ City.create({"id"=>4, "name"=>"Townsend"})
 # Address
 #---------------------------------------------------------------------------------
 Address.create({"id"=>1, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>2, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>3, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>4, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
+Address.create({"id"=>2, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>2})
+Address.create({"id"=>3, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>3})
+Address.create({"id"=>4, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>4})
 Address.create({"id"=>5, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>6, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>7, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>8, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
+Address.create({"id"=>6, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>2})
+Address.create({"id"=>7, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>3})
+Address.create({"id"=>8, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>4})
 Address.create({"id"=>9, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>10, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
+Address.create({"id"=>10, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>2})
 
 
 
@@ -86,10 +86,10 @@ Universitycontent.create({"title"=>"Mensen","content"=>"Es gibt gleich 2 Mensen 
 #---------------------------------------------------------------------------------
 # Comments
 #---------------------------------------------------------------------------------
-Comment.create({"comment"=>"Tolle Mensa", "section_id"=>5, "university_id"=>1})
-Comment.create({"comment"=>"Super Professoren", "section_id"=>2, "university_id"=>1})
-Comment.create({"comment"=>"Gute Einrichtung", "section_id"=>1, "university_id"=>2})
-Comment.create({"comment"=>"Geilste Stadt", "section_id"=>5, "university_id"=>3})
+Comment.create({"comment"=>"Tolle Mensa", "university_id"=>1})
+Comment.create({"comment"=>"Super Professoren",  "university_id"=>1})
+Comment.create({"comment"=>"Gute Einrichtung",  "university_id"=>2})
+Comment.create({"comment"=>"Geilste Stadt", "university_id"=>3})
 
 #---------------------------------------------------------------------------------
 # Subjects

@@ -28,14 +28,14 @@ Content.create({"content"=>"Lorem ipsum dolor sit amet, consetetur sadipscing el
 #---------------------------------------------------------------------------------
 # Hochschulen
 #---------------------------------------------------------------------------------
-University.create({"id"=>1, "name"=>"TU Berlin", "website"=>"http://www.tu-berlin.de/", "hs_type"=>"Uni", "address_id"=> 1})
-University.create({"id"=>2, "name"=>"FH Berlin", "website"=>"http://www.fh-berlin.de/", "hs_type"=>"FH", "address_id"=> 2})
+University.create({"id"=>1, "campus"=>true, "name"=>"TU Berlin", "website"=>"http://www.tu-berlin.de/", "hs_type"=>"Uni", "address_id"=> 1})
+University.create({"id"=>2, "campus"=>true, "name"=>"FH Berlin", "website"=>"http://www.fh-berlin.de/", "hs_type"=>"FH", "address_id"=> 2})
 University.create({"id"=>3, "name"=>"Uni Münster", "website"=>"http://www.uni-muenster.de/de/", "hs_type"=>"Uni", "address_id"=> 3})
-University.create({"id"=>4, "name"=>"FH Münster", "website"=>"", "hs_type"=>"FH" , "address_id"=> 4})
+University.create({"id"=>4, "campus"=>true, "name"=>"FH Münster", "website"=>"", "hs_type"=>"FH" , "address_id"=> 4})
 University.create({"id"=>5, "name"=>"Uni Frankfurt", "website"=>"", "hs_type"=>"Uni" , "address_id"=> 5})
-University.create({"id"=>6, "name"=>"FH Frankfurt", "website"=>"", "hs_type"=>"FH" , "address_id"=> 6})
+University.create({"id"=>6, "campus"=>true, "name"=>"FH Frankfurt", "website"=>"", "hs_type"=>"FH" , "address_id"=> 6})
 University.create({"id"=>7, "name"=>"Uni Osnabrück", "website"=>"", "hs_type"=>"Uni" , "address_id"=> 7})
-University.create({"id"=>8, "name"=>"FH Osnabrück", "website"=>"", "hs_type"=>"FH" , "address_id"=> 8})
+University.create({"id"=>8, "campus"=>true, "name"=>"FH Osnabrück", "website"=>"", "hs_type"=>"FH" , "address_id"=> 8})
 University.create({"id"=>9, "name"=>"Uni Beilefeld", "website"=>"", "hs_type"=>"Uni" , "address_id"=> 9})
 University.create({"id"=>10, "name"=>"FH Beilefeld", "website"=>"", "hs_type"=>"FH" , "address_id"=> 10})
 
@@ -56,15 +56,15 @@ City.create({"id"=>4, "name"=>"Townsend"})
 # Address
 #---------------------------------------------------------------------------------
 Address.create({"id"=>1, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>2, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>3, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>4, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
+Address.create({"id"=>2, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>2})
+Address.create({"id"=>3, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>3})
+Address.create({"id"=>4, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>4})
 Address.create({"id"=>5, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>6, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>7, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>8, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
+Address.create({"id"=>6, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>2})
+Address.create({"id"=>7, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>3})
+Address.create({"id"=>8, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>4})
 Address.create({"id"=>9, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>10, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
+Address.create({"id"=>10, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>2})
 
 
 

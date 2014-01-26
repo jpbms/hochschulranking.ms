@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20140125181558) do
     t.string   "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "section_id"
     t.integer  "user_id"
     t.integer  "university_id"
   end
@@ -62,6 +63,14 @@ ActiveRecord::Schema.define(version: 20140125181558) do
     t.datetime "updated_at"
     t.string   "page"
     t.integer  "pageId"
+  end
+
+  create_table "evaluations", force: true do |t|
+    t.integer  "evaluation"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "section_id"
+    t.integer  "university_id"
   end
 
   create_table "pictures", force: true do |t|
@@ -107,16 +116,11 @@ ActiveRecord::Schema.define(version: 20140125181558) do
 
   add_index "rating_caches", ["cacheable_id", "cacheable_type"], name: "index_rating_caches_on_cacheable_id_and_cacheable_type"
 
-  create_table "roles", force: true do |t|
-    t.string   "name"
-    t.integer  "resource_id"
-    t.string   "resource_type"
+  create_table "sections", force: true do |t|
+    t.string   "section"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
-  add_index "roles", ["name"], name: "index_roles_on_name"
 
   create_table "states", force: true do |t|
     t.string   "name"
@@ -156,6 +160,13 @@ ActiveRecord::Schema.define(version: 20140125181558) do
     t.boolean  "campus",     default: false
   end
 
+  create_table "university_subjects", force: true do |t|
+    t.integer  "university_id"
+    t.integer  "subject_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "universitycontents", force: true do |t|
     t.string   "title"
     t.text     "content"
@@ -188,12 +199,5 @@ ActiveRecord::Schema.define(version: 20140125181558) do
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-
-  create_table "users_roles", id: false, force: true do |t|
-    t.integer "user_id"
-    t.integer "role_id"
-  end
-
-  add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
 
 end
