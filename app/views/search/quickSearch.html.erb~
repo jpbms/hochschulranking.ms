@@ -8,7 +8,9 @@
 				<div class="form-group no-padding text-left">
 					<%= search_form_for @search,  url: search_quickSearch_path do |g| %>
 					<%= g.label :name_cont, "Hochschule:" %>
-					<%= g.text_field :name_or_address_city_name_cont, :class => "span3" %>
+					<%= g.text_field :name_cont, :class => "span3" %>
+					<%= g.label :name_cont, "Stadt:" %>
+					<%= g.text_field :address_city_name_cont, :class => "span3" %>
 					<%= g.label :subjects_name_cont, "Studiengang:" %>
 					<%= g.text_field :subject_subject_types_subject_name_cont, :class => "span3" %>
 					<%= g.label :state_id_gteq, "Rating over" %>

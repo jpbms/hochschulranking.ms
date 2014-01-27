@@ -1,7 +1,9 @@
 class Rate < ActiveRecord::Base
   belongs_to :rater, :class_name => "User"
   belongs_to :rateable, :polymorphic => true
- 
+<% content_for :javascript_includes do %>
+  <%= javascript_include_tag 'jquery.raty.js','letsrate.js'%>
+<% end %> 
 
   #attr_accessible :rate, :dimension
 

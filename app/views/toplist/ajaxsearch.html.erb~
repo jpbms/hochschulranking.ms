@@ -3,6 +3,6 @@
 	<td><%= i+1 %></td>
 	<td><%= link_to(uni.name, uni) %></td>
 	<td><%= uni.address.city.name %></td>
-	<td><%= uni.avg_evaluation %></td>
+	<td><%= rating_for uni, "allgemein", :star => 5%></td>
 </tr>
 <% end %>
