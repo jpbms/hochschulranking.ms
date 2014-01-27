@@ -6,6 +6,13 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :comments
   has_one :profile
+  
+  #creating a profile by creating a user
+  after_create :create_profile
+  def create_profile
+    Profile.create(user: self)
+  end
+
   belongs_to :university 
   belongs_to :subject
   letsrate_rater
