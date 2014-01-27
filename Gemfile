@@ -50,7 +50,9 @@ group :development do
   gem "rails-erd"
 end
 
-
+group :development, :test do
+  gem 'rspec-rails'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

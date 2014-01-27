@@ -10,6 +10,7 @@ class Ability
     else
         #logged in user
         if user.has_role? :user
+            can :read, :all
             can :update, User, :user_id => user.id
             can :manage, Comment, :user_id => user.id
         end 
