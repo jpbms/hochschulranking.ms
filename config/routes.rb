@@ -5,7 +5,6 @@ HochschulrankingMs::Application.routes.draw do
   post '/rate' => 'rater#create', :as => 'rate'
   get "universities" => "universities#index"
   
-
   get "search" => "search#quickSearch"
   get "search/quickSearch" => "search#quickSearch"
  
