@@ -2,6 +2,7 @@ HochschulrankingMs::Application.routes.draw do
 
 
 
+  opinio_model
   post '/rate' => 'rater#create', :as => 'rate'
   get "universities" => "universities#index"
   
@@ -33,11 +34,11 @@ HochschulrankingMs::Application.routes.draw do
 
   resources :subjects
 
-  resources :universities
+  resources :universities do
+    opinio
+  end
 
   resources :contents
-
-  resources :comments
 
   resources :evaluations
 

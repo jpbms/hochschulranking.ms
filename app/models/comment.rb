@@ -1,4 +1,4 @@
 class Comment < ActiveRecord::Base
-  belongs_to :user
-  belongs_to :university
+  opinio
+  paginates_per 10
 end

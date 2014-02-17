@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140125181558) do
+ActiveRecord::Schema.define(version: 20140217192124) do
 
   create_table "addresses", force: true do |t|
     t.string   "street"
@@ -49,12 +49,12 @@ ActiveRecord::Schema.define(version: 20140125181558) do
   end
 
   create_table "comments", force: true do |t|
-    t.string   "comment"
+    t.integer  "owner_id",         null: false
+    t.integer  "commentable_id",   null: false
+    t.string   "commentable_type", null: false
+    t.text     "body",             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "section_id"
-    t.integer  "user_id"
-    t.integer  "university_id"
   end
 
   create_table "contents", force: true do |t|
@@ -63,14 +63,6 @@ ActiveRecord::Schema.define(version: 20140125181558) do
     t.datetime "updated_at"
     t.string   "page"
     t.integer  "pageId"
-  end
-
-  create_table "evaluations", force: true do |t|
-    t.integer  "evaluation"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "section_id"
-    t.integer  "university_id"
   end
 
   create_table "pictures", force: true do |t|
@@ -126,12 +118,6 @@ ActiveRecord::Schema.define(version: 20140125181558) do
 
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
   add_index "roles", ["name"], name: "index_roles_on_name"
-
-  create_table "sections", force: true do |t|
-    t.string   "section"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "states", force: true do |t|
     t.string   "name"

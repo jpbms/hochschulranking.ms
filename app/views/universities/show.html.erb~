@@ -75,43 +75,13 @@
 
 					  
 					</table>
-				</div>
-
-				<div class="span8"><!-- Kommentar abgeben -->
-					<form action="#123" method="post" class="form">
-						<h3>Hinterlassen sie einen Kommentar</h3>
-						<textarea name="message" placeholder="Insert your message" class="required"></textarea>
-						<div class="response-message"></div>
-						<input type="submit" value="Absenden" name="submit" class="float-right">
-						<div class="clear"></div>
-					</form><p>
-				</div> 
-				
+				</div>	
+                                <%= paginate comments %>			
 				<div class="span8" id="comments"><!-- Eigener KommentarKommentare -->
-					<% @unicomment.each do|uni| %>
-					<form method="post" class="form">
-						<img src="http://placehold.it/60x60" class="commentPic float-left" />
-						<h3 class="no-bottom-margin">John Doe</h3>
-						Kommentar vom: 31.12.2013
-						<hr class="fancy-hr no-top-margin no-bottom-margin">
-						<div class="clear"></div>
-						<p><%=uni.comment%></p>
-						<input type="submit" value="L&ouml;schen" formaction="#delete" name="submit" class="float-right commentButton no-bottom-margin">
-						<input type="submit" value="Editieren" formaction="#edit" name="submit" class="float-right commentButton no-bottom-margin">
-						<div class="clear"></div>
-					</form>
-					<p>
-				<%end%>			
+					<%= render_comments @university ,:page => params[:page], :limit => 5 %>
+					<%= render_comments_form @university %>	
 				</div>
+                                <%= paginate comments %>
 				
-				<div class=" span8 pagechange"><!-- SEITENWECHSELN -->
-					<center>
-						<a><i class="icon-circle-arrow-left pageArrow"></i>Vorherige</a>
-						<a>1</a>
-						<a>2</a>
-						<a>3</a>
-						<a>N&auml;chste<i class="icon-circle-arrow-right pageArrow"></i></a>
-					</center>
-				</div>
 			</div> <!-- End Row -->
 		</div>

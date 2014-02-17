@@ -4,7 +4,7 @@ class University < ActiveRecord::Base
   has_many :users
   has_many :subject_subject_types
   has_many :universitycontents
-  has_many :comments
+  opinio_subjectum
   DIMENSIONS = ["allgemein", "professoren", "tutoren"]
   letsrate_rateable *DIMENSIONS
 DIMENSIONS.each do |dimension|

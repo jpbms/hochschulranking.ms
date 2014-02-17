@@ -1,5 +1,4 @@
 class Comment < ActiveRecord::Base
-  belongs_to :section
-  belongs_to :user
-  belongs_to :university
+  opinio
+  paginates_per 3
 end

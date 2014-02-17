@@ -6,9 +6,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :comments
   has_one :profile
-  u = User.new(:email => "user@name.com", :password => 'password', :password_confirmation => 'password')
-u.save
-  
   
   #creating a profile by creating a user
   after_create :create_profile

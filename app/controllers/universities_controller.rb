@@ -6,7 +6,6 @@ class UniversitiesController < ApplicationController
   def show
      @university = University.find(params[:id])
      @unicontent = @university.universitycontents.all
-     @unicomment = @university.comments.all
      @unisubject = SubjectSubjectType.all(:include => :subject_type,:include => :subject,:conditions => ["university_id = ?", @university])
   end
 
@@ -20,4 +19,5 @@ class UniversitiesController < ApplicationController
     def university_params
       params.require(:university).permit(:name, :website)
     end
+
 end

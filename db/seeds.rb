@@ -85,10 +85,6 @@ Universitycontent.create({"title"=>"Mensen","content"=>"Es gibt gleich 2 Mensen 
 #---------------------------------------------------------------------------------
 # Comments
 #---------------------------------------------------------------------------------
-Comment.create({"comment"=>"Tolle Mensa", "university_id"=>1})
-Comment.create({"comment"=>"Super Professoren",  "university_id"=>1})
-Comment.create({"comment"=>"Gute Einrichtung",  "university_id"=>2})
-Comment.create({"comment"=>"Geilste Stadt", "university_id"=>3})
 
 #---------------------------------------------------------------------------------
 # Subjects

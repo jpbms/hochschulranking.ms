@@ -31,7 +31,10 @@ gem 'rolify'
 gem 'geokit'
 gem 'paperclip'
 gem 'ransack'
-gem 'will_paginate', '~> 3.0'
+gem "will_paginate", "~> 3.0.4"
+gem "letsrate"
+gem "opinio"
+gem 'protected_attributes'
 
 #for development
 gem 'thin'
@@ -49,7 +52,9 @@ group :development do
   gem "rails-erd"
 end
 
-
+group :development, :test do
+  gem 'rspec-rails'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
