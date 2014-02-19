@@ -28,13 +28,15 @@ gem 'factory_girl'
 gem 'devise'
 gem 'cancan'
 gem 'rolify'
-gem 'geokit'
+gem 'geocoder'
+gem 'gmaps4rails'
 gem 'paperclip'
 gem 'ransack'
 gem "will_paginate", "~> 3.0.4"
 gem "letsrate"
 gem "opinio"
-gem 'protected_attributes'
+gem 'kaminari'
+#gem 'protected_attributes'
 
 #for development
 gem 'thin'

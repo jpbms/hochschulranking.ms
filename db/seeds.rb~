@@ -41,29 +41,39 @@ University.create({"id"=>10, "name"=>"FH Beilefeld", "website"=>"", "hs_type"=>"
 #---------------------------------------------------------------------------------
 # City
 #---------------------------------------------------------------------------------
-City.create({"id"=>1, "name"=>"Testhausen"})
-City.create({"id"=>2, "name"=>"Testcity"})
-City.create({"id"=>3, "name"=>"Testtown"})
-City.create({"id"=>4, "name"=>"Townsend"})
-
+City.create({"id"=>1, "name"=>"Berlin", "state_id"=>3})
+City.create({"id"=>2, "name"=>"Berlin", "state_id"=>3})
+City.create({"id"=>3, "name"=>"Münster", "state_id"=>1})
+City.create({"id"=>4, "name"=>"Münster", "state_id"=>1})
+City.create({"id"=>5, "name"=>"Frankfurt am Main", "state_id"=>4})
+City.create({"id"=>6, "name"=>"Frankfurt am Main", "state_id"=>4})
+City.create({"id"=>7, "name"=>"Osnabrück", "state_id"=>2})
+City.create({"id"=>8, "name"=>"Osnabrück", "state_id"=>2})
+City.create({"id"=>9, "name"=>"Bielefeld", "state_id"=>1})
+City.create({"id"=>10, "name"=>"Bielefeld", "state_id"=>1})
 #---------------------------------------------------------------------------------
 # State
 #---------------------------------------------------------------------------------
-
+State.create({"id"=>1, "name"=>"Nordrhein-Westfalen"})
+State.create({"id"=>2, "name"=>"Niedersachsen"})
+State.create({"id"=>3, "name"=>"Berlin"})
+State.create({"id"=>4, "name"=>"Hessen"})
 
 #---------------------------------------------------------------------------------
 # Address
 #---------------------------------------------------------------------------------
-Address.create({"id"=>1, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>2, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>2})
-Address.create({"id"=>3, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>3})
-Address.create({"id"=>4, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>4})
-Address.create({"id"=>5, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>6, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>2})
-Address.create({"id"=>7, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>3})
-Address.create({"id"=>8, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>4})
-Address.create({"id"=>9, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>1})
-Address.create({"id"=>10, "postalcode"=>48159, "street"=>"Test-Street", "street_number"=>1, "city_id"=>2})
+Address.create({"id"=>1, "postalcode"=>"10623", "street"=>"Straße des 17. Juni", "street_number"=>135, "city_id"=>1})
+Address.create({"id"=>2, "postalcode"=>"10318", "street"=>"Treskowallee", "street_number"=>8, "city_id"=>2})
+Address.create({"id"=>3, "postalcode"=>"48149", "street"=>"Schlossplatz", "street_number"=>2, "city_id"=>3})
+Address.create({"id"=>4, "postalcode"=>"48149", "street"=>"Corrensstraße", "street_number"=>25, "city_id"=>4})
+Address.create({"id"=>5, "postalcode"=>"60323", "street"=>"Grüneburgplatz", "street_number"=>1, "city_id"=>5})
+Address.create({"id"=>6, "postalcode"=>"60318", "street"=>"Nibelungenplatz", "street_number"=>1, "city_id"=>6})
+Address.create({"id"=>7, "postalcode"=>"49074", "street"=>"Neuer Graben", "city_id"=>7})
+Address.create({"id"=>8, "postalcode"=>"49076", "street"=>"Caprivistraße", "street_number"=>30, "city_id"=>8})
+Address.create({"id"=>9, "postalcode"=>"33615", "street"=>"Universitätsstraße", "street_number"=>25, "city_id"=>9})
+Address.create({"id"=>10, "postalcode"=>"33615", "street"=>"Kurt-Schumacher-Straße", "street_number"=>6, "city_id"=>10})
+
+
 
 
 
@@ -85,10 +95,6 @@ Universitycontent.create({"title"=>"Mensen","content"=>"Es gibt gleich 2 Mensen 
 #---------------------------------------------------------------------------------
 # Comments
 #---------------------------------------------------------------------------------
-Comment.create({"comment"=>"Tolle Mensa", "university_id"=>1})
-Comment.create({"comment"=>"Super Professoren",  "university_id"=>1})
-Comment.create({"comment"=>"Gute Einrichtung",  "university_id"=>2})
-Comment.create({"comment"=>"Geilste Stadt", "university_id"=>3})
 
 #---------------------------------------------------------------------------------
 # Subjects
