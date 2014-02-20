@@ -159,6 +159,13 @@ ActiveRecord::Schema.define(version: 20140219112937) do
     t.boolean  "campus",     default: false
   end
 
+  create_table "university_sections", force: true do |t|
+    t.integer  "university_id"
+    t.integer  "section_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "university_subjects", force: true do |t|
     t.integer  "university_id"
     t.integer  "subject_id"

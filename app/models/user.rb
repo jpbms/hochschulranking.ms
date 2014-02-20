@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable
   has_one :profile
+  attr_accessible :email
+  attr_accessible :password
   
   #creating a profile by creating a user
   after_create :create_profile
