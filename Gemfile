@@ -32,12 +32,13 @@ gem 'geocoder'
 gem 'gmaps4rails'
 gem 'underscore-rails'
 gem 'paperclip'
+#gem 'rmagick'
 gem 'ransack'
 gem "will_paginate", "~> 3.0.4"
 gem "letsrate"
 gem "opinio"
 gem 'kaminari'
-gem 'protected_attributes'
+#gem 'protected_attributes'
 
 #for development
 gem 'thin'

@@ -1,4 +1,0 @@
-class AddUniversityIdToComments < ActiveRecord::Migration
-  def change
-  end
-end
