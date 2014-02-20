@@ -75,13 +75,10 @@
 
 					  
 					</table>
-				</div>	
-                                <%= paginate comments %>			
+				</div>				
 				<div class="span8" id="comments"><!-- Eigener KommentarKommentare -->
-					<%= render_comments @university ,:page => params[:page], :limit => 5 %>
+					
 					<%= render_comments_form @university %>	
 				</div>
-                                <%= paginate comments %>
-				
 			</div> <!-- End Row -->
 		</div>

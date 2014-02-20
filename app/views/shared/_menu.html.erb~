@@ -2,14 +2,15 @@
 			
 	<ul >
     	<li><a href="/index">Home</a></li>
-    	<li><a href="#about">About</a></li>
     	<li><a href="/toplist">Toplist</a></li>
-	<li><a href="/search">Suche</a></li>
-    	<li><a href="#portfolio">Bewerten</a></li>		    	
-    	<!-- Login -->
+	<li><a href="/search">Suche</a></li>		    	
+	<li><a href="/search/mapsearch">Map Searc</a></li>
+    	    	
+	<!-- Login -->
 		<% if user_signed_in? %>		
 		  
-		  <li class="nav-border"><%= link_to current_user.email, edit_user_registration_path, :class => 'navbar-link' %></li>
+		<!--li class="nav-border"><%= link_to current_user.email, edit_user_registration_path, :class => 'navbar-link' %></li> -->
+		<li class="nav-border"><%= link_to current_user.email, edit_profile_path(current_user,@profile), :class => 'navbar-link' %></li>
 		  <li><%= link_to "Logout", destroy_user_session_path, :method => :delete, :class => 'navbar-link'  %></li>
 		<% else %>
 		  <li class="nav-border"><%= link_to "Registrieren", new_user_registration_path, :class => 'navbar-link'  %></li>
