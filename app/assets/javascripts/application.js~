@@ -13,16 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require underscore
+//= require gmaps/google
 //= require_tree .
-$(function () {
-// Search form.
-  $('#university_search).submit(function () {
-    $.get(this.action, $(this).serialize(), null, 'script');
-    return false;
-  });
-	$('#universities_search input').keyup(function () {
-	  $.get($('#universities_search').attr('action'), &crarr; 
-	    $('#universities_search').serialize(), null, 'script');
-	  return false;
-	});
-});
+

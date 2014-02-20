@@ -1,7 +1,6 @@
-<% @university.each do |university| %>
-<tr> 
-	<td><%= link_to(university.name, university) %></td>
-	<td><%= university.address.city.name %></td>
-	<td><%= university.avg_evaluation %></td>
-</tr>
-<% end %>
+  <% @university.each do |university| %>
+	<tr> 
+		<td><%= link_to(university.name, university) %></td>
+		<td><%= university.address.city.name %></td>
+	</tr>
+  <% end %>

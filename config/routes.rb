@@ -5,11 +5,11 @@ HochschulrankingMs::Application.routes.draw do
   opinio_model
   post '/rate' => 'rater#create', :as => 'rate'
   get "universities" => "universities#index"
-  
+
+
   get "search" => "search#quickSearch"
-  get "search/quickSearch" => "search#quickSearch"
- 
-  get "search/advancedSearch" => "search#advancedSearch"
+  get "search/quickSearch" => "search#quickSearch" 
+  post "search/advancedSearch" => "search#advancedSearch"
 
   get "search/mapSearch"
 
