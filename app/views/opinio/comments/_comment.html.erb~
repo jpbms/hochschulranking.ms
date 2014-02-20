@@ -1,9 +1,7 @@
 <li id="comment_<%= comment.id %>">
   <span>Geschrieben von: <%= comment.owner.email %></span>
- <p>
-    <%= simple_format(comment.body) %>
+  <p>
+     <%= simple_format(comment.body) %>
   </p>
-  <% if comment.owner == send(Opinio.current_user_method) %>
-    <%= link_to t('opinio.actions.delete'), comment_path(comment), :method => :delete, :remote => true %>
-  <% end %>
+  <%= link_to 'Destroy', comment_path(comment), :method => :delete, :remote => true %>
 </li>

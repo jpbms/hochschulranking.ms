@@ -1,0 +1,4 @@
+class DropSections < ActiveRecord::Migration
+  def change
+  end
+end

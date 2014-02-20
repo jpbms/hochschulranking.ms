@@ -1,0 +1,4 @@
+class RemoveSectionIdFromEvaluations < ActiveRecord::Migration
+  def change
+  end
+end

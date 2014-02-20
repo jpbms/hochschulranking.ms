@@ -1,0 +1,4 @@
+class RemoveSectionIdFromComments < ActiveRecord::Migration
+  def change
+  end
+end
