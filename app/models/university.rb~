@@ -1,7 +1,6 @@
 class University < ActiveRecord::Base
   has_one :picture
   belongs_to :address
-  has_many :comments
   has_many :users
   has_many :subject_subject_types
   has_many :universitycontents
@@ -19,7 +18,7 @@ end
  # end
 
   def avg_rates_in_percent
-     Rate.where("rateable_id="+id.to_s).sum(:stars) /  Rate.where("rateable_id="+id.to_s).count * 100 / 5
+     Rate.where("rateable_id="+id.to_s+ " and dimension=allgemein").sum(:stars) /  Rate.where("rateable_id="+id.to_s+ " and dimension=allgemein").count * 100 / 5
      #rates.sum(:stars).to_f / rates.count * 100 / 5
   end
   #end

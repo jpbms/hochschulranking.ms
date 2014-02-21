@@ -77,28 +77,32 @@
 					</table>
 				</div>				
 				<div class="span8"><!-- Kommentar abgeben -->
-					<form action="#123" method="post" class="form">
-						<h3>Hinterlassen sie einen Kommentar</h3>
-						<textarea name="message" placeholder="Insert your message" class="required"></textarea>
-						<div class="response-message"></div>
-						<input type="hidden" name="uniid" value="<%= @university.id %>">
-						<input type="hidden" name="userid" value="<%= @university.id %>">
-						<input type="submit" value="Absenden" name="submit" class="float-right">
-						<div class="clear"></div>
-					</form><p>
+				<%= form_for(:comment, :url => {action: "create"}) do |f| %>
+				<h3>Hinterlassen sie einen Kommentar</h3>
+			  	  <%= text_area "comment", "comment", :rows => 3, :cols => 50 %> <br />
+				  <input type="hidden" name="uniid" value="<%= @university.id %>">
+				  <input type="hidden" name="userid" value="<%= current_user.id %>">
+			  	  <input type="submit" value="Absenden" name="submit" class="float-right commentButton no-bottom-margin">				
+				<% end %>
+				<p>
 				</div> 
+
 				<div class="span8"><!-- Eigener KommentarKommentare -->
-					<form method="post" class="form">
+					<% @unicomment.each do |unic| %>
+					<%= form_for(:comment, :url => {action: "delete"}) do |f| %>
 						<img src="http://placehold.it/60x60" class="commentPic float-left" />
-						<h3 class="no-bottom-margin"></h3>
+						<h3 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h3>
 						<hr class="fancy-hr no-top-margin no-bottom-margin">
 						<div class="clear"></div>
-						<p></p>
-						<input type="submit" value="L&ouml;schen" formaction="#delete" name="submit" class="float-right commentButton no-bottom-margin">
-						<input type="submit" value="Editieren" formaction="#edit" name="submit" class="float-right commentButton no-bottom-margin">
+						<p><%=unic.comment%></p>
+						<input type="hidden" name="comid" value="<%= unic.id %>">
+			  	  <input type="submit" value="L&ouml;schen" name="submit" class="float-right commentButton no-bottom-margin">				
+				<% end %>
 						<div class="clear"></div>
-					</form>
+					
 					<p>
+					<%end%>
+					
 				</div> 
 
 			</div> <!-- End Row -->
