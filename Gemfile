@@ -36,7 +36,7 @@ gem 'paperclip'
 gem 'ransack'
 gem "will_paginate", "~> 3.0.4"
 gem "letsrate"
-gem "opinio"
+#gem "opinio"
 gem 'kaminari'
 #gem 'protected_attributes'
 

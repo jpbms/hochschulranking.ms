@@ -16,5 +16,6 @@ class User < ActiveRecord::Base
 
   belongs_to :university 
   belongs_to :subject
+  has_many :comments
   letsrate_rater
 end

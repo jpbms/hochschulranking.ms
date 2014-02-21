@@ -1,3 +1,4 @@
 class Comment < ActiveRecord::Base
-  opinio
+   belongs_to :university
+   belongs_to :user
 end

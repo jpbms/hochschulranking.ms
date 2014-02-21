@@ -77,8 +77,7 @@
 					</table>
 				</div>				
 				<div class="span8" id="comments"><!-- Eigener KommentarKommentare -->
-					<%= render_comments @university ,:page => params[:page], :limit => 5 %>
-					<%= render_comments_form @university %>	
+					<%= comments_for @university %>	
 				</div>
 			</div> <!-- End Row -->
 		</div>

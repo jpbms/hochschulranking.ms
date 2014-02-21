@@ -8,7 +8,7 @@ class UniversityFunctions
 
   def self.getRatedList
     #return University.all.sort_by{|u| u.avg_evaluation.to_f}.reverse
-	return University.includes(:allgemein_average).order('rating_caches.avg DESC').limit(5)
+	return University.order('rating_caches.avg DESC').limit(5)
   end
 
  def self.toFivePointRating(percent)
