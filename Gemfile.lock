@@ -77,7 +77,6 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.4)
     orm_adapter (0.5.0)
-    pg (0.17.1)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.4)
@@ -184,10 +183,6 @@ DEPENDENCIES
   jquery-rails
   kaminari
   letsrate
-<<<<<<< HEAD
-=======
-  pg
->>>>>>> 73b7ef9fc6a2f802b93d74abc38337488aee3228
   rails (= 4.0.2)
   rails-erd
   rails_12factor
