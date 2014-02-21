@@ -5,7 +5,6 @@ class UniversitiesController < ApplicationController
   # GET /universities/1.json
   def show
      @university = University.find(params[:id])
-     @unicomments = Comment.where("university_id =?",@university).all
      @unicontent = @university.universitycontents.all
      @unisubject = SubjectSubjectType.all(:include => :subject_type,:include => :subject,:conditions => ["university_id = ?", @university])
   end

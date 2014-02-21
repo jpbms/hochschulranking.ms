@@ -12,6 +12,7 @@ DIMENSIONS.each do |dimension|
 end
 
   
+acts_as_commentable
 
   #def avg_evaluation
   #	if evaluations.present?

@@ -81,25 +81,25 @@
 						<h3>Hinterlassen sie einen Kommentar</h3>
 						<textarea name="message" placeholder="Insert your message" class="required"></textarea>
 						<div class="response-message"></div>
+						<input type="hidden" name="uniid" value="<%= @university.id %>">
+						<input type="hidden" name="userid" value="<%= @university.id %>">
 						<input type="submit" value="Absenden" name="submit" class="float-right">
 						<div class="clear"></div>
 					</form><p>
 				</div> 
-				<% @unicomments.each do|unic| %>
 				<div class="span8"><!-- Eigener KommentarKommentare -->
 					<form method="post" class="form">
 						<img src="http://placehold.it/60x60" class="commentPic float-left" />
-						<h3 class="no-bottom-margin"><%=unic.user.email%></h3>
-						Kommentar vom: 31.12.2013
+						<h3 class="no-bottom-margin"></h3>
 						<hr class="fancy-hr no-top-margin no-bottom-margin">
 						<div class="clear"></div>
-						<p><%=unic.commentbody%></p>
+						<p></p>
 						<input type="submit" value="L&ouml;schen" formaction="#delete" name="submit" class="float-right commentButton no-bottom-margin">
 						<input type="submit" value="Editieren" formaction="#edit" name="submit" class="float-right commentButton no-bottom-margin">
 						<div class="clear"></div>
 					</form>
 					<p>
 				</div> 
-<%end%>
+
 			</div> <!-- End Row -->
 		</div>
