@@ -76,8 +76,30 @@
 					  
 					</table>
 				</div>				
-				<div class="span8" id="comments"><!-- Eigener KommentarKommentare -->
-					<%= comments_for @university %>	
-				</div>
+				<div class="span8"><!-- Kommentar abgeben -->
+					<form action="#123" method="post" class="form">
+						<h3>Hinterlassen sie einen Kommentar</h3>
+						<textarea name="message" placeholder="Insert your message" class="required"></textarea>
+						<div class="response-message"></div>
+						<input type="submit" value="Absenden" name="submit" class="float-right">
+						<div class="clear"></div>
+					</form><p>
+				</div> 
+				<% @unicomments.each do|unic| %>
+				<div class="span8"><!-- Eigener KommentarKommentare -->
+					<form method="post" class="form">
+						<img src="http://placehold.it/60x60" class="commentPic float-left" />
+						<h3 class="no-bottom-margin"><%=unic.user.email%></h3>
+						<%= unic.timestamps%>
+						<hr class="fancy-hr no-top-margin no-bottom-margin">
+						<div class="clear"></div>
+						<p><%=unic.commentbody%></p>
+						<input type="submit" value="L&ouml;schen" formaction="#delete" name="submit" class="float-right commentButton no-bottom-margin">
+						<input type="submit" value="Editieren" formaction="#edit" name="submit" class="float-right commentButton no-bottom-margin">
+						<div class="clear"></div>
+					</form>
+					<p>
+				</div> 
+<%end%>
 			</div> <!-- End Row -->
 		</div>
