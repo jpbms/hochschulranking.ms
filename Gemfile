@@ -4,10 +4,13 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :production do
+  #gem 'pg'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+gem 'rails_12factor', group: :production
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -27,16 +30,18 @@ gem 'rspec-rails'
 gem 'factory_girl'
 gem 'devise'
 gem 'cancan'
-gem 'rolify'
+gem 'rolify', git: "https://github.com/EppO/rolify.git"
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'underscore-rails'
-gem 'paperclip'
+gem 'gravatar-ultimate'
+#gem 'paperclip'
 #gem 'rmagick'
 gem 'ransack'
 gem "will_paginate", "~> 3.0.4"
 gem "letsrate"
 gem "opinio"
+gem 'acts_as_commentable'
 gem 'kaminari'
 #gem 'protected_attributes'
 
@@ -54,6 +59,7 @@ end
 
 group :development do
   gem "rails-erd"
+  gem "sqlite3"
 end
 
 group :development, :test do

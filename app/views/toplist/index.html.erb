@@ -13,13 +13,13 @@
 					    <th>Ort</th>
 					    <th>Rating</th>
 					  </tr><tbody id="innerlist">
-					  <%= yield :javascript_includes %>
 					  <% @unis.each_with_index do |uni, i| %>
 						<tr> 
 							<td><%= i+1 %></td>
 							<td><%= link_to(uni.name, uni) %></td>
 							<td><%= uni.address.city.name %></td>
 							<%= javascript_include_tag 'application'%>           
+						    <%= yield :javascript_includes %>         
 					    
 							<td><%= rating_for uni, "allgemein", :star => 5%></td>
 						</tr>

@@ -7,6 +7,28 @@ class UniversitiesController < ApplicationController
      @university = University.find(params[:id])
      @unicontent = @university.universitycontents.all
      @unisubject = SubjectSubjectType.all(:include => :subject_type,:include => :subject,:conditions => ["university_id = ?", @university])
+     @unicomment = Comment.where("commentable_id =?",@university).all
+  end
+
+  def create 
+	@comment = Comment.new(:comment =>params[:comment][:comment],:commentable_id => params[:uniid],:user_id => params[:userid])
+	@post = University.find(params[:uniid])
+	#@comment = @post.comments.new(params[:comment])
+	if @comment.save
+	    redirect_to @post
+  	end
+  end
+
+  def delete 
+puts("--------------------------------------------")
+puts(params)
+#	@comment = Comment.new(:comment =>params[:comment][:comment],:commentable_id => params[:uniid],:user_id => params[:userid])
+#	@post = University.find(params[:uniid])
+	#@comment = @post.comments.new(params[:comment])
+	@comment = Comment.find(params[:comid])
+	if @comment.destroy
+	    redirect_to @post
+  	end
   end
 
   private
@@ -20,7 +42,4 @@ class UniversitiesController < ApplicationController
       params.require(:university).permit(:name, :website)
     end
 
-   comment_destroy_conditions do |comment|
-  authorize :destroy, comment
-end
 end
