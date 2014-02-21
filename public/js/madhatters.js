@@ -364,6 +364,8 @@ $(document).ready(function() {
 			    name_cont: $("#hochschulSearch").val(),
 			    address_city_name_cont: $("#stadtSearch").val(),
 			    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
+			    
+			    
 			}),
 
 			success: function(data) {
@@ -381,6 +383,7 @@ $(document).ready(function() {
                     name_cont: $("#hochschulSearch").val(),
 		    address_city_name_cont: $("#stadtSearch").val(),
 		    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
+		    
                 }),
 
                 success: function(data) {
@@ -396,6 +399,7 @@ $(document).ready(function() {
 		    name_cont: "",
 		    address_city_name_cont:  $("#stadtSearch").val(),
 		    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
+		    
 		}),
 
 		success: function(data) {
@@ -506,7 +510,7 @@ $(document).ready(function() {
 		}
 	})
 	$("#fhSearch").onclick(function() {
-		if ($("#fhSearch").val() == "FH") {
+		if ($("#fhSearch").checked = true) {
 
 		     $.ajax({
 			url: '/search/advancedSearch',
@@ -516,6 +520,7 @@ $(document).ready(function() {
 			    address_city_name_cont: $("#stadtSearch").val(),
 			    subject_subject_types_subject_name_cont: $("#subjectSearch").val(),
 			    hs_type_in: "FH"
+			    
 			}),
 
 			success: function(data) {

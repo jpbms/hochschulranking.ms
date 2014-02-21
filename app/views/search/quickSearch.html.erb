@@ -45,12 +45,11 @@
 								<%= g.text_field :subject_subject_types_subject_name_cont,:id =>"subjectSearch", :class => "span3" %>
 								<%= g.label :ratingCache_avg_gteq, "Rating over" %>
 								<%= g.select :website_cont, options_for_select(["1", "2","3","4","5"], disabled: ["1","2","3","4","5"]), :class => "span3" %>					
-								<%= check_box_tag("q[hs_type_in][]", "FH") %>FH<br>
+								<div id="fhSearch"><%= check_box_tag("q[hs_type_in][]", "FH") %>FH<br></div>
 								<%= check_box_tag("q[hs_type_in][]", "Uni") %>Uni<br>
 								<%= check_box_tag("q[campus_eq_any][]", "true") %>Campus
 								<div class="actions"><%= g.submit "Search" %></div>
 								<% end %>
-								<%= link_to "Map Search", search_mapSearch_path %>
 								
 							</div>
 						</div>

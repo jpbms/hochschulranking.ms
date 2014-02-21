@@ -14,10 +14,13 @@ class SearchController < ApplicationController
   def mapSearch
 	if params[:location].present?
 	   @classifieds = Address.near(params[:location], params[:distance])
-	   #@unies = University.all.where("university.addresses.id = ?",@classifieds)
 	else
 	   @classifieds = Address.all
- 	   #@unies = University.all.where("university.addresses.id = ?",@classifieds)
+	end
+    	@hash = Gmaps4rails.build_markers(@classifieds) do |user, marker|
+	      	marker.lat user.latitude
+	      	marker.lng user.longitude
 	end
   end
+
 end

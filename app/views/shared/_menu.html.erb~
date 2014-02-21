@@ -4,7 +4,7 @@
     	<li><a href="/index">Home</a></li>
     	<li><a href="/toplist">Toplist</a></li>
 	<li><a href="/search">Suche</a></li>		    	
-	<li><a href="/search/mapsearch">Map Searc</a></li>
+	<li><a href="/search/mapSearch">Map Search</a></li>
     	    	
 	<!-- Login -->
 		<% if user_signed_in? %>		
