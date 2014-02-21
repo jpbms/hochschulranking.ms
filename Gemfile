@@ -34,12 +34,9 @@ gem 'rolify'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'underscore-rails'
-<<<<<<< HEAD
 gem 'gravatar-ultimate'
-=======
 #gem 'paperclip'
 #gem 'rmagick'
->>>>>>> 73b7ef9fc6a2f802b93d74abc38337488aee3228
 gem 'ransack'
 gem "will_paginate", "~> 3.0.4"
 gem "letsrate"
