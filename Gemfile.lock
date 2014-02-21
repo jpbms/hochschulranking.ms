@@ -60,6 +60,9 @@ GEM
       activesupport (>= 3.0.0)
     geocoder (1.1.9)
     gmaps4rails (2.1.2)
+    gravatar-ultimate (2.0.0)
+      activesupport (>= 2.3.14)
+      rack
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -81,7 +84,6 @@ GEM
     multi_json (1.8.4)
     opinio (0.3.0)
     orm_adapter (0.5.0)
-    pg (0.17.1)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.4)
@@ -182,12 +184,16 @@ DEPENDENCIES
   factory_girl
   geocoder
   gmaps4rails
+  gravatar-ultimate
   jbuilder (~> 1.2)
   jquery-rails
   kaminari
   letsrate
+<<<<<<< HEAD
   opinio
   pg
+=======
+>>>>>>> 56864cefa36b1ec98f84c7dd1bae9b4833ed692f
   rails (= 4.0.2)
   rails-erd
   rails_12factor

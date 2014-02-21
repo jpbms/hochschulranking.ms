@@ -20,6 +20,13 @@
 
 
         <div class="field">
+          <div style="float: right;">
+            <a href="https://de.gravatar.com" alt="Your Gravatar"> <img src='<%= Gravatar.new(current_user.email).image_url%>'></a>
+          </div>
+          <div style="float: left;"><h2><%= @profile.nickname %></h2></div>
+        </div> 
+        <hr class="fancy-hr">
+        <div class="field"><p>&nbsp;<p>&nbsp;<p>
           <%= f.label :nickname %><br>
           <%= f.text_field :nickname %>
         </div>

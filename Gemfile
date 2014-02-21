@@ -5,7 +5,7 @@ gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
 group :production do
-  gem 'pg'
+  #gem 'pg'
 end
 
 # Use SCSS for stylesheets
@@ -34,6 +34,7 @@ gem 'rolify', git: "https://github.com/EppO/rolify.git"
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'underscore-rails'
+gem 'gravatar-ultimate'
 #gem 'paperclip'
 #gem 'rmagick'
 gem 'ransack'
