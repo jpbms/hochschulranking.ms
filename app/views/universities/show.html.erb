@@ -89,7 +89,7 @@
 
 				<div class="span8"><!-- Eigener KommentarKommentare -->
 					<% @unicomment.each do |unic| %>
-					<%= form_for(:comment, :url => {action: "delete"}) do |f| %>
+					<%= form_for(:comment, :url => '/universities/delete') do |f| %>
 						<img src="http://placehold.it/60x60" class="commentPic float-left" />
 						<h3 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h3>
 						<hr class="fancy-hr no-top-margin no-bottom-margin">
