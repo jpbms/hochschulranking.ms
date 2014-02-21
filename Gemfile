@@ -30,7 +30,7 @@ gem 'rspec-rails'
 gem 'factory_girl'
 gem 'devise'
 gem 'cancan'
-gem 'rolify'
+gem 'rolify', git: "https://github.com/EppO/rolify.git"
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'underscore-rails'

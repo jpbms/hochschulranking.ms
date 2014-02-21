@@ -39,7 +39,7 @@ gem 'underscore-rails'
 gem 'ransack'
 gem "will_paginate", "~> 3.0.4"
 gem "letsrate"
-#gem "opinio"
+gem "opinio"
 gem 'acts_as_commentable'
 gem 'kaminari'
 #gem 'protected_attributes'
