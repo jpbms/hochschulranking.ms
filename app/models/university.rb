@@ -11,9 +11,6 @@ DIMENSIONS.each do |dimension|
   has_one :"#{dimension}_average", :as => :cacheable, :class_name => "RatingCache", :dependent => :destroy, :conditions => {:dimension => dimension.to_s}
 end
 
-  
-acts_as_commentable
-
   #def avg_evaluation
   #	if evaluations.present?
   #	  evaluations.sum(:evaluation).to_f / evaluations.count
