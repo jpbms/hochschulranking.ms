@@ -1,7 +1,7 @@
 class University < ActiveRecord::Base
   has_one :picture
   belongs_to :address
-  belongs_to :comment
+  has_many :comments
   has_many :users
   has_many :subject_subject_types
   has_many :universitycontents
@@ -9,9 +9,11 @@ class University < ActiveRecord::Base
   letsrate_rateable *DIMENSIONS
 DIMENSIONS.each do |dimension|
   has_one :"#{dimension}_average", :as => :cacheable, :class_name => "RatingCache", :dependent => :destroy, :conditions => {:dimension => dimension.to_s}
+
 end
 
   
+acts_as_commentable
 
   #def avg_evaluation
   #	if evaluations.present?
