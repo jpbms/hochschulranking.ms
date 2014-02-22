@@ -189,11 +189,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   letsrate
-<<<<<<< HEAD
   opinio
-  pg
-=======
->>>>>>> 56864cefa36b1ec98f84c7dd1bae9b4833ed692f
   rails (= 4.0.2)
   rails-erd
   rails_12factor
