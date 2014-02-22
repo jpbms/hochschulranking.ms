@@ -1,7 +1,6 @@
 <% content_for :javascript_includes do %>
   <%= javascript_include_tag 'jquery.raty.js','letsrate.js'%>
-<% end %> 
-
+<% end %>
 <div class="container" id="hochschule">
 			<div class="row">
 				<div class="span12">
@@ -64,22 +63,22 @@
 					    <th>Kriterium</th>
 					    <th>Rating</th>
 					  </tr>
+<%= javascript_include_tag 'application'%>           
+					    <%= yield :javascript_includes %>
+
 					  <tr>
 					    <td>Allgemeines</td>
-					    <%= javascript_include_tag 'application'%>           
-					    <%= yield :javascript_includes %>
+					    
 					    <td><%= rating_for @university, "allgemein", :star => 5%></td>
 					  </tr>
 <tr>
 					    <td>Professoren</td>
-					    <%= javascript_include_tag 'application'%>           
-					    <%= yield :javascript_includes %>
+					    
 					    <td><%= rating_for @university, "professoren", :star => 5%></td>
 					  </tr>
 <tr>
 					    <td>Tutoren</td>
-					    <%= javascript_include_tag 'application'%>           
-					    <%= yield :javascript_includes %>
+					          
 					    <td><%= rating_for @university, "tutoren", :star => 5%></td>
 					  </tr>
 
@@ -137,4 +136,5 @@
 
 			</div> <!-- End Row -->
 		</div>
+
 

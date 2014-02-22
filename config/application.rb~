@@ -9,6 +9,9 @@ Bundler.require(:default, Rails.env)
 
 module HochschulrankingMs
   class Application < Rails::Application
+<% content_for :javascript_includes do %>
+  <%= javascript_include_tag 'jquery.raty.js','letsrate.js'%>
+<% end %> 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -22,6 +25,6 @@ module HochschulrankingMs
     # config.i18n.default_locale = :de
 
 
-    config.assets.initialize_on_precompile = false
+    # config.assets.initialize_on_precompile = false
   end
 end
