@@ -13,11 +13,11 @@
 						<div class="box-content">
 
 						<%= form_tag search_mapSearch_path, method: :get do %>
-						  <%= label :location, "Search Universities near : " %>
+						  <%= label :location, "Universitäten in der Nähe von : " %>
 						  <%= text_field_tag :location, params[:location] %>
 
 
-						  <%= label :distance, "Distance(in km) : " %>
+						  <%= label :distance, "Distanz(in km) : " %>
 						  <%= text_field_tag :distance, params[:distance] %>
 
 						  <%= submit_tag "Search" %>

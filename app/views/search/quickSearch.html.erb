@@ -14,14 +14,14 @@
 					<tr>
 					  <th><%= sort_link(@search, :name, "Hochschule") %></th>
 					  <th><%= sort_link(@search, :address_city_name, "Ort") %></th>
-					  <th>Rating</th>
+					  <th><%= sort_link(@search, :allgemein_avg, "Rating") %></th>
 					</tr>
 
 				  <tbody id="innerlist">
 				  <% @universities.each do |university| %>
 					<tr> 
 						<td><%= link_to(university.name, university) %></td>
-						<td><%= university.address.city.name %></td>
+						<td><%= university.address.city.name %></td>			
 						<%= javascript_include_tag 'application'%>           
 						    <%= yield :javascript_includes %>
 						<td><%= rating_for university, "allgemein", :star => 5%></td>
@@ -41,11 +41,12 @@
 								<%= g.text_field :name_cont, :id => "hochschulSearch", :class => "span3" %>
 								<%= g.label :name_cont, "Stadt:" %>
 								<%= g.text_field :address_city_name_cont, :id =>"stadtSearch", :class => "span3" %>
+								<%= g.label :name_cont, "Bundesland:" %>
+								<%= g.text_field :address_city_state_name_cont, :id =>"stateSearch", :class => "span3" %>
 								<%= g.label :subjects_name_cont, "Studiengang:" %>
 								<%= g.text_field :subject_subject_types_subject_name_cont,:id =>"subjectSearch", :class => "span3" %>
-								<%= g.label :ratingCache_avg_gteq, "Rating over" %>
-								<%= g.select :website_cont, options_for_select(["1", "2","3","4","5"], disabled: ["1","2","3","4","5"]), :class => "span3" %>					
-								<div id="fhSearch"><%= check_box_tag("q[hs_type_in][]", "FH") %>FH<br></div>
+													
+								<%= check_box_tag("q[hs_type_in][]", "FH") %>FH<br>
 								<%= check_box_tag("q[hs_type_in][]", "Uni") %>Uni<br>
 								<%= check_box_tag("q[campus_eq_any][]", "true") %>Campus
 								<div class="actions"><%= g.submit "Search" %></div>

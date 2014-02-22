@@ -2,8 +2,9 @@ class SearchController < ApplicationController
 
   def quickSearch
 	@search = University.search(params[:q])	
-	@universities = @search.result(distinct: true)
-  end
+	@universities = @search.result(distinct: true)  
+
+end
 
   def advancedSearch
 	@searches = University.search(params)
@@ -12,11 +13,12 @@ class SearchController < ApplicationController
   end
 
   def mapSearch
-	if params[:location].present?
+	if (params[:location].present? && params[:distance].present?)
 	   @classifieds = Address.near(params[:location], params[:distance])
 	else
 	   @classifieds = Address.all
 	end
+	
     	@hash = Gmaps4rails.build_markers(@classifieds) do |address, marker|
 	      	marker.lat address.latitude
 	      	marker.lng address.longitude

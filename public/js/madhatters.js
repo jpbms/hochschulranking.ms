@@ -354,6 +354,10 @@ $(document).ready(function() {
             });
     })
 
+/* ==============================================
+
+    Hochschule
+    =============================================== */
 
 	$("#hochschulSearch").keyup(function() {
 	if ($("#hochschulSearch").onkeydown = 8){
@@ -363,6 +367,7 @@ $(document).ready(function() {
 			data: ({
 			    name_cont: $("#hochschulSearch").val(),
 			    address_city_name_cont: $("#stadtSearch").val(),
+		 	    address_city_state_name_cont: $("#stateSearch").val(),
 			    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
 			    
 			    
@@ -382,6 +387,7 @@ $(document).ready(function() {
                 data: ({
                     name_cont: $("#hochschulSearch").val(),
 		    address_city_name_cont: $("#stadtSearch").val(),
+		    address_city_state_name_cont: $("#stateSearch").val(),
 		    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
 		    
                 }),
@@ -398,6 +404,7 @@ $(document).ready(function() {
 		data: ({
 		    name_cont: "",
 		    address_city_name_cont:  $("#stadtSearch").val(),
+		    address_city_state_name_cont: $("#stateSearch").val(),
 		    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
 		    
 		}),
@@ -410,6 +417,11 @@ $(document).ready(function() {
 
 	
     })
+/* ==============================================
+
+    Stadt
+    =============================================== */
+
 	$("#stadtSearch").keyup(function() {
 		if ($("#stadtSearch").onkeydown = 8){
 		$.ajax({
@@ -418,6 +430,7 @@ $(document).ready(function() {
 			data: ({
 			    name_cont: $("#hochschulSearch").val(),
 			    address_city_name_cont: $("#stadtSearch").val(),
+			    address_city_state_name_cont: $("#stateSearch").val(),
 			    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
 			}),
 
@@ -435,6 +448,7 @@ $(document).ready(function() {
 			data: ({
 			    name_cont: $("#hochschulSearch").val(),
 			    address_city_name_cont: $("#stadtSearch").val(),
+			    address_city_state_name_cont: $("#stateSearch").val(),
 			    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
 			}),
 
@@ -450,6 +464,7 @@ $(document).ready(function() {
 			data: ({
 			    name_cont: $("#hochschulSearch").val(),
 			    address_city_name_cont:  "",
+			    address_city_state_name_cont: $("#stateSearch").val(),
 			    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
 			}),
 
@@ -460,6 +475,12 @@ $(document).ready(function() {
 		}
 
 	})
+
+	/* ==============================================
+
+    Subject
+    =============================================== */
+
 	$("#subjectSearch").keyup(function() {
 	if ($("#subjectSearch").onkeydown = 8){
 		$.ajax({
@@ -468,6 +489,7 @@ $(document).ready(function() {
 			data: ({
 			    name_cont: $("#hochschulSearch").val(),
 			    address_city_name_cont: $("#stadtSearch").val(),
+			    address_city_state_name_cont: $("#stateSearch").val(),
 			    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
 			}),
 
@@ -485,6 +507,7 @@ $(document).ready(function() {
 			data: ({
 			    name_cont: $("#hochschulSearch").val(),
 			    address_city_name_cont: $("#stadtSearch").val(),
+			    address_city_state_name_cont: $("#stateSearch").val(),
 			    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
 			}),
 
@@ -500,6 +523,7 @@ $(document).ready(function() {
 			data: ({
 			    name_cont: $("#hochschulSearch").val(),
 			    address_city_name_cont:  $("#stadtSearch").val(),
+			    address_city_state_name_cont: $("#stateSearch").val(),
 			    subject_subject_types_subject_name_cont: ""
 			}),
 
@@ -509,7 +533,66 @@ $(document).ready(function() {
 		    });
 		}
 	})
-	$("#fhSearch").onclick(function() {
+
+/* ==============================================
+
+    State
+    =============================================== */
+
+	$("#stateSearch").keyup(function() {
+	if ($("#stateSearch").onkeydown = 8){
+		$.ajax({
+			url: '/search/advancedSearch',
+			type: "POST",
+			data: ({
+			    name_cont: $("#hochschulSearch").val(),
+			    address_city_name_cont: $("#stadtSearch").val(),
+			    address_city_state_name_cont: $("#stateSearch").val(),
+			    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
+			}),
+
+			success: function(data) {
+			    $("#list #innerlist").html(data);
+			}
+		    });
+		
+		}
+		if ($("#subjectSearch").val().length > 0) {
+
+		     $.ajax({
+			url: '/search/advancedSearch',
+			type: "POST",
+			data: ({
+			    name_cont: $("#hochschulSearch").val(),
+			    address_city_name_cont: $("#stadtSearch").val(),
+			    address_city_state_name_cont: $("#stateSearch").val(),
+			    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
+			}),
+
+			success: function(data) {
+			    $("#list #innerlist").html(data);
+			}
+		    });
+		}
+		else{
+		$.ajax({
+			url: '/search/advancedSearch',
+			type: "POST",
+			data: ({
+			    name_cont: $("#hochschulSearch").val(),
+			    address_city_name_cont:  $("#stadtSearch").val(),
+			    address_city_state_name_cont: "",
+			    subject_subject_types_subject_name_cont: $("#subjectSearch").val()
+			}),
+
+			success: function(data) {
+			    $("#list #innerlist").html(data);
+			}
+		    });
+		}
+	})
+
+	$("#fhSearch").onClick(function() {
 		if ($("#fhSearch").checked = true) {
 
 		     $.ajax({
