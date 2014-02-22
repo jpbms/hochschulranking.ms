@@ -3,6 +3,7 @@ class Comment < ActiveRecord::Base
   include ActsAsCommentable::Comment
 
   belongs_to :commentable, :polymorphic => true
+  paginates_per 5
 
   default_scope -> { order('created_at ASC') }
 

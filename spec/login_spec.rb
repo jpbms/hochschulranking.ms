@@ -1,9 +1,5 @@
 require 'spec_helper'
 
-#describe "login/login.html.erb" do
-#  pending "add some examples to (or delete) #{__FILE__}"
-#end
-
 describe 'Sign in' do
 	before(:each) do
 		visit root_path

@@ -1,6 +1,7 @@
 <% content_for :javascript_includes do %>
   <%= javascript_include_tag 'jquery.raty.js','letsrate.js'%>
 <% end %> 
+
 <div class="container" id="hochschule">
 			<div class="row">
 				<div class="span12">
@@ -9,18 +10,26 @@
 				<div class="span12">
 					<h1><%= @university.name %></h1>
 				</div>
-					
+				
+				
+				<script>
+				  $(function() {
+				    $( "#tabs" ).tabs();
+				  });
+				</script>	
+
+
 				<div class="span8">
 					<div id="tabs">
 						<ul class="nav nav-tabs">
 						    <% @unicontent.each_with_index do |uni, i| %>
-						    <li><a href="#tabs-<%=i%>"><%=uni.title%></a></li>
+						    <li><a href="#tabs-<%=i+1%>"><%=uni.title%></a></li>
 						    <%end%>
-						    <li><a href="#tabs-100">Studiengänge</a></li>
+						    <li><a href="#tabs-100">Studieng&auml;nge</a></li>
 						</ul>
-						<% @unicontent.each_with_index do |uni, i| %>
-						<div class="tab" id="tabs-<%=i%>">
-						    <p><%=uni.content%></p>
+						<% @unicontent.each_with_index do |unib, i| %>
+						<div class="tab" id="tabs-<%=i+1%>">
+						    <p><%=unib.content%></p>
 						</div>
 						<%end%>
 						<div class="tab" id="tabs-100">
@@ -31,6 +40,7 @@
 						
 					</div>
 				</div>
+	
 					
 				<div class="span4">
 					<div class="contact-info">
@@ -76,10 +86,12 @@
 					  
 					</table>
 				</div>	
+				
 				<div class="span8"><!-- Eigener KommentarKommentare -->
+				<%= paginate @unicomment %>
 					<% @unicomment.each do |unic| %>
 					<%= form_for(:comment, :url => '/universities/delete') do |f| %>
-						<img src="http://placehold.it/60x60" class="commentPic float-left" />
+						<img src='<%= Gravatar.new(User.find(unic.user_id).email).image_url%>' class="commentPic float-left" />
 						<% if User.find(unic.user_id).profile.nickname != nil %>
 						  <% if User.find(unic.user_id).profile.nickname == "" %>
 						    <h3 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h3>
@@ -101,8 +113,10 @@
 					
 					<p>
 					<%end%>
-					
-				</div> 
+				<%= paginate @unicomment %> 	
+				</div>
+				
+				
 
 
 
@@ -123,3 +137,4 @@
 
 			</div> <!-- End Row -->
 		</div>
+
