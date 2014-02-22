@@ -9,7 +9,6 @@ class University < ActiveRecord::Base
 DIMENSIONS.each do |dimension|
   has_one :"#{dimension}_average", :as => :cacheable, :class_name => "RatingCache", :dependent => :destroy, :conditions => {:dimension => dimension.to_s}
 end
- paginates_per 10
 
   #def avg_evaluation
   #	if evaluations.present?

@@ -13,18 +13,13 @@ class UniversitiesController < ApplicationController
   def create 
 	@comment = Comment.new(:comment =>params[:comment][:comment],:commentable_id => params[:uniid],:user_id => params[:userid])
 	@post = University.find(params[:uniid])
-	#@comment = @post.comments.new(params[:comment])
 	if @comment.save
 	    redirect_to @post
   	end
   end
 
   def delete 
-puts("--------------------------------------------")
-puts(params)
-#	@comment = Comment.new(:comment =>params[:comment][:comment],:commentable_id => params[:uniid],:user_id => params[:userid])
 	@post = University.find(params[:uniid])
-	#@comment = @post.comments.new(params[:comment])
 	@comment = Comment.find(params[:comid])
 	if @comment.destroy
 	    redirect_to @post
