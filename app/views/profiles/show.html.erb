@@ -3,31 +3,52 @@
     <div class="span2"></div>
     <div class="span8">
 
-      <p id="notice"><%= notice %></p>
+      <h2>Editing profile</h2>
+      
+      <%= form_for(@profile) do |f| %>
+        <% if @profile.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
 
-      <p>
-        <strong>Nickname:</strong>
-        <%= @profile.nickname %>
-      </p>
+            <ul>
+            <% @profile.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
 
-      <p>
-        <strong>First name:</strong>
-        <%= @profile.first_name %>
-      </p>
 
-      <p>
-        <strong>Last name:</strong>
-        <%= @profile.last_name %>
-      </p>
-
-      <p>
-        <strong>Phonenumber:</strong>
-        <%= @profile.phonenumber %>
-      </p>
-
-      <p>
-        <strong>City:</strong>
-        <%= @profile.city %>
-      </p>
+        <div class="field">
+          <div style="float: right;">
+            <a href="https://de.gravatar.com" alt="Your Gravatar"> <img src='<%= Gravatar.new(current_user.email).image_url%>'></a>
+          </div>
+          <div style="float: left;"><h2><%= @profile.nickname %></h2></div>
+        </div> 
+        <hr class="fancy-hr">
+        <div class="field"><p>&nbsp;<p>&nbsp;<p>
+          <%= f.label :nickname %><br>
+          <%= f.text_field :nickname %>
+        </div>
+         <div class="field">
+          <%= f.label :first_name %><br>
+          <%= f.text_field :first_name %>
+        </div>
+        <div class="field">
+          <%= f.label :last_name %><br>
+          <%= f.text_field :last_name %>
+        </div>
+        <div class="field">
+          <%= f.label :phonenumber %><br>
+          <%= f.text_field :phonenumber %>
+        </div>
+        <div class="field">
+          <%= f.label :city %><br>
+          <%= f.text_field :city %>
+        </div>
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+      <% end %>
 
 <div class="span2"></div>
