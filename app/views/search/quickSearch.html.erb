@@ -13,7 +13,9 @@
 
 					<tr>
 					  <th><%= sort_link(@search, :name, "Hochschule") %></th>
-					  <th><%= sort_link(@search, :address_city_name, "Ort") %></th>
+					  <th><%= sort_link(@search, :address_city_name, "Stadt") %></th>
+					  <th><%= sort_link(@search, :address_city_state_name, "Bundesland") %></th>
+					
 					  <th><%= sort_link(@search, :allgemein_avg, "Rating") %></th>
 					</tr>
 
@@ -21,7 +23,8 @@
 				  <% @universities.each do |university| %>
 					<tr> 
 						<td><%= link_to(university.name, university) %></td>
-						<td><%= university.address.city.name %></td>			
+						<td><%= university.address.city.name %></td>
+						<td><%= university.address.city.state.name %></td>			
 						<%= javascript_include_tag 'application'%>           
 						    <%= yield :javascript_includes %>
 						<td><%= rating_for university, "allgemein", :star => 5%></td>
@@ -39,6 +42,9 @@
 								<%= search_form_for @search, url: search_quickSearch_path do |g| %>
 								<%= g.label :name_cont, "Hochschule:" %>
 								<%= g.text_field :name_cont, :id => "hochschulSearch", :class => "span3" %>
+								<%= check_box_tag("q[hs_type_in][]", "FH") %>FH<br>
+								<%= check_box_tag("q[hs_type_in][]", "Uni") %>Uni<br>
+								<%= check_box_tag("q[campus_eq_any][]", "true") %>Campus
 								<%= g.label :name_cont, "Stadt:" %>
 								<%= g.text_field :address_city_name_cont, :id =>"stadtSearch", :class => "span3" %>
 								<%= g.label :name_cont, "Bundesland:" %>
@@ -46,9 +52,10 @@
 								<%= g.label :subjects_name_cont, "Studiengang:" %>
 								<%= g.text_field :subject_subject_types_subject_name_cont,:id =>"subjectSearch", :class => "span3" %>
 													
-								<%= check_box_tag("q[hs_type_in][]", "FH") %>FH<br>
-								<%= check_box_tag("q[hs_type_in][]", "Uni") %>Uni<br>
-								<%= check_box_tag("q[campus_eq_any][]", "true") %>Campus
+								
+								<%= check_box_tag("q[subjectSubjectType_subjectType_in][]", "Bachelor") %>Bachelor<br>
+								<%= check_box_tag("q[subjectSubjectType_subjectType_in][]", "Master") %>Master<br>
+								
 								<div class="actions"><%= g.submit "Search" %></div>
 								<% end %>
 								

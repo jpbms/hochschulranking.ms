@@ -2,6 +2,7 @@ class SearchController < ApplicationController
 
   def quickSearch
 	@search = University.search(params[:q])	
+	@subjects = Subject.all
 	@universities = @search.result(distinct: true)  
 
 end

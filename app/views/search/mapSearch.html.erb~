@@ -13,10 +13,9 @@
 						<div class="box-content">
 
 						<%= form_tag search_mapSearch_path, method: :get do %>
-						  <%= label :location, "Universitäten in der Nähe von : " %>
-						  <%= text_field_tag :location, params[:location] %>
-
-
+						  <%= label :location, "Universitäten in der Nähe von : (Stadtname benötigt) " %>
+						  <%= text_field_tag :location, params[:location], :placeholder => "Stadt" %>
+						  
 						  <%= label :distance, "Distanz(in km) : " %>
 						  <%= text_field_tag :distance, params[:distance] %>
 
@@ -36,9 +35,11 @@
 				$(document).ready(function() {
 				  handler = Gmaps.build('Google');
 				  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+			          
 				  markers = handler.addMarkers(<%=raw @hash.to_json %>);
 				  handler.bounds.extendWith(markers);
 				  handler.fitMapToBounds();
+				  
 				  });
 				});
 				</script>
