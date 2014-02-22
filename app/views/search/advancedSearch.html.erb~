@@ -2,6 +2,7 @@
 	<tr> 
 		<td><%= link_to(university.name, university) %></td>
 		<td><%= university.address.city.name %></td>
+		<td><%= university.address.city.state.name %></td>
 		<%= javascript_include_tag 'application'%>           
 		    <%= yield :javascript_includes %>
 		<td><%= rating_for university, "allgemein", :star => 5%></td>

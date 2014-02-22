@@ -24,10 +24,7 @@
 					<tr> 
 						<td><%= link_to(university.name, university) %></td>
 						<td><%= university.address.city.name %></td>
-						<td><%= university.address.city.state.name %></td>
-						<td><% @universities.each do |unis| %>
-						    <%= unis.subjects.name %>
-						    <% end %></td>			
+						<td><%= university.address.city.state.name %></td>			
 						<%= javascript_include_tag 'application'%>           
 						    <%= yield :javascript_includes %>
 						<td><%= rating_for university, "allgemein", :star => 5%></td>
@@ -50,8 +47,9 @@
 								<%= check_box_tag("q[campus_eq_any][]", "true") %>Campus
 								<%= g.label :name_cont, "Stadt:" %>
 								<%= g.text_field :address_city_name_cont, :id =>"stadtSearch", :class => "span3" %>
-								<%= g.label :name_cont, "Bundesland:" %>
-								<%= g.text_field :address_city_state_name_cont, :id =>"stateSearch", :class => "span3" %>
+								<%= g.label :address_city_state_name_cont, "Bundesland:" %>
+								<%= g.select :address_city_state_name_cont, options_for_select(["Baden-Württemberg", "Bayern","Berlin","Brandenburg","Bremen","Hamburg","Hessen","Mecklenburg-Vorpommern","Niedersachsen","Nordrhein-Westfalen","Rheinland-Pfalz","Saarland","Sachsen","Sachsen-Anhalt","Schleswig-Holstein","Thüringen"]), :placeholder => "Bundesland", :class => "span3" %>
+								
 								<%= g.label :subjects_name_cont, "Studiengang:" %>
 								<%= g.text_field :subject_subject_types_subject_name_cont,:id =>"subjectSearch", :class => "span3" %>
 													
