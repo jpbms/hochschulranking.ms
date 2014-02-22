@@ -1,6 +1,7 @@
 <% content_for :javascript_includes do %>
   <%= javascript_include_tag 'jquery.raty.js','letsrate.js'%>
 <% end %> 
+
 <div class="container" id="hochschule">
 			<div class="row">
 				<div class="span12">
@@ -18,9 +19,9 @@
 						    <%end%>
 						    <li><a href="#tabs-100">Studiengänge</a></li>
 						</ul>
-						<% @unicontent.each_with_index do |uni, i| %>
+						<% @unicontent.each_with_index do |unib, i| %>
 						<div class="tab" id="tabs-<%=i%>">
-						    <p><%=uni.content%></p>
+						    <p><%=unib.content%></p>
 						</div>
 						<%end%>
 						<div class="tab" id="tabs-100">
@@ -76,7 +77,7 @@
 					  
 					</table>
 				</div>	
-				<%= paginate @unicomment%>
+				<%= paginate @unicomment %>
 				<div class="span8"><!-- Eigener KommentarKommentare -->
 					<% @unicomment.each do |unic| %>
 					<%= form_for(:comment, :url => '/universities/delete') do |f| %>
@@ -103,8 +104,9 @@
 					<p>
 					<%end%>
 					
-				</div> 
-				<%= paginate @unicomment %>
+				</div>
+				<%= paginate @unicomment %> 
+				
 
 
 
@@ -125,3 +127,4 @@
 
 			</div> <!-- End Row -->
 		</div>
+

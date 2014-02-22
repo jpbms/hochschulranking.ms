@@ -7,7 +7,7 @@ class UniversitiesController < ApplicationController
      @university = University.find(params[:id])
      @unicontent = @university.universitycontents.all
      @unisubject = SubjectSubjectType.all(:include => :subject_type,:include => :subject,:conditions => ["university_id = ?", @university])
-     @unicomment = Comment.where("commentable_id =?",@university).all
+     @unicomment = Comment.where("commentable_id =?",@university).paginate(:page => params[:page], :per_page => 5)
   end
 
   def create 
