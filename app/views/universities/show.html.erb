@@ -10,17 +10,25 @@
 				<div class="span12">
 					<h1><%= @university.name %></h1>
 				</div>
-					
+				
+				
+				<script>
+				  $(function() {
+				    $( "#tabs" ).tabs();
+				  });
+				</script>	
+
+
 				<div class="span8">
 					<div id="tabs">
 						<ul class="nav nav-tabs">
 						    <% @unicontent.each_with_index do |uni, i| %>
-						    <li><a href="#tabs-<%=i%>"><%=uni.title%></a></li>
+						    <li><a href="#tabs-<%=i+1%>"><%=uni.title%></a></li>
 						    <%end%>
-						    <li><a href="#tabs-100">Studiengänge</a></li>
+						    <li><a href="#tabs-100">Studieng&auml;nge</a></li>
 						</ul>
 						<% @unicontent.each_with_index do |unib, i| %>
-						<div class="tab" id="tabs-<%=i%>">
+						<div class="tab" id="tabs-<%=i+1%>">
 						    <p><%=unib.content%></p>
 						</div>
 						<%end%>
@@ -32,6 +40,7 @@
 						
 					</div>
 				</div>
+	
 					
 				<div class="span4">
 					<div class="contact-info">

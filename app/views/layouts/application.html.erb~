@@ -6,9 +6,9 @@
 		Title and basic Metas
 		=============================================== -->
 		<meta charset="utf-8">
-		<title>Hochschulrating +</title>
+		<title>Hochschulranking +</title>
 		<meta name="description" content="Fachhochschulrating +">
-		<meta name="author" content="Richard Purk">
+		<meta name="author" content="Richard Purk, Niklas Borginator, Jean-Philipp Burnus, Jan Wübbels">
 
 		<!-- ==============================================
 		Mobile Metas
@@ -34,9 +34,12 @@
 		
 			
 		<!-- ==============================================
-		Hea Javascript
+		Head Javascript
 		=============================================== -->
 		<%= javascript_include_tag "application" %>
+
+		<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 		<!-- ==============================================
 		Favicons
