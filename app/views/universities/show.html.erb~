@@ -76,12 +76,19 @@
 					  
 					</table>
 				</div>	
-				<%= paginate @comments %>
 				<div class="span8"><!-- Eigener KommentarKommentare -->
 					<% @unicomment.each do |unic| %>
 					<%= form_for(:comment, :url => '/universities/delete') do |f| %>
 						<img src="http://placehold.it/60x60" class="commentPic float-left" />
+						<% if User.find(unic.user_id).profile.nickname != nil %>
+						  <% if User.find(unic.user_id).profile.nickname == "" %>
+						    <h3 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h3>
+						  <% else %>
+						    <h3 class="no-bottom-margin"><%=User.find(unic.user_id).profile.nickname %></h3>
+						  <%end%>
+						<%else%>
 						<h3 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h3>
+						<% end %>
 						<hr class="fancy-hr no-top-margin no-bottom-margin">
 						<div class="clear"></div>
 						<p><%=unic.comment%></p>
@@ -96,7 +103,6 @@
 					<%end%>
 					
 				</div> 
-				<%= paginate @comments %>
 
 
 
