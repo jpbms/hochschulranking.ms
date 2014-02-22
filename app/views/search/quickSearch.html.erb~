@@ -50,7 +50,6 @@
 								<%= check_box_tag("q[campus_eq_any][]", "true") %>Campus
 								<div class="actions"><%= g.submit "Search" %></div>
 								<% end %>
-								<%= link_to "Map Search", search_mapSearch_path %>
 								
 							</div>
 						</div>

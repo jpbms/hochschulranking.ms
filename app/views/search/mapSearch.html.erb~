@@ -24,11 +24,6 @@
 
 						<% end %>
 
-						<% @classifieds.each do |g| %>
-
-							<%= g.street %>
-
-						<% end %>
 						</div>
 					</div>
 				</div>
@@ -47,7 +42,7 @@
 				  });
 				});
 				</script>
-
+				
 			</div>
 </div>
 				
