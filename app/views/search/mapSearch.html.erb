@@ -22,7 +22,10 @@
 						  <%= submit_tag "Search" %>
 
 						<% end %>
-
+						<% if @classifieds.blank? %>
+						<p>Keine Universitäten gefunden. Bitte neue Stadt oder größere Distanz eingeben</p>
+						<% else %>
+						<% end %>
 						</div>
 					</div>
 				</div>
