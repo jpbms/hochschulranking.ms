@@ -75,29 +75,27 @@
 
 					  
 					</table>
-				</div>				
-				<div class="span8"><!-- Kommentar abgeben -->
-				<%= form_for(:comment, :url => {action: "create"}) do |f| %>
-				<h3>Hinterlassen sie einen Kommentar</h3>
-			  	  <%= text_area "comment", "comment", :rows => 3, :cols => 50 %> <br />
-				  <input type="hidden" name="uniid" value="<%= @university.id %>">
-				  <input type="hidden" name="userid" value="<%= current_user.id %>">
-			  	  <input type="submit" value="Absenden" name="submit" class="float-right commentButton no-bottom-margin">				
-				<% end %>
-				<p>
-				</div> 
-
+				</div>	
 				<div class="span8"><!-- Eigener KommentarKommentare -->
 					<% @unicomment.each do |unic| %>
 					<%= form_for(:comment, :url => '/universities/delete') do |f| %>
 						<img src="http://placehold.it/60x60" class="commentPic float-left" />
-						<h3 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h3>
+						<% if User.find(unic.user_id).profile.nickname != nil %>
+						  <% if User.find(unic.user_id).profile.nickname == "" %>
+						    <h3 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h3>
+						  <% else %>
+						    <h3 class="no-bottom-margin"><%=User.find(unic.user_id).profile.nickname %></h3>
+						  <%end%>
+						<%else%>
+						  <h3 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h3>
+						<% end %>
 						<hr class="fancy-hr no-top-margin no-bottom-margin">
 						<div class="clear"></div>
 						<p><%=unic.comment%></p>
 						<input type="hidden" name="uniid" value="<%= @university.id %>">
 						<input type="hidden" name="comid" value="<%= unic.id %>">
-			  	  <input type="submit" value="L&ouml;schen" name="submit" class="float-right commentButton no-bottom-margin">				
+					<%if can? :delete, unic%>
+			  	  <input type="submit" value="L&ouml;schen" name="submit" class="float-right commentButton no-bottom-margin">				<% end %>
 				<% end %>
 						<div class="clear"></div>
 					
@@ -105,6 +103,23 @@
 					<%end%>
 					
 				</div> 
+
+
+
+                               <% if can? :manage, @university%>			
+				<div class="span8"><!-- Kommentar abgeben -->
+				<%= form_for(:comment, :url => {action: "create"}) do |f| %>
+				<h3>Hinterlassen sie einen Kommentar</h3>
+			  	  <%= text_area "comment", "comment", :rows => 3, :cols => 50 %> <br />
+				  <input type="hidden" name="uniid" value="<%= @university.id %>">
+				  <input type="hidden" name="userid" value="<%= current_user.id %>">
+			  	  <input type="submit" value="Absenden" name="submit" class="float-right commentButton no-bottom-margin">		
+				<% end %>
+		                <% end %>
+				<p>
+				</div> 
+
+				
 
 			</div> <!-- End Row -->
 		</div>
