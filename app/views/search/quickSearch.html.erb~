@@ -35,7 +35,7 @@
 								<%= search_form_for @search, url: search_quickSearch_path do |g| %>
 								<%= g.label :name_cont, "Hochschule:" %>
 								<%= g.text_field :name_cont, :id => "hochschulSearch", :class => "span3" %>
-								<hr class="fancy-hr" style="margin-top: 0px";>
+								<hr class="fancy-hr" style="margin-top: 0px; margin-bottom: 5px;">
 								<h4>Suche filtern</h4><p>
 								<%= check_box_tag("q[hs_type_in][]", "FH") %>FH<br>
 								<%= check_box_tag("q[hs_type_in][]", "Uni") %>Uni<br>
@@ -43,7 +43,7 @@
 								<%= g.label :name_cont, "Stadt:" %>
 								<%= g.text_field :address_city_name_cont, :id =>"stadtSearch", :class => "span3" %>
 								<%= g.label :address_city_state_name_cont, "Bundesland:" %>
-								<%= g.select :address_city_state_name_cont, options_for_select(["","Baden-Württemberg", "Bayern","Berlin","Brandenburg","Bremen","Hamburg","Hessen","Mecklenburg-Vorpommern","Niedersachsen","Nordrhein-Westfalen","Rheinland-Pfalz","Saarland","Sachsen","Sachsen-Anhalt","Schleswig-Holstein","Thüringen"]), :placeholder => "Bundesland", :class => "span3" %>
+								<%= g.collection_select :address_city_state_name_cont,State.all, :id,:name, :class => "span3" %>
 								
 								<%= g.label :subjects_name_cont, "Studiengang:" %>
 								<%= g.text_field :subject_subject_types_subject_name_cont,:id =>"subjectSearch", :class => "span3" %>
