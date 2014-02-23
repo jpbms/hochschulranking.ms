@@ -30,10 +30,11 @@ gem 'rspec-rails'
 gem 'factory_girl'
 gem 'devise'
 gem 'cancan'
-gem 'rolify'
+gem 'rolify', git: "https://github.com/EppO/rolify.git"
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'underscore-rails'
+gem 'gravatar-ultimate'
 #gem 'paperclip'
 #gem 'rmagick'
 gem 'ransack'
@@ -42,6 +43,7 @@ gem "letsrate"
 gem "opinio"
 gem 'acts_as_commentable'
 gem 'kaminari'
+gem "sqlite3"
 #gem 'protected_attributes'
 
 #for development
