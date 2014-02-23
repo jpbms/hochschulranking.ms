@@ -27,16 +27,16 @@ Content.create({"content"=>"Lorem ipsum dolor sit amet, consetetur sadipscing el
 #---------------------------------------------------------------------------------
 # Hochschulen
 #---------------------------------------------------------------------------------
-University.create({"id"=>1, "campus"=>true, "name"=>"TU Berlin", "website"=>"http://www.tu-berlin.de/", "hs_type"=>"Uni", "address_id"=> 1})
-University.create({"id"=>2, "campus"=>true, "name"=>"FH Berlin", "website"=>"http://www.fh-berlin.de/", "hs_type"=>"FH", "address_id"=> 2})
-University.create({"id"=>3, "name"=>"Uni Münster", "website"=>"http://www.uni-muenster.de/de/", "hs_type"=>"Uni", "address_id"=> 3})
-University.create({"id"=>4, "campus"=>true, "name"=>"FH Münster", "website"=>"", "hs_type"=>"FH" , "address_id"=> 4})
-University.create({"id"=>5, "name"=>"Uni Frankfurt", "website"=>"", "hs_type"=>"Uni" , "address_id"=> 5})
-University.create({"id"=>6, "campus"=>true, "name"=>"FH Frankfurt", "website"=>"", "hs_type"=>"FH" , "address_id"=> 6})
-University.create({"id"=>7, "name"=>"Uni Osnabrück", "website"=>"http://www.uni-osnabrueck.de/startseite.html", "hs_type"=>"Uni" , "address_id"=> 7})
-University.create({"id"=>8, "campus"=>true, "name"=>"HS Osnabrück", "website"=>"http://www.hs-osnabrueck.de/", "hs_type"=>"HS" , "address_id"=> 8})
-University.create({"id"=>9, "name"=>"Uni Beilefeld", "website"=>"", "hs_type"=>"Uni" , "address_id"=> 9})
-University.create({"id"=>10, "name"=>"FH Beilefeld", "website"=>"", "hs_type"=>"FH" , "address_id"=> 10})
+University.create({"id"=>1, "campus"=>true, "name"=>"Technische Universität Berlin", "website"=>"http://www.tu-berlin.de/", "hs_type"=>"Uni", "address_id"=> 1})
+University.create({"id"=>2, "campus"=>true, "name"=>"Freie Universität Berlin", "website"=>"http://www.fh-berlin.de/", "hs_type"=>"Uni", "address_id"=> 2})
+University.create({"id"=>3, "name"=>"Westfälische Wilhelms-Universität Münster", "website"=>"http://www.uni-muenster.de/de/", "hs_type"=>"Uni", "address_id"=> 3})
+University.create({"id"=>4, "campus"=>true, "name"=>"FH Münster", "website"=>"https://www.fh-muenster.de/index.php", "hs_type"=>"FH" , "address_id"=> 4})
+University.create({"id"=>5, "name"=>"Fachhochschule Düsseldorf", "website"=>"http://www.fh-duesseldorf.de/a_fh", "hs_type"=>"FH" , "address_id"=> 5})
+University.create({"id"=>6, "campus"=>true, "name"=>"Deutsche Sporthochschule Köln", "website"=>"http://www.dshs-koeln.de/", "hs_type"=>"Uni" , "address_id"=> 6})
+University.create({"id"=>7, "name"=>"Universität Duisburg-Essen", "website"=>"https://www.uni-due.de/", "hs_type"=>"Uni" , "address_id"=> 7})
+University.create({"id"=>8, "campus"=>true, "name"=>"Hochschule Darmstadt", "website"=>"http://www.h-da.de/", "hs_type"=>"Uni" , "address_id"=> 8})
+University.create({"id"=>9, "name"=>"Universität Bielefeld", "website"=>"http://www.uni-bielefeld.de/", "hs_type"=>"Uni" , "address_id"=> 9})
+University.create({"id"=>10, "name"=>"Technische Universität Darmstadt", "website"=>"http://www.tu-darmstadt.de/", "hs_type"=>"Uni" , "address_id"=> 10})
 University.create({"id"=>11, "name"=>"FH Flensburg", "website"=>"http://www.fh-flensburg.de/fhfl/index.php", "hs_type"=>"FH" , "address_id"=> 11})
 University.create({"id"=>12, "name"=>"Uni Flensburg", "website"=>"http://www.uni-flensburg.de/?989", "hs_type"=>"Uni" , "address_id"=> 12})
 University.create({"id"=>13, "name"=>"FH Kiel", "website"=>"http://www.fh-kiel.de/", "hs_type"=>"FH" , "address_id"=> 13})
@@ -64,8 +64,35 @@ University.create({"id"=>34, "name"=>"Uni Potsdam", "website"=>"http://www.uni-p
 University.create({"id"=>35, "name"=>"TU Chemnitz", "website"=>"http://www.tu-chemnitz.de/", "hs_type"=>"TU" , "address_id"=> 35})
 University.create({"id"=>36, "name"=>"TU Dresden", "website"=>"http://tu-dresden.de/", "hs_type"=>"TU" , "address_id"=> 36})
 University.create({"id"=>37, "name"=>"Uni Leipzig", "website"=>"http://www.zv.uni-leipzig.de/", "hs_type"=>"Uni" , "address_id"=> 37})
-
-
+University.create({"id"=>38, "name"=>"Alice Salomon Hochschule Berlin", "website"=>"http://www.ash-berlin.eu/", "hs_type"=>"Uni" , "address_id"=> 38})
+University.create({"id"=>39, "campus"=>true, "name"=>"Beuth Hochschule für Technik Berlin", "website"=>"http://www.beuth-hochschule.de/", "hs_type"=>"Uni" , "address_id"=> 39})
+University.create({"id"=>40, "campus"=>false, "name"=>"design akademie berlin - Hochschule für Kommunikation und Design Berlin", "website"=>"http://www.design-akademie-berlin.de/", "hs_type"=>"Uni" , "address_id"=> 40})
+University.create({"id"=>41, "campus"=>false, "name"=>"Fachhochschule Dortmund", "website"=>"http://www.fh-dortmund.de/de/index.php", "hs_type"=>"FH" , "address_id"=> 41})
+University.create({"id"=>42, "campus"=>false, "name"=>"Johann Wolfgang Goethe-Universität, Frankfurt am Main", "website"=>"http://www2.uni-frankfurt.de/", "hs_type"=>"Uni" , "address_id"=> 42})
+University.create({"id"=>43, "campus"=>false, "name"=>"Universität Kassel", "website"=>"http://www.uni-kassel.de/uni/", "hs_type"=>"Uni" , "address_id"=> 43})
+University.create({"id"=>44, "campus"=>false, "name"=>"Hochschule RheinMain", "website"=>"http://www.hs-rm.de/hochschule/startseite/index.html", "hs_type"=>"Uni" , "address_id"=> 44})
+University.create({"id"=>45, "campus"=>true, "name"=>"Fachhochschule Kunst Arnstadt", "website"=>"http://www.fh-arnstadt-balingen.de/kunst/hochschule.html", "hs_type"=>"FH" , "address_id"=> 45})
+University.create({"id"=>46, "campus"=>true, "name"=>"Fachhochschule Erfurt", "website"=>"http://www.fh-erfurt.de/fhe/", "hs_type"=>"FH" , "address_id"=> 46})
+University.create({"id"=>47, "campus"=>true, "name"=>"Ernst-Abbe-Fachhochschule Jena", "website"=>"www.fh-jena.de", "hs_type"=>"FH" , "address_id"=> 47})
+University.create({"id"=>48, "campus"=>true, "name"=>"Fachhochschule Nordhausen", "website"=>"http://www.fh-nordhausen.de/", "hs_type"=>"FH" , "address_id"=> 48})
+University.create({"id"=>49, "campus"=>true, "name"=>"Hochschule für Musik Franz Liszt Weimar", "website"=>"http://www.hfm-weimar.de/580/", "hs_type"=>"Uni" , "address_id"=> 49})
+University.create({"id"=>50, "campus"=>true, "name"=>"Universität Augsburg", "website"=>"http://www.uni-augsburg.de/", "hs_type"=>"Uni" , "address_id"=> 50})
+University.create({"id"=>51, "campus"=>true, "name"=>"Otto-Friedrich-Universität Bamberg", "website"=>"http://www.uni-bamberg.de/", "hs_type"=>"Uni" , "address_id"=> 51})
+University.create({"id"=>52, "campus"=>true, "name"=>"Friedrich-Alexander-Universität Erlangen-Nürnberg", "website"=>"http://www.uni-erlangen.de/", "hs_type"=>"Uni" , "address_id"=> 52})
+University.create({"id"=>53, "campus"=>true, "name"=>"Hochschule für Fernsehen und Film München", "website"=>"http://www.hff-muc.de/", "hs_type"=>"Uni" , "address_id"=> 53})
+University.create({"id"=>54, "campus"=>true, "name"=>"Technische Hochschule Nürnberg", "website"=>"http://www.th-nuernberg.de/", "hs_type"=>"Uni" , "address_id"=> 54})
+University.create({"id"=>55, "campus"=>true, "name"=>"Evangelische Hochschule Freiburg", "website"=>"http://www.eh-freiburg.de/", "hs_type"=>"Uni" , "address_id"=> 55})
+University.create({"id"=>56, "campus"=>true, "name"=>"Ruprecht-Karls-Universität Heidelberg", "website"=>"http://www.uni-heidelberg.de/", "hs_type"=>"Uni" , "address_id"=> 56})
+University.create({"id"=>57, "campus"=>true, "name"=>"Universität Mannheim", "website"=>"http://www.uni-mannheim.de/", "hs_type"=>"Uni" , "address_id"=> 57})
+University.create({"id"=>58, "campus"=>true, "name"=>"Universität Stuttgart", "website"=>"http://www.uni-stuttgart.de/home/", "hs_type"=>"Uni" , "address_id"=> 58})
+University.create({"id"=>59, "campus"=>true, "name"=>"Universität Ulm", "website"=>"http://www.uni-ulm.de/", "hs_type"=>"Uni" , "address_id"=> 59})
+University.create({"id"=>60, "campus"=>true, "name"=>"Fachhochschule Kaiserslautern", "website"=>"http://www.fh-kl.de/lab/start11.html", "hs_type"=>"FH" , "address_id"=> 60})
+University.create({"id"=>61, "campus"=>true, "name"=>"Hochschule Ludwigshafen am Rhein", "website"=>"http://www.hs-lu.de/startseite.html", "hs_type"=>"Uni" , "address_id"=> 61})
+University.create({"id"=>62, "campus"=>true, "name"=>"Fachhochschule Mainz", "website"=>"https://www.fh-mainz.de/", "hs_type"=>"FH" , "address_id"=> 62})
+University.create({"id"=>63, "campus"=>true, "name"=>"Universität Trier", "website"=>"http://www.uni-trier.de/", "hs_type"=>"Uni" , "address_id"=> 63})
+University.create({"id"=>64, "campus"=>true, "name"=>"Fachhochschule Worms", "website"=>"http://www.fh-worms.de/", "hs_type"=>"FH" , "address_id"=> 64})
+University.create({"id"=>65, "campus"=>true, "name"=>"Hochschule der Bildenden Künste Saar", "website"=>"http://www.hbksaar.de/startseite/", "hs_type"=>"Uni" , "address_id"=> 65})
+University.create({"id"=>66, "campus"=>true, "name"=>"Universität des Saarlandes", "website"=>"http://www.uni-saarland.de/", "hs_type"=>"Uni" , "address_id"=> 66})
 #---------------------------------------------------------------------------------
 # City
 #---------------------------------------------------------------------------------
@@ -97,9 +124,34 @@ City.create({"id"=>25, "name"=>"Potsdam", "state_id"=>10})
 City.create({"id"=>26, "name"=>"Chemnitz", "state_id"=>11})
 City.create({"id"=>27, "name"=>"Dresden", "state_id"=>11})
 City.create({"id"=>28, "name"=>"Leipzig", "state_id"=>11})
-
-
-
+City.create({"id"=>29, "name"=>"Dortmund", "state_id"=>1})
+City.create({"id"=>30, "name"=>"Düsseldorf", "state_id"=>1})
+City.create({"id"=>31, "name"=>"Köln", "state_id"=>1})
+City.create({"id"=>32, "name"=>"Essen", "state_id"=>1})
+City.create({"id"=>33, "name"=>"Darmstadt", "state_id"=>4})
+City.create({"id"=>34, "name"=>"Kassel", "state_id"=>4})
+City.create({"id"=>35, "name"=>"Wiesbaden", "state_id"=>4})
+City.create({"id"=>36, "name"=>"Arnstadt", "state_id"=>12})
+City.create({"id"=>37, "name"=>"Erfurt", "state_id"=>12})
+City.create({"id"=>38, "name"=>"Jena", "state_id"=>12})
+City.create({"id"=>39, "name"=>"Nordhausen", "state_id"=>12})
+City.create({"id"=>40, "name"=>"Weimar", "state_id"=>12})
+City.create({"id"=>41, "name"=>"Augsburg", "state_id"=>13})
+City.create({"id"=>42, "name"=>"Bamberg", "state_id"=>13})
+City.create({"id"=>43, "name"=>"Erlangen", "state_id"=>13})
+City.create({"id"=>44, "name"=>"München", "state_id"=>13})
+City.create({"id"=>45, "name"=>"Nürnberg", "state_id"=>13})
+City.create({"id"=>46, "name"=>"Freiburg", "state_id"=>14})
+City.create({"id"=>47, "name"=>"Heidelberg", "state_id"=>14})
+City.create({"id"=>48, "name"=>"Mannheim", "state_id"=>14})
+City.create({"id"=>49, "name"=>"Stuttgart", "state_id"=>14})
+City.create({"id"=>50, "name"=>"Ulm", "state_id"=>14})
+City.create({"id"=>51, "name"=>"Kaiserslautern", "state_id"=>15})
+City.create({"id"=>52, "name"=>"Ludwigshafen", "state_id"=>15})
+City.create({"id"=>53, "name"=>"Mainz", "state_id"=>15})
+City.create({"id"=>54, "name"=>"Trier", "state_id"=>15})
+City.create({"id"=>55, "name"=>"Worms", "state_id"=>15})
+City.create({"id"=>56, "name"=>"Saarbrücken", "state_id"=>16})
 #---------------------------------------------------------------------------------
 # State
 #---------------------------------------------------------------------------------
@@ -114,20 +166,25 @@ State.create({"id"=>8, "name"=>"Bremen"})
 State.create({"id"=>9, "name"=>"Sachsen-Anhalt"})
 State.create({"id"=>10, "name"=>"Brandenburg"})
 State.create({"id"=>11, "name"=>"Sachsen"})
+State.create({"id"=>12, "name"=>"Thüringen"})
+State.create({"id"=>13, "name"=>"Bayern"})
+State.create({"id"=>14, "name"=>"Baden-Württemberg"})
+State.create({"id"=>15, "name"=>"Rheinland-Pfalz"})
+State.create({"id"=>16, "name"=>"Saarland"})
 
 #---------------------------------------------------------------------------------
 # Address
 #---------------------------------------------------------------------------------
 Address.create({"id"=>1, "postalcode"=>"10623", "street"=>"Straße des 17. Juni", "street_number"=>135, "city_id"=>1})
-Address.create({"id"=>2, "postalcode"=>"10318", "street"=>"Treskowallee", "street_number"=>8, "city_id"=>1})
+Address.create({"id"=>2, "postalcode"=>"14195", "street"=>"Kaiserswerther Straße", "street_number"=>16, "city_id"=>1})
 Address.create({"id"=>3, "postalcode"=>"48149", "street"=>"Schlossplatz", "street_number"=>2, "city_id"=>2})
-Address.create({"id"=>4, "postalcode"=>"48149", "street"=>"Corrensstraße", "street_number"=>25, "city_id"=>2})
-Address.create({"id"=>5, "postalcode"=>"60323", "street"=>"Grüneburgplatz", "street_number"=>1, "city_id"=>3})
-Address.create({"id"=>6, "postalcode"=>"60318", "street"=>"Nibelungenplatz", "street_number"=>1, "city_id"=>3})
-Address.create({"id"=>7, "postalcode"=>"49074", "street"=>"Neuer Graben", "city_id"=>4})
-Address.create({"id"=>8, "postalcode"=>"49076", "street"=>"Caprivistraße", "street_number"=>30, "city_id"=>4})
+Address.create({"id"=>4, "postalcode"=>"48149", "street"=>"Hüfferstraße", "street_number"=>27, "city_id"=>2})
+Address.create({"id"=>5, "postalcode"=>"40225", "street"=>"Universitätsstraße", "street_number"=>23, "city_id"=>30})
+Address.create({"id"=>6, "postalcode"=>"50933", "street"=>"Am Sportpark Müngersdorf", "street_number"=>6, "city_id"=>31})
+Address.create({"id"=>7, "postalcode"=>"45141", "street"=>"Universitätsstraße", "street_number"=>2,"city_id"=>32})
+Address.create({"id"=>8, "postalcode"=>"64295", "street"=>"Schöfferstraße", "street_number"=>3, "city_id"=>33})
 Address.create({"id"=>9, "postalcode"=>"33615", "street"=>"Universitätsstraße", "street_number"=>25, "city_id"=>5})
-Address.create({"id"=>10, "postalcode"=>"33615", "street"=>"Kurt-Schumacher-Straße", "street_number"=>6, "city_id"=>5})
+Address.create({"id"=>10, "postalcode"=>"64289", "street"=>"Karolinenplatz", "street_number"=>5, "city_id"=>33})
 Address.create({"id"=>11, "postalcode"=>"24943", "street"=>"Kanzleistraße", "street_number"=>91, "city_id"=>6})
 Address.create({"id"=>12, "postalcode"=>"24943", "street"=>"Auf dem Campus", "street_number"=>1, "city_id"=>6})
 Address.create({"id"=>13, "postalcode"=>"24149", "street"=>"Sokratesplatz", "street_number"=>1, "city_id"=>7})
@@ -155,6 +212,35 @@ Address.create({"id"=>34, "postalcode"=>"14469", "street"=>"Am Neuen Palais", "s
 Address.create({"id"=>35, "postalcode"=>"09111", "street"=>"Straße der Nationen", "street_number"=>62, "city_id"=>26})
 Address.create({"id"=>36, "postalcode"=>"01069", "street"=>"Mommsenstraße", "street_number"=>11, "city_id"=>27})
 Address.create({"id"=>37, "postalcode"=>"04109", "street"=>"Ritterstraße", "street_number"=>26, "city_id"=>28})  
+Address.create({"id"=>38, "postalcode"=>"12627", "street"=>"Alice-Salomon-Platz", "street_number"=>5, "city_id"=>1})
+Address.create({"id"=>39, "postalcode"=>"13353", "street"=>"Limburger Straße", "street_number"=>42, "city_id"=>1}) 
+Address.create({"id"=>40, "postalcode"=>"10999", "street"=>"Paul-Lincke-Ufer", "street_number"=>8, "city_id"=>1})
+Address.create({"id"=>41, "postalcode"=>"44139", "street"=>"Sonnenstraße", "street_number"=>96, "city_id"=>29})
+Address.create({"id"=>42, "postalcode"=>"60325", "street"=>"Senckenberganlage", "street_number"=>31, "city_id"=>33})
+Address.create({"id"=>43, "postalcode"=>"34125", "street"=>"Mönchebergstraße", "street_number"=>19, "city_id"=>34})
+Address.create({"id"=>44, "postalcode"=>"65197", "street"=>"Kurt-Schumacher-Ring", "street_number"=>18, "city_id"=>35})  
+Address.create({"id"=>45, "postalcode"=>"99310", "street"=>"Lindenallee", "street_number"=>10, "city_id"=>36})   
+Address.create({"id"=>46, "postalcode"=>"99085", "street"=>"Altonaer Straße", "street_number"=>25, "city_id"=>37})   
+Address.create({"id"=>47, "postalcode"=>"07745", "street"=>"Carl-Zeiss-Promenade", "street_number"=>2, "city_id"=>38})
+Address.create({"id"=>48, "postalcode"=>"99734", "street"=>"Weinberghof", "street_number"=>4, "city_id"=>39})
+Address.create({"id"=>49, "postalcode"=>"99423", "street"=>"Platz der Demokratie", "street_number"=>2, "city_id"=>40})
+Address.create({"id"=>50, "postalcode"=>"86159", "street"=>"Universitätsstraße", "street_number"=>2, "city_id"=>41})
+Address.create({"id"=>51, "postalcode"=>"96047", "street"=>"Kapuzinerstraße", "street_number"=>25, "city_id"=>42})
+Address.create({"id"=>52, "postalcode"=>"91054", "street"=>"Schlossplatz", "street_number"=>4, "city_id"=>43})
+Address.create({"id"=>53, "postalcode"=>"80333", "street"=>"Bernd-Eichinger-Platz", "street_number"=>1, "city_id"=>44})
+Address.create({"id"=>54, "postalcode"=>"90489", "street"=>"Keßlerplatz", "street_number"=>12, "city_id"=>45})
+Address.create({"id"=>55, "postalcode"=>"79114", "street"=>"Bugginger Straße", "street_number"=>38, "city_id"=>46})
+Address.create({"id"=>56, "postalcode"=>"69117", "street"=>"Grabengasse", "street_number"=>1, "city_id"=>47})
+Address.create({"id"=>57, "postalcode"=>"68131", "street"=>"Schloss", "street_number"=>1, "city_id"=>48})
+Address.create({"id"=>58, "postalcode"=>"70174", "street"=>"Keplerstraße", "street_number"=>7, "city_id"=>49})
+Address.create({"id"=>59, "postalcode"=>"89081", "street"=>"Albert-Einstein-Allee", "street_number"=>5, "city_id"=>50})
+Address.create({"id"=>60, "postalcode"=>"67657", "street"=>"Morlauterer Straße", "street_number"=>31, "city_id"=>51})
+Address.create({"id"=>61, "postalcode"=>"67059", "street"=>"Ernst-Boehe-Straße", "street_number"=>4, "city_id"=>52})
+Address.create({"id"=>62, "postalcode"=>"55128", "street"=>"Lucy-Hillebrand-Straße", "street_number"=>2, "city_id"=>53})
+Address.create({"id"=>63, "postalcode"=>"54296", "street"=>"Universitätsring", "street_number"=>15, "city_id"=>54})
+Address.create({"id"=>64, "postalcode"=>"67549", "street"=>"Erenburgerstraße", "street_number"=>19, "city_id"=>55})
+Address.create({"id"=>65, "postalcode"=>"66117", "street"=>"Keplerstraße", "street_number"=>3, "city_id"=>56})
+Address.create({"id"=>66, "postalcode"=>"66123", "street"=>"Campus", "street_number"=>1, "city_id"=>56})
 #---------------------------------------------------------------------------------
 #---------------------------------------------------------------------------------
 # Aber hier Folgen Testdaten! - Nicht mehr für eine Neuinitialisierung der Seite notwendig
@@ -163,12 +249,34 @@ Address.create({"id"=>37, "postalcode"=>"04109", "street"=>"Ritterstraße", "str
 #---------------------------------------------------------------------------------
 # UniversityContent
 #---------------------------------------------------------------------------------
-Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Uni liegt im Herzen der Stadt","university_id"=>1})
-Universitycontent.create({"title"=>"Mensen","content"=>"Die Mensa ist in der Uni mit integriert","university_id"=>1})
-Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Uni liegt auf einem Berg","university_id"=>2})
-Universitycontent.create({"title"=>"Mensen","content"=>"Die Mensa ist von der Uni aus zu Fuß in 5 Minuten zu erreichen","university_id"=>2})
-Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Uni zerstreut in der Stadt","university_id"=>3})
-Universitycontent.create({"title"=>"Mensen","content"=>"Es gibt gleich 2 Mensen die in der Stadt verteilt sind","university_id"=>3})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die TU Berlin versteht sich als international renommierte Universität in der deutschen Hauptstadt, im Zentrum Europas. Eine scharfe Profilbildung, herausragende Leistungen in Forschung und Lehre, die Qualifikation von sehr guten Absolventinnen und Absolventen und eine moderne Verwaltung stehen im Mittelpunkt ihres Agierens. Ihr Streben nach Wissensvermehrung und technologischem Fortschritt orientiert sich an den Prinzipien von Exzellenz und Qualität. ","university_id"=>1})
+Universitycontent.create({"title"=>"Mensa","content"=>"Wer hierher kommt, kann mehr erwarten als gesundes, reichhaltiges und preiswertes Essen! Hier entspannt man sich zwischen zwei Vorlesungen, verabredet sich mit Freunden zum Essen, sitzt mit neuen Kollegen zwanglos zusammen, geht gemeinsam noch einen Kaffee trinken oder sonnt sich auf einer unserer Sonnenterrassen. Hier werden die Wochenenden geplant, finden sich Lerngruppen zusammen, kann man abschalten. dDas Vertrauen macht uns stolz - es ist uns aber auch Anspruch: Immer wieder besser zu werden. Tag für Tag. Denn wir wollen Ihnen mehr bieten als nur gesundes Essen! ","university_id"=>1})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Freie Universität Berlin gehört zu den wissenschaftlichen Top-Adressen. Sie zählt zu den deutschen Hochschulen, die in der Exzellenzinitiative des Bundes und der Länder in allen drei Förderlinien erfolgreich abgeschnitten haben und deren Exzellenz-Zukunftskonzepte gefördert werden.
+
+Im Rahmen der Dahlem Research School fördert die Freie Universität gezielt wissenschaftlichen Nachwuchs, sie pflegt mehr als 100 internationale Partnerschaften mit universitätsweiter Geltung, rund 17 Prozent ihrer Studierenden kommen aus dem Ausland.  Die Freie Universität bietet als Volluniversität an 15 Fachbereichen und Zentralinstituten mehr als 150 Studiengänge in allen Fächergruppen an.","university_id"=>2})
+Universitycontent.create({"title"=>"Mensa","content"=>"Die Hauptmensa in der Silberlaube an der Habelschwerdter Allee (Mensa II) ist montags bis freitags von 11.30 bis 14.30 Uhr geöffnet. Zusätzlich zu dieser großen Mensa gibt es eine etwas kleinere Mensa (Mensa I) in der Van't-Hoff-Straße 6. Dort können die Speisen bei schönem Wetter sogar auf einer Dachterrasse mit Grünblick genossen werden.
+
+In der Mensa kostet – bei Vorlage des Ausweises für Studierende – eine Mahlzeit zwischen Euro 1,50 und 3,50. Solange Sie noch keinen Ausweis für Studierende der Freien Universität haben, sollten Sie Ihren Internationalen Studentenausweis vorzeigen. Denken Sie also bitte daran, ihn mitzubringen!
+
+Da an den Kassen kein Bargeld angenommen wird, müssen Sie eine so genannte Giro-Vend-Karte erwerben. Diese erhalten Sie unter Vorlage des Ausweises für Studierende an einer der Kassen in der Mensa für ein Pfand von Euro 1,55. Die Karten können jederzeit an Automaten aufgeladen werden.
+
+Zusätzlich gibt es auf dem Campus mehrere Cafeterias, die teils vom Studentenwerk, teils von Studierenden selbst betrieben werden. Auch die Mensen der anderen Hochschulen in Berlin können von Studierenden der Freien Universität genutzt werden.","university_id"=>2})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Westfälische Wilhelms-Universität Münster (WWU) hat in den Geistes- und Sozialwissenschaften, der Mathematik, den Naturwissenschaften, Lebenswissenschaften sowie Wirtschafts- und Rechtswissenschaften ein starkes Forschungsprofil entwickelt. Sie fördert gezielt die Spitzenforschung und den wissenschaftlichen Nachwuchs in diesen Fächern. Gleichzeitig sichert die WWU durch die Gewährleistung der Breitenforschung die Grundlage, auf der weitere Exzellenz wachsen kann. Die Ziele der WWU Münster im Bereich der Forschung stehen in engem Wechselspiel mit der Selbstverpflichtung zum Angebot qualitativ hochwertiger und inhaltlich vielfältiger Studienprogramme. In zwei Schritten hat die WWU viele ihrer Studiengänge auf die Abschlüsse Bachelor und Master umgestellt.  Die Entwicklung von Programmen zur strukturierten Promotion stellt den dritten Schritt zur Verwirklichung der Ziele des Bologna-Prozesses dar. Auf der Grundlage hochwertiger Breiten- und Spitzenforschung ermöglicht die WWU so die bestmögliche Ausbildung ihrer Studierenden.","university_id"=>3})
+Universitycontent.create({"title"=>"Mensa","content"=>"Die Mensa am Aasee, Bismarckallee 11, zählt zu den modernsten in Deutschland. Diese Mensa ist nicht nur schön gelegen, sondern bietet mit ihrem innovativen und multifunktionalen Gastronomie- und Veranstaltungszentrum Platz für über 1.670 Gäste.
+
+Hier bieten wir Ihnen neben diversen Menüs auch schmackhafte Eintopfgerichte, reichhaltige Salat- und Gemüsebuffets, Frisches vom Grill und vielfältige Dessertvariationen. An einer Wokstationen gibt es außerdem Showcooking mit einem wechselnden Angebot. Bei den besonders ausgewiesenen, wechselnden Menüs 1, 2 und 3, die wir Ihnen hier und in der Mensa am Ring mit je drei Beilagen zu einem Festpreis anbieten, besteht für die Beilagen innerhalb des Sortiments Wahlfreiheit. Und ist Ihr Hunger nicht so groß und Sie verzichten auf ein oder zwei Beilagen, so gewähren wir Ihnen hierfür einen Preisnachlass von je 0,25 EUR. Für die besonders hungrigen Gäste haben wir hingegen den Mengenrabatt: Für die vierte und fünfte Beilage berechnen wir Ihnen nur 0,25 € je Beilage …","university_id"=>3})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Fachhochschule Münster steht in einer langen Bildungstradition: 1971 entstanden aus dem Zusammenschluss von staatlichen und privaten Bau- und Ingenieurschulen sowie Einrichtungen mit berufsbezogener Fachausbildung, gehört sie heute zu den größten und erfolgreichsten Fachhochschulen Deutschlands. Der Anspruch der Fachhochschule Münster ist, die erste Adresse in Bildung und Forschung für die Praxis zu sein. Qualität ist die Grundlage für alle Arbeitsbereiche der Hochschule. Sie ist Maßstab für die Lehre mit ihren vielfältigen, am Bedarf des Marktes ausgerichteten Angeboten. Sie ist Fundament für den exzellenten Forschungserfolg mit der bundesweit höchsten Drittmittelquote.
+
+Sie ist die Triebfeder für Unternehmen, mit der Hochschule strategische Allianzen und Partnerschaften einzugehen. Und sie ist das Markenzeichen eines fein justierten Systems der internen Ressourcensteuerung. Alle Qualitätsmerkmale zusammen prägen das Bild dieser modernen, leistungsstarken und kundenorientierten Hochschule.","university_id"=>4})
+Universitycontent.create({"title"=>"Mensa","content"=>"Die Mensa am Ring, Domagstr. 61, ist unsere größte Mensa in Münster. Hier bieten wir Ihnen neben diversen Menüs auch schmackhafte Eintopfgerichte, reichhaltige Salat- und Gemüsebuffets, Frisches vom Grill und vielfältige Dessertvariationen. An einer Wokstation gibt es außerdem Showcooking mit einem wechselnden Angebot und besondere „Aktionsteller“. Bei den besonders ausgewiesenen, wechselnden Menüs 1, 2 und 3, die wir Ihnen hier und in der Mensa am Aasee mit je drei Beilagen zu einem Festpreis anbieten, besteht für die Beilagen innerhalb des Sortiments Wahlfreiheit. ","university_id"=>4})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Universität Bielefeld wurde 1969 mit explizitem Forschungsauftrag und hohem Anspruch an die Qualität einer forschungsorientierten Lehre gegründet. Heute umfasst sie 13 Fakultäten, die ein differenziertes Fächerspektrum in den Geistes-, Natur-, Sozial- und Technikwissenschaften abdecken. Mit ca. 21.500 Studierenden in 105 Studienangeboten, ca. 2.750 Mitarbeiterinnen und Mitarbeitern (darunter 264 Professor/innen und Juniorprofessor/innen sowie 1.380 wissenschaftliche Mitarbeiter/innen), gehört sie zu den mittelgroßen Universitäten in Deutschland. ","university_id"=>9})
+Universitycontent.create({"title"=>"Mensa","content"=>"Küchenleiter: Christian Altenhöner und Meik del Moral Cabana
+
+Geänderte Mensa-Öffnungszeiten während der Semesterferien:
+mo - fr   11.30 bis 14.00 Uhr
+
+vegane und lactosefreien Speisen ausgezeichnet mit V/L
+glutenfreie Speisen ausgezeichnet mit G","university_id"=>9})
 Universitycontent.create({"title"=>"Allgemeines","content"=>"Mit mehr als 4000 Studierenden hat sich die Fachhochschule Flensburg (Flensburg University of Applied Sciences) zu einer der erfolgreichsten deutschen Hochschulen für Technik und Wirtschaft entwickelt.
 
 Die Fachhochschule Flensburg hat mehrere moderne Alleinstellungsmerkmale in Norddeutschland. Als Beispiele wären zu nennen die Biotechnologie und die Verfahrenstechnik, die Energietechnik, insbesondere die Regenerative Energietechnik sowie die Maritimen Studiengänge, insbesondere die Ausbildung von technischen und nautischen Schiffsoffizieren. An der FH Flensburg ist 2010 ein neues Maritimes Zentrum eröffnet worden, das international gefragt ist.
@@ -374,6 +482,162 @@ Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Universität Le
 Nach umfangreicher Diskussion verabschiedete die Universität im Jahre 2003 ein Leitbild, das in acht Punkten ihre Entwicklung als klassische, weltoffene Volluniversität widerspiegelt und ihre zukünftige Arbeit prägen wird.","university_id"=>37})
 Universitycontent.create({"title"=>"Mensa","content"=>"In unseren Mensen und Cafeterien gibt es eine große Angebotspalette an preisgünstigem und schmackhaftem Essen: Täglich wechselnde
 Gerichte, Pasta mit diversen Soßen, Gegrilltes oder Gerichte vom Wok, vegane und vegetarische Kost, Salate und Desserts. Die Cafeterien bieten zudem noch ein gutes Frühstücks- und Imbissangebot, und am Nachmittag lässt man sich dort ein Stück Kuchen und eine Latte Macchiato schmecken.","university_id"=>37})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Unsere Hochschule hat ein einzigartiges Profil, das aus ihrer spannenden Historie und der langjährigen Tradition resultiert. So haben beispielsweise Diversity und Gender-Mainstreaming, Gesundheitsförderung und Familienfreundlichkeit sowie Kulturarbeit und der internationale Austausch einen hohen Stellenwert bei uns.
+Außerdem ist die Hochschule sehr gut vernetzt- national und international im Bereich der Wissenschaft, der Praxis und Forschung.","university_id"=>38})
+Universitycontent.create({"title"=>"Mensa","content"=>"Willkommen an der ASH in Berlin-Hellersdorf. Auch hier bekommen Sie das leckere Angebot vom Studentenwerk Berlin! In der Mensa ASH Hellersdorf","university_id"=>38})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Studiere Zukunft lautet das Motto der Beuth Hochschule für Technik Berlin, der Traditionshochschule mit dem größten ingenieurwissenschaftlichen Studienangebot in Berlin und Brandenburg. Nach Studierendenzahlen zählt die Beuth Hochschule zu den zehn größten Fachhochschulen Deutschlands.
+
+Die Beuth Hochschule entstand 1971 als Technische Fachhochschule Berlin durch den Zusammenschluss mehrerer Ingenieurakademien. An ihrem verkehrstechnisch hervorragend angeschlossenem Standort Wedding in der Mitte Berlins und mehreren Außenstellen ermöglicht die Hochschule ein praxisorientiertes Studium für qualifizierte Fachkräfte und Abiturientinnen und Abiturienten. Sie reflektiert die soziale und gesellschaftliche Vielfalt der Weddinger Stadtteilgeschichte und fördert die Karrierechancen von begabten Menschen unabhängig von ihrem Hintergrund. Ein besonderes Ziel der Hochschule ist es, den Anteil der weiblichen Studierenden kontinuierlich zu steigern. Auch deshalb wurde der Hochschule das Prädikat Familienfreundliche Hochschule verliehen. ","university_id"=>39})
+Universitycontent.create({"title"=>"Mensa","content"=>"Unsere Mensa und Cafeteria sind eine Einrichtung des Studentenwerkes Berlin. In der Mensa und Cafeteria werden Ihnen große und kleine Mahlzeiten, Snacks für zwischendurch sowie unterschiedliche Getränke für den kleinen und großen Hunger geboten.
+Meistens können Sie sich Ihr Essen selbst zusammenstellen und unter den verschiedenen Komponenten auswählen. Täglich bieten wir Ihnen in unserer Mensa ein Bio-Essen an. Für dieses Gericht werden nur Produkte aus ökologischem Landbau verarbeitet. Damit wurde der Wunsch vieler Studierender aufgegriffen. ","university_id"=>39})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Wir lehren Kommunikation als permanente Herausforderung, um Heute und Morgen zu verbinden Der direkte Kontakt mit visionären Projekten befähigt zu zukunftsorientiertem Denken, Handeln und Gestalten. Wir beobachten die Veränderungen der Wahrnehmungsbedingungen, die Beschleunigung der Kommunikationsprozesse vor dem Hintergrund der sozioökonomischen und technischen Möglichkeiten. Wir konzipieren und entwerfen heute für zukünftige Mediennutzung.","university_id"=>40})
+Universitycontent.create({"title"=>"Mensa","content"=>"Die Mensa ist in der Uni mit integriert","university_id"=>40})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Der scheinbare Widerspruch ist schnell aufzulösen. Die Fachhochschule Dortmund wurde zwar offiziell 1971 gegründet, ihre älteste Vorgängereinrichtung, die Königliche Werkmeisterschule für Maschinenbauer eröffnete jedoch ihre Pforten bereits im Jahre 1890. Am Grundgedanken hat sich in der langen Zeit jedoch nichts geändert: Studium und Lehre sind an der Lösung von anwendungsnahen Problemen und Aufgaben orientiert, erfahrene Professorinnen und Professoren garantieren die Verbindung zur Praxis und ermöglichen heute ein perspektivenreiches Studium mit rund 30 Angeboten: Von Architektur und Design über Informatik und Ingenieurwissenschaften bis hin zu angewandter Sozialwissenschaft und Wirtschaft sind heute rund 10000 Studenten an der Fachhochschule Dortmund eingeschrieben.
+
+Dortmund - da sehen viele Menschen noch rauchende Schornsteine, vor glühenden Hochöfen schwitzende Arbeiter oder Kumpel, die unter Tage fahren. Doch die Wirklichkeit ist längst eine andere: Zechen gibt es hier keine mehr, Stahlwerke ebensowenig. Stattdessen expandieren der Dienstleistungsbereich und High-Tech-Branchen, wie zum Beispiel die Mikrostrukturtechnik. Es existieren günstige Einkaufsmöglichkeiten, ein reichhaltiges Kulturangebot, internationale Messen und natürlich (immer noch) ein begeisterungsfähiges Fußballpublikum. Umgeben von großzügigen Grünflächen wachsen hier zunehmend zukunftsorientierte Betriebe der Hochtechnologie und kompetente Dienstleistungsunternehmen mit Schwerpunkten zum Beispiel in der Medien-, Software- und Versicherungswirtschaft heran.  ","university_id"=>41})
+Universitycontent.create({"title"=>"Mensa","content"=>"Das Studentenwerk Dortmund betreibt an den Standorten in Dortmund, Iserlohn, Meschede, Soest und Hagen insgesamt 17 Mensen, Cafeterien und Bistros.
+
+Vielfalt schaffen, nachhaltig handeln und eine gute Qualität anbieten - diese Ziele verfolgen die mehr als 200 Mitarbeiter in den einzelnen Einrichtungen jeden Tag.
+
+Ein großer Schritt in diese Richtung wurde 2006 gemacht. Mit dem Umbau der Hauptmensa auf dem Unicampus Nord verschwanden die Essens-Rondelle, in denen fertig angerichtete Mahlzeiten auf ihre Kunden warteten. Geschaffen wurde ein großer lichtdurchfluteter Raum mit vielen Ausgabestationen und Selbstbedienungstheken. Vom Wok-Gemüse über vegane Tagesgerichte bis hin zum Döner findet der Gast heute mehr Auswahl als je zuvor. ","university_id"=>41})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Fachhochschule Düsseldorf wurde am 1. August 1971 aus dem Zusammenschluss mehrerer renommierter Vorgängerinstitutionen, unter anderem der Staatlichen Ingenieurschule, der Peter-Behrens-Werkkunstschule, der Höheren Fachschule für Sozialarbeit und der Düsseldorfer Außenstelle der Höheren Wirtschaftsfachschule Mönchengladbach gegründet. Mit rund 8800 Studierenden, rund 180 Professorinnen und Professoren sowie 120 wissenschaftlichen Mitarbeiterinnen und Mitarbeitern ist die Fachhochschule Düsseldorf (FH D) heute eine der größten Fachhochschulen Nordrhein-Westfalens. Sie bietet mit 36 Studiengängen an sieben Fachbereichen ein umfangreiches Studienangebot, dessen Profil durch anwendungsorientierte und fächerübergreifende Lehre geprägt wird.
+","university_id"=>5})
+Universitycontent.create({"title"=>"Mensa","content"=>"Hygiene und Qualität werden bei uns großgeschrieben und sind eng miteinander verbunden.
+Ständig erweitern wir unser HACCP–Programm (hazard analysis critical control points) um gesundheitliche Gefahren zu identifizieren, zu bewerten und zu beherrschen. Das Eigenkontrollkonzept des Studentenwerks fängt beim Wareneingang an, geht über die fachgerechte Lagerung, die Vor- und Zubereitung, den Transport, bis zur Ausgabe der Speisen. Um unser Eigenkontrollkonzept zu verifizieren, werden wir regelmäßig und unangekündigt durch ein externes Hygieneinstitut überprüft. Regelmäßige Personalschulungen im Hygienekonzept sind für uns selbstverständlich. ","university_id"=>5})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Deutsche Sporthochschule Köln ist keine gewöhnliche Universität. Sie ist Deutschlands einzige Sportuniversität, die sich ausschließlich dem Themenfeld Sport und Bewegung widmet. Während an anderen Universitäten die Sportwissenschaft neben vielen weiteren Fachgebieten besteht, findet man in Köln eine außergewöhnliche Situation vor: An 21 Instituten, vier An-Instituten und neun wissenschaftlichen Zentren wird das vielfältige und spannende Gebiet der Sportwissenschaft in allen seinen Facetten detailliert unter die Lupe genommen.
+
+Die gebündelte Fachkompetenz an einem Standort ermöglicht so eine einzigartige Interdisziplinarität und die Möglichkeit, komplexe gesellschaftliche Themen aus verschiedenen sportwissenschaftlichen Perspektiven zu beleuchten. Das Spektrum reicht von Gesundheitsthemen über biomechanische und psychologische Fragestellungen, bis hin zur ökonomischen, historischen und ethischen Betrachtung des Sports.","university_id"=>6})
+Universitycontent.create({"title"=>"Mensa","content"=>"Die Mensa und das Café Auszeit befinden im Hauptgebäude der Deutschen Sporthochschule Köln im Stadtteil Junkersdorf. ","university_id"=>6})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Universität Duisburg-Essen (UDE) gehört als jüngste deutsche Universität mit rund 40.000 Studierenden zu den zehn größten in der Bundesrepublik. Für das westliche Ruhrgebiet und die Region Niederrhein mit mehr als 5 Millionen Einwohnern ist sie das akademische und intellektuelle Zentrum. Mit ihrer Gründung im Jahr 2003 ist eine Universität mit einem breiten Fächerspektrum und einem wettbewerbsfähigen Leistungsprofil entstanden.","university_id"=>7})
+Universitycontent.create({"title"=>"Mensa","content"=>"Täglich stehen drei Gerichte mit unterschiedlichen Beilagen zur Auswahl, ein vegetarisches Essen ist immer dabei. Der Preis liegt für Bedienstete zwischen 4 und 5 Euro. Zusätzlich gibt es in den Hauptmensen täglich ein Salatbuffet und im wöchentlichen Wechsel eine Gemüse- und Pasta-Bar zum Preis von 0,70 Euro pro 100g. Darüber hinaus sind Quark und Joghurtteller im Angebot. In Duisburg auf der Lotharstraße gibt es zwei Mensen mit unterschiedlichem Angebot, so dass Sie zwischen sechs unterschiedlichen Hauptgerichten mit Beilagen wählen können. ","university_id"=>7})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Hochschule Darmstadt (h_da)  ist eine der größten Hochschulen für Angewandte Wissenschaften in Deutschland. Über 50 Bachelor-, Diplom-, und Masterstudiengänge mit vielfach selbst wählbaren Schwerpunkten bieten beste Berufsaussichten für ihre über 13.500 Studierenden. Das Spektrum der Studiengänge reicht von den Ingenieurswissenschaften über Informationstechnologien, Soziale Arbeit, Gesellschaftswissenschaften und Wirtschaft bis hin zu Architektur, Medien und Design. Die angewandte Forschung und Entwicklung an der h_da bereichert die exzellente Lehre und stärkt die Wirtschaftsunternehmen der Region durch Technologie- und Wissenstransfer.","university_id"=>8})
+Universitycontent.create({"title"=>"Mensa","content"=>"n unseren Mensa-Standorten in Darmstadt bzw. Dieburg können Sie aus verschiedenen Tagesgerichten wählen. Dazu kommen Salattheken, Pizza- und Pasta-Stationen und in aller Regel wechselnde aktuelle Angebote.
+
+Sie können sich vor Ort - zum Beispiel an den Schautheken im Foyer der Mensa Stadtmitte - genau darüber informieren, was gerade serviert wird.
+
+Bitte haben Sie Verständnis, dass wir nicht das gesamte tagesaktuelle Speiseangebot aller Mensen umfassend online aufführen können.","university_id"=>8})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Technische Universität Darmstadt ist reich an Leistungen und Impulsen – weil Menschen in all ihrer Vielfältigkeit seit über 130 Jahren das Bild der Universität Tag für Tag prägen und geprägt haben.
+
+Lernen Sie in einem virtuellen Rundgang Geschichte und Persönlichkeiten der Technischen Universität Darmstadt kennen. Wir präsentieren das Leben der Studierenden und deren Chancen nach Abschluss der wissenschaftlichen Ausbildung. Wir erzählen von technischen Meisterleistungen, Kooperationen mit Partnern aus Industrie und Wissenschaft und herausragenden Persönlichkeiten. Jede einzelne Geschichte, jeder individuelle Blick steht stellvertretend für die besondere Vielfalt der Technischen Universität Darmstadt.","university_id"=>10})
+Universitycontent.create({"title"=>"Mensa","content"=>"Das Studenwerk Darmstadt betreibt an der TU Darmstadt zwei Mensen (Stadtmitte und Lichtwiese) und drei Bistros (Stadtmitte, Lichtwiese, Bistro Athene im Robert-Piloty-Gebäude).
+
+In den Mensen kann zwischen mehreren Hauptgerichten (Hauptkomponenten) gewählt werden, dazu gibt es mehrere Beilagen, die frei zusammengestellt werden können. In den Bistros finden Studierende ein reichhaltiges Frühstücksangebot oder leckere Snacks für den kleinen Hunger zwischendurch.","university_id"=>10})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Goethe-Universität ist eine forschungsstarke Hochschule in der europäischen Finanzmetropole Frankfurt. Lebendig, urban und weltoffen besitzt sie als Stiftungsuniversität ein einzigartiges Maß an Eigenständigkeit. 1914 als erste Stiftungsuniversität Deutschlands von Frankfurter Bürgern gegründet, ist sie mit über 45.000 Studierenden (Stand WS 13/14) die drittgrößte Universität Deutschlands. Seit Anfang des letzten Jahrzehnts durchläuft die Goethe-Universität einen ungewöhnlich dynamischen Veränderungsprozess. Kennzeichen dafür sind die Rück-Umwandlung zur Stiftungsuniversität 2008, Qualitätsoffensiven in Lehre und Forschung, verstärkte Kooperationen mit externen Partnern und eine fast vollständige Erneuerung der gesamten baulichen Infrastruktur. So ist der Neubau des Campus Westend für die Geistes-, Gesellschafts-, Kultur und Sozialwissenschaften rund um das historische Ensemble des Architekten Hans Poelzig weit fortgeschritten und soll 2017 vollendet sein; die „Science City Riedberg“ vereint die naturwissenschaftlichen Fachbereiche in unmittelbarer Nachbarschaft zu zwei Max-Planck-Instituten. Auch der medizinische Campus Niederrad mit dem Universitätsklinikum erneuert sich vollständig. Das Land Hessen unterstützt dieses größte Hochschul-Neubauprojekt Deutschlands mit weit über 1 Mrd. Euro.","university_id"=>42})
+Universitycontent.create({"title"=>"Mensa","content"=>"Cafeteria Bockenheim. Die Cafeteria versorgt Studierende und Hochschulmitarbeiter auf dem Campus Bockenheim mit warmen Gerichten zur Mittagszeit. Außerdem gibt es Salate, belegte Brötchen, süße Teilchen, Snacks  und Getränke. Ab 15:00 Uhr bietet das Team frisch gemachte Burger an. ","university_id"=>42})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Universität Kassel ist eine junge, moderne und lebendige Universität. Sie hat ein außergewöhnliches Profil mit den Themen Natur, Technik, Kultur und Gesellschaft. Ideen zu fördern, zu entwickeln, zu überprüfen und umzusetzen ist ihr Anspruch - auch wenn sich diese (noch) nicht im Mainstream befinden. Kaum eine andere Hochschule in Deutschland bietet ein so breites Studienangebot wie die Universität Kassel. Von den Naturwissenschaften über die Technikwissenschaften bis hin zu künstlerischen Studiengängen – Das einmalige Profil der Universität Kassel bietet zahlreiche faszinierende Chancen. ","university_id"=>43})
+Universitycontent.create({"title"=>"Mensa","content"=>"Damit Ihnen genug Zeit zum Studieren bleibt, übernimmt das Studentenwerk Kassel das Kochen für Sie. Und das tun wir selbstverständlich gern. Zu diesem Zweck bewirtschaftet das Studentenwerk an den verschiedenen Hochschulstandorten fünf Mensen, neun Cafeterien und ein Restaurant. In diesen Einrichtungen bieten wir Mittagessen,  Abendessen (während der Vorlesungszeit) und - für den Hunger zwischendurch - kleinere Mahlzeiten, Snacks, Brötchen, Kuchen sowie heiße und kalte Getränke zu sozial verträglichen Preisen für Studierende der Universität Kassel an. ","university_id"=>43})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Hochschule RheinMain bietet optimale Bildungs- und Berufschancen, indem sie ihre günstige geographische Lage, ihre konsequente Nähe zum Markt und zur Gesellschaft, ihre Forschungsaktivitäten und ihren gelebten Teamgeist zu einzigartiger Praxis- und Lebensnähe verbindet. Im Mittelpunkt der Ausbildung an den beiden Studienorten Wiesbaden und Rüsselsheim stehen die Studierenden.
+
+Fachhochschulstudium bedeutet hier: Vorbereitung auf moderne Berufsfelder, welche die Anwendung wissenschaftlicher Methoden oder künstlerischer Fähigkeiten erwarten. Und zwar in den fünf Fachbereichen Architektur und Bauingenieurwesen, Design Informatik Medien, Sozialwesen, Wiesbaden Business School und Ingenieurwissenschaften.","university_id"=>44})
+Universitycontent.create({"title"=>"Mensa","content"=>"Die Mensen in Wiesbaden und Rüsselsheim werden vom Studentenwerk Frankfurt am Main betrieben. Besonderer Wert wird auf frische Produkte und Qualität zu studentenfreundlichen Preisen gelegt. Ob Frühstück, Mittagessen oder ein kleiner Snack zwischendurch - die Teams der Mensen an den beiden Studienorten freuen sich auf Ihren Besuch. ","university_id"=>44})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die FH KUNST ist eine private Hochschule mit staatlicher Anerkennung.
+Träger ist die FH KUNST GmbH. Der Studienabschluss ist dem staatlicher Hochschulen gleichgestellt. In 8 Semestern (vier Jahren) bildet die anthroposophisch orientierte FH KUNST in drei Studiengängen aus:
+Freie Bildende Kunst (Bachelor of Fine Arts), Kunsttherapie (Bachelor of Arts) und Kommunikationsdesign (Bachelor of Arts).
+Für das Studienjahr 2012/2013 sind die Studiengänge Interior Design (Bachelor of Arts) und Change Management (Master of Arts) geplant.
+
+Die FH KUNST strebt ausdrücklich eine Kooperation mit anderen Hochschulen an und kooperiert für die studienintegrierten Projekte und Praktika mit sozialen und klinischen Partnerinstitutionen, Museen, Design- und Werbeagenturen sowie Industrieunternehmen.","university_id"=>45})
+Universitycontent.create({"title"=>"Mensa","content"=>"Mensa & Cafeteria befinden sich im Gebäude","university_id"=>45})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"
+Wissenschaft und Praxis modern und flexibel verbinden
+
+Der Titel University of Applied Sciences (Universität der angewandten Wissenschaften) macht international deutlich, wofür auch die Fachhochschule Erfurt steht: Die Verbindung von wissenschaftlicher Ausbildung und praxisorientierten Anwendungen. Die neuen Studienangebote Bachelor und Master garantieren ein effektives, straffes Studium, das den schnellen Weg in die berufliche Praxis ermöglicht und zugleich die Möglichkeiten weiterer akademischer Bildung eröffnet.
+
+Die Fachhochschule Erfurt wurde am 01.10.1991 gegründet. 22 Jahre später ist sie eine etablierte, moderne und praxisorientierte Hochschule mit einem guten Ruf und einem modernen Leitbild. Vordere Plätze in nationalen Rankings (bspw. zur Einhaltung der Regelstudienzeit) die zahlreichen fruchtbaren Kontakte zur Wirtschaft, die intensive Vernetzung in Stadt und Region sowie eine wachsende internationale Ausstrahlung unterstreichen dies. Besonders hervorzuheben ist die sehr gute Zusammenarbeit mit den unterschiedlichsten regionalen und kommunalen Unternehmen, Institutionen sowie Einrichtungen. Der seit 1998 jährlich stattfindende Unternehmens-Kontakt-Tag (Tag der Forschung), die alle zwei Jahre durchgeführte Hausmesse Heizung/Sanitär des Studiengangs Gebäude- und Energietechnik oder die jährlich organisierte Bewerbermesse (Firmenkontaktbörse) sind herausragende Beispiele für die intensive und beiderseitig nutzbringende Zusammenarbeit mit der Wirtschaft. Die anwendungsbezogene Lehre gemeinsam mit der praxisorientierten Forschung bereitet die Studierenden optimal auf ihre spätere berufliche Tätigkeit vor. Die umfangreichen Angebote zum Erlernen von Sprachen, interkultureller Kompetenz, zu Schlüssel- und Basisqualifikationen runden die Ausbildungsangebote ab. ","university_id"=>46})
+Universitycontent.create({"title"=>"Mensa","content"=>"Campus-Buffet ist das Label des Studentenwerks Thüringen für die gastronomische Versorgung bei Veranstaltungen im Rahmen von Lehre, Forschung und Weiterbildung an den von uns betreuten Universitäten und Hochschulen.
+
+Campus-Buffet bedeutet Catering auf hohem Niveau. Wir überzeugen Sie – Festessen aus der Mensa - das geht sehr gut!
+
+Campus-Buffet vermittelt Ihnen ein besonderes gastronomische Erlebnis. In unseren Küchen entstanden viele meisterliche Buffet-Variationen. An den von uns gedeckten Tischen saßen schon Bundespräsidenten und Bundeskanzler, Ministerpräsidenten und Minister. ","university_id"=>46})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Der Innovations-Campus Ernst-Abbe-Fachhochschule Jena bietet in acht Fachbereichen der Ingenieurwissenschaften, der Betriebswirtschaft und der Sozialwissenschaften ein wissenschaftlich solide fundiertes, interdisziplinäres und sehr praxisnahes Studium.","university_id"=>47})
+Universitycontent.create({"title"=>"Mensa","content"=>"Campus-Buffet vermittelt Ihnen ein besonderes gastronomische Erlebnis. In unseren Küchen entstanden viele meisterliche Buffet-Variationen. An den von uns gedeckten Tischen saßen schon Bundespräsidenten und Bundeskanzler, Ministerpräsidenten und Minister. ","university_id"=>47})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Seit ihrer Gründung 1997 und der Aufnahme des Studienbetriebs 1998 hat sich die Hochschule zu einer zukunftsorientierten Bildungseinrichtung entwickelt: Neueste Technologien, praxiserfahrene Professoren und Dozenten sowie moderne Studiengänge, die den Erfordernissen des künftigen Arbeitsmarktes entsprechen, garantieren Ihnen eine wissenschaftliche Ausbildung auf hohem Niveau.
+
+Individualität und größtmögliche Gestaltungsspielräume sind in Ihrem Studium für uns eine Selbstverständlichkeit. Durch das integrierte Campuskonzept und die Lage der Hochschule in der Stadt Nordhausen ist die Einheit von Forschen und Lehren, Studieren und Leben auf dem Campus möglich und bietet nahezu konkurrenzlose Voraussetzungen für ein interessantes und angenehmes Studieren am Südrand des Harzes. Der 11 ha große Campus gibt genügend Freiraum, um sowohl Lehre und Forschung als auch Sport, Kultur und Wohnen auf dem Campus zu vereinen. So ist ein Studium der kurzen Wege, der intensiven Betreuung in kleinen Lerngruppen und in hochmodernen Laboren und Lehrräumen möglich. ","university_id"=>48})
+Universitycontent.create({"title"=>"Mensa","content"=>"Mensa Weinberghof
+Weinberghof 2
+99734 Nordhausen","university_id"=>48})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Hochschule für Musik FRANZ LISZT in der Klassikerstadt Weimar ist eine traditionsreiche Ausbildungsstätte für junge Musiker, Wissenschaftler und Musikvermittler aus der ganzen Welt. Sie ist dem Selbstverständnis von Franz Liszt verpflichtet, der in seinem Wirken die Facetten des Komponisten, Virtuosen, Ensemblespielers, Pädagogen und reflektierenden Denkers verband. Die Hochschule misst sich an den bedeutendsten Musikhochschulen der Welt.
+
+Ausgebildet werden soll die ideale Persönlichkeit in Kunst, Wissenschaft oder Pädagogik. Diese verwirklicht sich gleichermaßen souverän in der Instrumentalpraxis, der Musikforschung und der Musikvermittlung. Sie verfügt über ein allgemeines Wissen vom kulturellen Erbe Europas und der Welt sowie über eine hinreichende Kenntnis der zeitgenössischen Kultur. Sie versteht sich als selbstbewusster, in unterschiedlichen Beschäftigungsformen tätiger Musikunternehmer. Sie hat die nötigen Kompetenzen erworben, um auf einem internationalen Kulturmarkt erfolgreich zu wirken.","university_id"=>49})
+Universitycontent.create({"title"=>"Mensa","content"=>"Campus-Buffet ist das Label des Studentenwerks Thüringen für die gastronomische Versorgung bei Veranstaltungen im Rahmen von Lehre, Forschung und Weiterbildung an den von uns betreuten Universitäten und Hochschulen.
+
+Campus-Buffet bedeutet Catering auf hohem Niveau. Wir überzeugen Sie – Festessen aus der Mensa - das geht sehr gut!","university_id"=>49})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"1970 gegründet, zählt die Universität Augsburg zu den noch jüngeren, modernen Universitäten Bayerns. Sie wächst nach wie vor, bleibt aber mit derzeit 18.000 Studierenden in ihrer Größe überschaubar. Auf ihre sieben Fakultäten verteilt sich ein breites Spektrum von rund 80 Studiengängen in den Geistes- und Sozialwissenschaften, den Natur- und Technikwissenschaften, den Rechts- und Wirtschaftswissenschaften und der Theologie. Die Universität Augsburg gehört zu den angenehmsten Orten, an denen man in Deutschland studieren kann. Südlich des historischen Stadtzentrums liegt der moderne und vielseitige grüne Campus, der sämtliche Gebäude in einer großen Parklandschaft mit viel Wasser und zahlreichen Skulpturen versammelt. Durchweg hervorragende Bedingungen ermöglichen es, in sinnvoller Zeit ein Fachstudium erfolgreich abzuschließen – konzentriert, effektiv und dennoch eingebettet in einen breiten, von Interdisziplinarität und Austausch geprägten anregenden geistig-kulturellen Hintergrund.","university_id"=>50})
+Universitycontent.create({"title"=>"Mensa","content"=>"Es gibt an der Universität Augsburg mehrere Möglichkeiten sich mit Essen und Trinken zu versorgen.Mensa, Cafeteria im Mensa-Gebäude (Neue Cafeteria), Cafeteria in Gebäude D (Alte Cafeteria), Verkaufsstand bei der Zentralbibliothek,
+Diese werden vom Studentenwerk Augsburg betrieben. Bezahlt wird bargeldlos mit der CampusCard.  Zusätzlich bietet das Studentenwerk drei CafeBars an. Auch hier erfolgt die Bezahlung per CampusCard.","university_id"=>50})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Otto-Friedrich-Universität ist die jüngste und zugleich eine der ältesten Universitäten Bayerns.
+
+Als der Bamberger Fürstbischof Melchior Otto Voit von Salzburg am 14. November 1647 das damalige Jesuitenkolleg um die beiden Fakultäten Philosophie und Theologie zur Academia Ottoniana erweiterte, war in der Festschrift von der Domus Sapientiae die Rede, vom Haus der Weisheit. Fürstbischof Friedrich Karl von Schönborn erweiterte die Academia um eine juristische Fakultät zur Volluniversität, später wurde sie durch die Errichtung einer medizinischen Fakultät zur klassischen Vierfakultätenuniversität. Im Jahr 1773 erhielt sie den Namen Universitas Ottoniana Fridericiana.
+
+Durch eine wechselvolle Geschichte mit Säkularisation und Schließung zur Zeit des Nationalsozialismus hindurch ist das Haus der Weisheit seiner über 350-jährigen Tradition verpflichtet geblieben. Seit 1979 darf sich das 1972 als Gesamthochschule bestehende Haus der Weisheit wieder Universität nennen. Und seit 1988 trägt die Otto-Friedrich-Universität auch ihre beiden Hauptförderer wieder im Namen. ","university_id"=>51})
+Universitycontent.create({"title"=>"Mensa","content"=>"Die Service Card bzw. der Studentenausweis funktioniert darüber hinaus auch als elektronische Geldbörse, d.h. sie kann mit Bargeld aufgeladen werden. Mit der Karte können Sie z.B. bargeldlos kopieren oder in den Mensen bezahlen. Die Universität Bamberg verfügt über zwei externer Link folgt Mensen, die sich in der Austraße und in der Feldkirchenstraße befinden. Das Aufladen der Karte ist an den entsprechenden Automaten im Eingangsbereich der Mensen möglich.","university_id"=>51})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Friedrich-Alexander-Universität (FAU) wurde am 4. November 1743 gegründet. Im Bewusstsein einer langen Tradition hat sie sich zu einer renommierten Universität mit einem der differenziertesten Fächerspektren entwickelt. Ziel der FAU ist die Profilierung auf zukunftsweisenden Wissenschaftsfeldern sowie die Vernetzung der technischen und naturwissenschaftlichen mit den klassischen Fächern.
+
+Die FAU gehört zu den forschungsstarken Universitäten Deutschlands. Diese Stellung wird gezielt ausgebaut. Dabei sichert die FAU die Freiheit der Forschung und sieht darin die Voraussetzung für wissenschaftlichen Fortschritt. Sie ist der Einheit von Forschung und Lehre verpflichtet. Die Forschung ist gleichermaßen grundlagen- und anwendungsorientiert. Die FAU erarbeitet neue, für die Zukunft von Wissenschaft und Gesellschaft bedeutsame Kompetenzfelder. Sie wahrt die etablierten wissenschaftlichen und ethischen Standards: gewonnene Erkenntnisse sind methodisch überprüfbar und werden im Dialog mit Wissenschaft und Öffentlichkeit diskutiert und reflektiert.","university_id"=>52})
+Universitycontent.create({"title"=>"Mensa","content"=>"Südmensa, Sitzplätze: 1.000, Essensausgabezeiten während des Semesters:
+Montag-Donnerstag 11.15-14.15 Uhr, Freitag 11.15-14.00 Uhr ","university_id"=>52})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Seit Gründung 1966, bzw. Aufnahme des Lehrbetriebs 1967, bildet die HFF München die Filmtalente von Morgen aus. Zu den bekanntesten Absolventen zählen u.a. Caroline Link, Doris Dörrie, Bernd Eichinger, Florian Henckel von Donnersmarck, Wim Wenders und Roland Emmerich. Nachdem zuerst in einer Villa in Schwabing gelehrt wurde, ging es 1988 in eine ehemalige Bettfedernfabrik im Münchner Stadtteil Giesing, bevor im September 2011 der Umzug in den Neubau inmitten des Münchner Kunstareals folgte. Hier können alle Studiengänge unter einem Dach vereint werden und von den Film- und TV-Studios über einen eigenen Postproduktionstrakt bis hin zu drei Kinos gibt es hier alles, was nicht nur Filmemachen, sondern auch Film-Studieren zur schönsten Sache der Welt machen kann.","university_id"=>53})
+Universitycontent.create({"title"=>"Mensa","content"=>"In unserer CANTINA CONVIVA begrüßen wir seit Herbst 2011 Studierende, Lehrende und MitarbeiterInnen der Hochschule für Fernsehen und Film. Ab 9:00 Uhr halten wir Frühstück, Snacks, heiße und kalte Getränke bereit. Zwischen 11:30 und 14:30 Uhr gibt es einen attraktiven Mittagstisch mit frischen Salaten, Suppen, Vegetarischem und Fleisch- oder Fischgerichten sowie ein Dessert. ","university_id"=>53})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Georg-Simon-Ohm-Hochschule besitzt ein eigenständiges Profil und will im Wettbewerb der Hochschulen weiterhin einen vorderen Platz einnehmen. Diverse Erfolge in Lehre, Forschung und Management zeigen, dass der bisher eingeschlagene Weg richtig war. Auch in den nächsten Jahren und Jahrzehnten gilt deshalb die Zielsetzung, richtungsweisende Entwicklungen aufzugreifen und nachhaltige Veränderungen herbeizuführen.","university_id"=>54})
+Universitycontent.create({"title"=>"Mensa","content"=>"Ausgabemensa St. Paul Nürnberg – Veggie Zone","university_id"=>54})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Evangelische Hochschule Freiburg, Protestant University of Applied Sciences, ist eine Hochschule für Soziale Arbeit, Diakonie und Religionspädagogik. Sie ist Teil „eine(r) offene(n) Kirche. In christlicher Verantwortung nehmen wir gesellschaftliche Entwicklungen wahr, greifen Impulse auf und wirken in die Gesellschaft hinein.“ Wir setzen uns ein für ein Zusammenleben, das durch die Freiheit von Gewalt und von immaterieller und materieller Not sowie durch Respekt vor der Schöpfung gekennzeichnet ist. Unser Ziel ist es, Menschen für ein solches Zusammenleben zu befähigen.","university_id"=>55})
+Universitycontent.create({"title"=>"Mensa","content"=>"Das Studentenwerk Freiburg betreut insgesamt 23 Mensen und Cafeterien in Freiburg und den Außenstellen. In den Mensen gibt es vom Schnellen Teller bis zum Menü für jeden Geschmack (z.B. auch vegane Gerichte und zertifiziertes Bio-Essen) und Geldbeutel unterschiedliche Angebote. Zusätzlich kann man sich in allen großen Mensen an Pasta- und Wokbuffets sein Essen selbst zusammenstellen.
+
+Übrigens: Kinder unter zehn Jahren von Studierenden bekommen zum Essen ihrer Eltern einen zusätzlichen kostenlosen Kinderteller. Für Eltern, die mit ihren Kindern zusammen gern in Ruhe essen wollen, gibt es einen Kinderbereich, in dem man auch spielen und chillen kann.
+
+Alle Studierenden, die aus gesundheitlichen Gründen auf bestimmte Ernährung angewiesen sind, können bei der Agentur für Arbeit einen Mehrbedarfszuschlag beantragen.
+Studierende mit einer Nahrungsmittelunverträglichkeit wenden sich bitte vor dem Essen direkt an das Mensa-Personal, um Details zu den Inhaltsstoffen zu erfahren.","university_id"=>55})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Gegründet im Jahr 1386 ist die Ruprecht-Karls-Universität Heidelberg die älteste Universität in Deutschland. Sie ist baden-württembergische Landesuniversität. Die Universität Heidelberg mit ihrer reichen Tradition als Forschungsuniversität von internationalem Rang richtet ihr Handeln und ihre Ziele an dem nachfolgenden Leitbild und den hierauf aufbauenden Grundsätzen aus:Auf der Grundlage ihrer Wirkungsgeschichte ist die Universität Heidelberg der umfassenden Mehrung und Verbreitung des Wissens über Mensch und Welt durch Forschung und Lehre verpflichtet. Als Volluniversität bekennt sie sich zur Freiheit in Forschung und Lehre und zu ihrer Verantwortung gegenüber Mensch, Gesellschaft und Natur.
+Die Universität Heidelberg will Wissen und Können in einer offenen, vorurteilsfreien Haltung gegenüber Menschen und Ideen entwickeln, nutzbar machen und an die nachfolgenden Generationen weitergeben. »Semper Apertus. Stets offen« ist ihr Wahlspruch.","university_id"=>56})
+Universitycontent.create({"title"=>"Mensa","content"=>"Das Studentenwerk Heidelberg sorgt für das leibliche Wohl von über 40.000 Studierenden.
+An den verschiedenen Hochschulstandorten warten zahlreiche Mensen, Cafés oder regionale Anbieter auf die studentischen Gäste.
+Ob modernes Free-Flow-Buffet, günstige Menüs oder kleine Snacks - für jeden Geschmack und Geldbeutel ist das Passende geboten.
+Groß geschrieben werden bei den Speisen und Getränken die Themen Bio, Fairtrade, Umweltschutz und Nachhaltigkeit.
+Seien Sie unser Gast und lassen Sie es sich bei uns schmecken! ","university_id"=>56})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Universität Mannheim weist von ihrer Entstehung, Entwicklung und aktuellen Struktur her ein besonderes Profil auf. Dieses Profil wird geprägt von den weithin anerkannten Wirtschafts- und Sozialwissenschaften und ihrer Vernetzung mit leistungsstarken Geistes- und Rechtwissenschaften sowie mit Mathematik und Informatik. In Mannheim existiert ein interdisziplinär strukturiertes System in Forschung und Lehre. Die wechselseitige Ergänzung aller Fächer ist das Alleinstellungsmerkmal der Universität und sichert den anhaltenden Erfolg ihrer Wissenschaftlerinnen und Wissenschaftler und Absolventinnen und Absolventen im nationalen und internationalen Wettbewerb.","university_id"=>57})
+Universitycontent.create({"title"=>"Mensa","content"=>"Die größte Mensa des Studentenwerks liegt direkt hinter dem Westflügel des Mannheimer Schlosses, auf halbem Weg zwischen Schloss-Ehrenhof und A 5.
+
+Optimal ist die Lage für die Studierenden der Universität und der Popakademie. Von der Popakademie sind es gerade einmal sieben Minuten per Rad. Und bei Regenwetter hält der Bus jeweils nahezu unmittelbar vor den Eingangstüren. Auch von der Musikhochschule sind es nicht einmal zehn Minuten zu Fuß zur Schlossmensa.","university_id"=>57})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Universität Stuttgart liegt inmitten einer hochdynamischen Wirtschaftsregion mit weltweiter Ausstrahlung, einer Region, die sich auf den Gebieten Mobilität, Informationstechnologie, Produktions- und Fertigungstechnik sowie Biowissenschaften profiliert hat. Die Stuttgarter Hochschule, die im Jahr 2004 ihr 175-jähriges Jubiläum feierte, wurde 1829 zu Beginn des industriellen Zeitalters in Europa gegründet. Die Kooperation zwischen technischen und naturwissenschaftlichen und geistes- und sozialwissenschaftlichen Fachrichtungen zählte immer zu der besonderen Stärke der Universität Stuttgart. Mit diesem Anliegen hat sie sich zu einer modernen leistungsorientierten Universität mit umfassendem Fächerkanon und einem Schwerpunkt in den technischen und naturwissenschaftlichen Disziplinen entwickelt. Nicht Berufsqualifizierung allein ist die Maxime, sondern „Technik, Wissen und Bildung für den Menschen“ lautet der Wahlspruch der Universität Stuttgart.
+ ","university_id"=>58})
+Universitycontent.create({"title"=>"Mensa","content"=>"Stellen Sie sich täglich ein individuelles Menü zusammen oder entspannen Sie sich in der Cafeteria bei einem Kaffee oder einem Imbiss. Wir freuen uns auf Sie!
+
+Unsere Mensen haben montags bis freitags von 11:15 bis 14:15 Uhr für Sie geöffnet. Bitte beachten Sie die individuellen Öffnungszeiten der Cafeterie, insbesondere abweichende Öffnungszeiten in den Semesterferien.
+","university_id"=>58})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Fakultät für Mathematik und Wirtschaftswissenschaften der Universität Ulm besteht aus Opens internal link in current window17 Instituten: neun im Fachbereich Mathematik und acht im Fachbereich der Wirtschaftswissenschaften.
+
+36 hauptamtliche Professuren, sechs Honorarprofessuren und zahlreiche weitere Dozenten und Lehrbeauftragte bieten eine große Vielfalt an Lehr- und Forschungsthemen. Rund 400 Studierende schließen pro Jahr ihr Studium erfolgreich bei uns ab. ","university_id"=>59})
+Universitycontent.create({"title"=>"Mensa","content"=>"Die größte Mensa des Studentenwerks befindet sich auf dem Campus der Universität. Gut gelegen im Festpunkt O 25, beim Eingang Universität Süd, nahe bei den großen Hörsälen.
+In der Mensa wird Komponenten-Wahl-Essen angeboten. Jeder Gast stellt sich sein individuelles Wunschgericht nach Lust, Laune und Hunger selbst zusammen. 
+Besonders zu erwähnen ist die helle, freundliche Atmosphäre. Im Speisesaal gibt es 450 Sitzplätze und auf der Empore, zu der man über eine Wendeltreppe gelangt, rund 60 weitere Sitzplätze. 
+1991 erhielt die Mensa von der Architektenkammer Baden-Württemberg die Auszeichnung für beispielhaftes Bauen. ","university_id"=>59})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Unsere Hochschule besteht nicht nur aus Studierenden und Lehrenden, sondern auch aus vielen Menschen, die den Betrieb aufrechterhalten und dafür sorgen, dass alles läuft.Die Hochschulleitung bilden Präsident,  Vizepräsident und Kanzler.
+Hier erfahren Sie die Sprechstunden von wichtigen Ansprechpartnern.
+Die allgemeinen Ansprechpartner unserer drei Studienorte helfen Ihnen weiter bei Themen wie: Haushaltsangelegenheiten, Schlüsselverwaltung, Personalangelegenheiten, Bestellwesen, Büroausstattung etc.","university_id"=>60})
+Universitycontent.create({"title"=>"Mensa","content"=>"Bisher zahlten in Rheinland-Pfalz eingeschriebene Studierende in der Heimat-Mensa ihres Hochschulstandortes den vom Land subventionierten, preiswerten Studierendenpreis, in Mensen anderer Hochschulstandorte aber den wesentlich höheren Gästepreis. Dieses Verfahren führte insbesondere beim regelmäßigen Besuch von Lehrveranstaltungen an benachbarten Hochschulstandorten zu einer verstärkten wirtschaftlichen Belastung der Studierenden. Die Geschäftsführer/-innen der rheinland-pfälzischen Studierendenwerke haben daher den Beschluss gefasst, den Studierenden von rheinland-pfälzischen Hochschulen in allen Mensen des Landes das Essen zum Studierendenpreis anzubieten. Hierfür ist der jeweilige Studierendenausweis vorzulegen.","university_id"=>60})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Ludwigshafen am Rhein ist eine junge Stadt. Erst im Jahr 1853 legten die Gründungsväter an der Rheinschanze und dem Winterhafen die Keimzelle. Das 168.347 Einwohner zählende Ludwigshafen (Stand 2010) ist die zweitgrößte Stadt und das wirtschaftliches Herz von Rheinland-Pfalz. Zusammen mit Mannheim auf der gegenüberliegenden Rheinseite bildet sie den Mittelpunkt der Metropolregion Rhein-Neckar, ein wirtschaftliches Kraftzentrum mit über 134.000 Unternehmen, einer hervorragenden Infrastruktur und rund 770.000 Arbeitnehmern. Die Region mit dem größten Chemie-Cluster Europas und mit der BASF als dem größtem Chemieunternehmen weltweit gehört mit München und Berlin zu den drei führenden Life-Sciences-Standorten in Deutschland. Darüber hinaus ist die Region auch Spitzenstandort für Materialwissenschaften und weist die zweitgrößte IT-Dichte der Welt auf - nicht zuletzt wegen der im nahegelegenen Walldorf beheimateten SAP. Vom Mannheimer Hafen, einem der größten Binnenhäfen Europas, und dem zweitgrößten Rangierbahnhof Deutschlands aus werden Güter in die ganze Welt geliefert. ","university_id"=>61})
+Universitycontent.create({"title"=>"Mensa","content"=>"Der Standort Ludwigshafen verfügt über eine Mensa und eine Cafeteria direkt auf dem Campus.
+Ab 3. März 2014 ist in der Mensa Ernst-Boehe-Straße ausschließlich Kartenzahlung (StudiCard der Hochschule Ludwigshafen) möglich; in der Cafeteria alternativ auch Barzahlung. Infos siehe unter www.hs-lu.de und Aushänge vor Ort.
+Am Fachbereich IV der Hochschule Ludwigshafen in der Maxstraße betreut das Studierendenwerk eine Mensaria (Karten- oder Barzahlung).","university_id"=>61})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Kurze Studienzeiten, internationale Ausbildungsgänge und Praxisbezug in Forschung und Lehre – das sind die Markenzeichen der Fachhochschule Mainz, an der zur Zeit knapp 4.800 Studierende eingeschrieben sind.
+
+Allen Studienrichtungen gemeinsam ist die anwendungsorientierte Ausbildung und Forschung der Hochschule, die ausgezeichnete Kontakte zur regionalen Wirtschaft und zu öffentlichen Einrichtungen unterhält. Durch die enge Kooperation mit der Praxis und die ständige innovative Anpassung der Studieninhalte an die Anforderungen des Arbeitsmarktes bietet die FH Mainz eine attraktive zukunftsweisende Ausbildung mit guten Berufsperspektiven. ","university_id"=>62})
+Universitycontent.create({"title"=>"Mensa","content"=>"Öffnungszeiten Mensa Campus
+Montag - Freitag: 11.00 - 14.00 Uhr ","university_id"=>62})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Charakteristisch für die Universität Trier ist ihr ausgeprägtes geistes- und gesellschaftswissenschaftliches Profil.
+Die klinisch orientierte Psychologie und die Geographie/Geowissenschaften zählen zu den größten Einrichtungen ihrer Art in der Bundesrepublik. Gut ausgebaut sind auch die Sprach-, Wirtschafts- und Rechtswissenschaften. Weitere Disziplinen mit hohem Anwendungspotenzial (Angewandte Mathematik/Informatik, Medienwissenschaften, Jura, Biogeographie) sowie hoch spezialisierte Fächer – angefangen von der Japanologie und Sinologie über die Computerlinguistik und Phonetik bis hin zur Papyrologie oder Jiddistik – ergänzen dieses Spektrum und geben der Universität Trier ihr unverwechselbares Profil. ","university_id"=>63})
+Universitycontent.create({"title"=>"Mensa","content"=>"Das Studiwerk verfügt über 3  Mensen und 5 Cafeterien. Ebenso ist während des Semesters eine Abendmensa, sowie eine Samstagsmensa geöffnet.","university_id"=>63})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Gute Gründe für ein Studium bei uns:Die eigenen Stärken entfalten durch individuelle Förderung. Die Welt entdecken durch Internationalität. Der erfolgreiche Einstieg durch Branchenorientierung. ","university_id"=>64})
+Universitycontent.create({"title"=>"Mensa","content"=>"Öffnungszeiten: während der Vorlesungszeit:   Mo-Fr 11.45 - 13.45 Uhr ; in der vorlesungsfreien Zeit:   Mo-Fr 12.00 - 13.30 Uhr ;Abendmensa: während der Vorlesungszeit:   Mo-Do 17.30 - 18.30 Uhr  (bis zum 21.06.2013)
+in der vorlesungsfreien Zeit:   nicht geöffnet ","university_id"=>64})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Seit ihrer Gründung im Jahr 1989 hat sich die Hochschule der Bildenden Künste Saar zu einem der wichtigsten Kreativzentren der Großregion Saarland/Rheinland Pfalz/Elsass/Lothringen/Luxemburg/Wallonien entwickelt. Als staatliche Einrichtung mit derzeit rund 400 Studienplätzen bietet die HBKsaar ihren Studierenden breit gefächerte, an aktuellen künstlerischen und gestalterischen Anforderungen orientierte Qualifizierungsmöglichkeiten.
+Die mit international renommierten Künstlern und Designern besetzten Professuren garantieren eine Ausbildung auf höchstem Niveau. Die offene Bildungsstruktur und die interdisziplinäre Ausrichtung der Lehre sowie die ausgeprägte Projektorientierung des Studienangebots binden Studierende beständig in reale Arbeitsprozesse mit konkreten Aufgabenstellungen ein, sodass aus dem Lehr- und Forschungsbetrieb der HBKsaar regelmäßig Ausstellungen und Projektpräsentationen hervorgehen, die innovativ-kreative Impulse in der gesamten Region setzen. Die HBKsaar führt damit die Tradition der saarländischen Kunstschulen seit 1924 nahtlos fort, die mit so bekannten Namen wie Oskar Holweck, Boris Kleint, Frans Masereel, Peter Raacke, Robert Sessler oder Otto Steinert verbunden ist.  ","university_id"=>65})
+Universitycontent.create({"title"=>"Mensa","content"=>"In der Mensa der HBK Saar kochen Studenten für Studenten täglich ganz frisch. Der Asta unterstützt die Mensa finanziell. Die Mensa kann man auch jederzeit nutzen für Partys, Feste, Empfänge oder aber die Diplomanden kochen
+während ihrer Diplomzeit dort. Ausserdem hat die Mensa jedes Semester Jobs zu vergeben. Wer interessiert
+ist wendet sich an die aktuelle Mensaleitung, Paulette Pennje und Sirirat Somprot, better known as BIG.","university_id"=>65})
+Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Universität des Saarlandes.
+Wir sind eine moderne Universität im dynamischen Dreiländereck von Deutschland, Frankreich und Luxemburg. Unsere Internationalität hat Tradition: Die Gründung der Universität des Saarlandes 1948 war ein deutsch-französisches Gemeinschaftsprojekt. Heute studieren in Saarbrücken und Homburg rund 18.100 junge Menschen, mehr als 16 Prozent von ihnen kommen aus dem Ausland. Der Campus liegt mitten im Grünen, Sport- und Kulturangebote sowie Cafés und Restaurants sorgen neben dem Studieren und Forschen für Entspannung und Erholung. Und mit dem ICE kommt man in knapp zwei Stunden von Saarbrücken nach Paris.","university_id"=>66})
+Universitycontent.create({"title"=>"Mensa","content"=>"Die Mensa auf dem Campus Saarbrücken befindet sich in Gebäude D 4.1. In der künstlerisch gestalteten Mensa bieten wir Ihnen täglich die Möglichkeit, aus acht verschiedenen Essen auszuwählen. Beim Aufgang A wird das Komplettmenü und beim Aufgang B ein vegetarisches Menü angeboten. Über die Aufgänge B und C erreichen Sie unseren Free Flow Bereich. Hier haben Sie die Wahl zwischen einem Low-Fat Gericht, einem Fischgericht, einem preiswerten Tellergericht sowie vegetarischen und regionalen Gerichten.","university_id"=>66})
 #---------------------------------------------------------------------------------
 # Comments
 #---------------------------------------------------------------------------------
@@ -422,7 +686,95 @@ Subject.create({"id"=>38,"name"=>"Sport"})
 Subject.create({"id"=>39,"name"=>"Ökotrophologie"})
 Subject.create({"id"=>40,"name"=>"Rechtswissenschaft"})
 Subject.create({"id"=>41,"name"=>"Wirtschaftsrecht"})
-
+Subject.create({"id"=>42,"name"=>"Erziehung und Bildung im Kindesalter"})
+Subject.create({"id"=>43,"name"=>"Gesundheits- und Pflegemanagement"})
+Subject.create({"id"=>44,"name"=>"Physio- und Ergotherapie"})
+Subject.create({"id"=>45,"name"=>"Intercultural Conflict Management"})
+Subject.create({"id"=>46,"name"=>"Biografisches und Kreatives Schreiben"})
+Subject.create({"id"=>47,"name"=>"Sozialmanagement"})
+Subject.create({"id"=>48,"name"=>"Architektur"})
+Subject.create({"id"=>49,"name"=>"Biotechnologie"})
+Subject.create({"id"=>50,"name"=>"Facility Management"})
+Subject.create({"id"=>51,"name"=>"Gartenbau"})
+Subject.create({"id"=>52,"name"=>"Lebensmitteltechnologie"})
+Subject.create({"id"=>53,"name"=>"Clinical Optometry"})
+Subject.create({"id"=>54,"name"=>"Marketingkommunikation"})
+Subject.create({"id"=>55,"name"=>"Kommunikationsdesign"})
+Subject.create({"id"=>56,"name"=>"Fotodesign"})
+Subject.create({"id"=>57,"name"=>"Web Development"})
+Subject.create({"id"=>58,"name"=>"Illustration"})
+Subject.create({"id"=>59,"name"=>"Strategic Design"})
+Subject.create({"id"=>60,"name"=>"Bauingenieurwesen"})
+Subject.create({"id"=>61,"name"=>"Psychologie"})
+Subject.create({"id"=>62,"name"=>"Bioinformatik"})
+Subject.create({"id"=>63,"name"=>"Philosophie"})
+Subject.create({"id"=>64,"name"=>"Sozialwissenschaft"})
+Subject.create({"id"=>65,"name"=>"Sportwissenschaft"})
+Subject.create({"id"=>66,"name"=>"Kommunikationsdesign"})
+Subject.create({"id"=>67,"name"=>"Retail Design"})
+Subject.create({"id"=>68,"name"=>"Sportjournalismus"})
+Subject.create({"id"=>69,"name"=>"Sport und Leistung"})
+Subject.create({"id"=>70,"name"=>"Sport und Gesundheit in Prävention und Therapie"})
+Subject.create({"id"=>71,"name"=>"Sportmanagement und Sportkommunikation"})
+Subject.create({"id"=>72,"name"=>"Sport, Erlebnis und Bewegung"})
+Subject.create({"id"=>73,"name"=>"Sport, Medien- und Kommunikationsforschung"})
+Subject.create({"id"=>74,"name"=>"Olympic Studies"})
+Subject.create({"id"=>75,"name"=>"Volkswirtschaftslehre"})
+Subject.create({"id"=>76,"name"=>"Geeowissenschaften"})
+Subject.create({"id"=>77,"name"=>"Sales and Marketing"})
+Subject.create({"id"=>78,"name"=>"Kunsttherapie"})
+Subject.create({"id"=>79,"name"=>"Freie Bildende Kunst"})
+Subject.create({"id"=>80,"name"=>"Kommunikationsdesign"})
+Subject.create({"id"=>81,"name"=>"Verkehrinformatik"})
+Subject.create({"id"=>82,"name"=>"Stadt- und Raumplanung"})
+Subject.create({"id"=>83,"name"=>"E-Commerce"})
+Subject.create({"id"=>84,"name"=>"Business Administration"})
+Subject.create({"id"=>85,"name"=>"Medientechnik"})
+Subject.create({"id"=>86,"name"=>"Augenoptik"})
+Subject.create({"id"=>87,"name"=>"Medizintechnik"})
+Subject.create({"id"=>88,"name"=>"Geotechnik"})
+Subject.create({"id"=>89,"name"=>"Umwelt- und Recyclingtechnik"})
+Subject.create({"id"=>90,"name"=>"Systems Engineering"})
+Subject.create({"id"=>91,"name"=>"Innovations- und Changemanagement"})
+Subject.create({"id"=>92,"name"=>"Musikwissenschaft"})
+Subject.create({"id"=>93,"name"=>"Musikpraxis"})
+Subject.create({"id"=>94,"name"=>"Musik- und Veranstaltungsmanagement"})
+Subject.create({"id"=>95,"name"=>"Kulturmanagement"})
+Subject.create({"id"=>96,"name"=>"Kunst"})
+Subject.create({"id"=>97,"name"=>"Software Engineering"})
+Subject.create({"id"=>98,"name"=>"Umweltethik"})
+Subject.create({"id"=>99,"name"=>"Pädagogik"})
+Subject.create({"id"=>100,"name"=>"Sozialkunde"})
+Subject.create({"id"=>101,"name"=>"Deutsch"})
+Subject.create({"id"=>102,"name"=>"Geographie"})
+Subject.create({"id"=>103,"name"=>"Dokumentarfilm und Fernsehpublizistik"})
+Subject.create({"id"=>104,"name"=>"Drehbuch"})
+Subject.create({"id"=>105,"name"=>"Kamera"})
+Subject.create({"id"=>106,"name"=>"Kino- und Fernsehfilm"})
+Subject.create({"id"=>107,"name"=>"Produktion und Medienwirtschaft"})
+Subject.create({"id"=>108,"name"=>"Theater-, Film- und Fernsehkritik"})
+Subject.create({"id"=>109,"name"=>"Gebäudetechnik"})
+Subject.create({"id"=>110,"name"=>"Religionspädagogik/ Gemeindediakonie"})
+Subject.create({"id"=>111,"name"=>"Pädagogik der Kindheit"})
+Subject.create({"id"=>112,"name"=>"Geowissenschaft"})
+Subject.create({"id"=>113,"name"=>"Political Science"})
+Subject.create({"id"=>114,"name"=>"Wirtschaftspädagogik"})
+Subject.create({"id"=>115,"name"=>"Anglistik"})
+Subject.create({"id"=>116,"name"=>"Computational Linguistics"})
+Subject.create({"id"=>117,"name"=>"Logistik"})
+Subject.create({"id"=>118,"name"=>"Marketing"})
+Subject.create({"id"=>119,"name"=>"Pflege"})
+Subject.create({"id"=>120,"name"=>"Controlling"})
+Subject.create({"id"=>121,"name"=>"Business Law"})
+Subject.create({"id"=>122,"name"=>"Archäologie"})
+Subject.create({"id"=>123,"name"=>"Steuerlehre"})
+Subject.create({"id"=>124,"name"=>"Handelsmanagement"})
+Subject.create({"id"=>125,"name"=>"International Management"})
+Subject.create({"id"=>126,"name"=>"Mobile Computing"})
+Subject.create({"id"=>127,"name"=>"Media Art and Design"})
+Subject.create({"id"=>128,"name"=>"Produktdesign"})
+Subject.create({"id"=>129,"name"=>"Kunsterziehung"})
+Subject.create({"id"=>130,"name"=>"Kunst, Freie"})
 
 #---------------------------------------------------------------------------------
 # SubjectTypes
@@ -437,6 +789,7 @@ SubjectType.create({"id"=>7,"name"=>"Master of Education"})
 SubjectType.create({"id"=>8,"name"=>"Bachelor of Music"})
 SubjectType.create({"id"=>9,"name"=>"Master of Music"})
 SubjectType.create({"id"=>10,"name"=>"Staatsexam"})
+SubjectType.create({"id"=>11,"name"=>"Master of Arts"})
 #---------------------------------------------------------------------------------
 # Subjects_University
 #---------------------------------------------------------------------------------
@@ -632,8 +985,272 @@ SubjectSubjectType.create({"subject_id"=>26,"subject_type_id"=>4,"university_id"
 SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>1,"university_id"=>37})
 SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>2,"university_id"=>37})
 SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>2,"university_id"=>37})
-
-
+SubjectSubjectType.create({"subject_id"=>16,"subject_type_id"=>6,"university_id"=>38})
+SubjectSubjectType.create({"subject_id"=>42,"subject_type_id"=>6,"university_id"=>38})
+SubjectSubjectType.create({"subject_id"=>43,"subject_type_id"=>1,"university_id"=>38})
+SubjectSubjectType.create({"subject_id"=>44,"subject_type_id"=>1,"university_id"=>38})
+SubjectSubjectType.create({"subject_id"=>45,"subject_type_id"=>11,"university_id"=>38})
+SubjectSubjectType.create({"subject_id"=>46,"subject_type_id"=>11,"university_id"=>38})
+SubjectSubjectType.create({"subject_id"=>47,"subject_type_id"=>11,"university_id"=>38})
+SubjectSubjectType.create({"subject_id"=>48,"subject_type_id"=>1,"university_id"=>39})
+SubjectSubjectType.create({"subject_id"=>49,"subject_type_id"=>1,"university_id"=>39})
+SubjectSubjectType.create({"subject_id"=>50,"subject_type_id"=>1,"university_id"=>39})
+SubjectSubjectType.create({"subject_id"=>51,"subject_type_id"=>1,"university_id"=>39})
+SubjectSubjectType.create({"subject_id"=>52,"subject_type_id"=>1,"university_id"=>39})
+SubjectSubjectType.create({"subject_id"=>48,"subject_type_id"=>2,"university_id"=>39})
+SubjectSubjectType.create({"subject_id"=>53,"subject_type_id"=>2,"university_id"=>39})
+SubjectSubjectType.create({"subject_id"=>54,"subject_type_id"=>6,"university_id"=>40})
+SubjectSubjectType.create({"subject_id"=>55,"subject_type_id"=>6,"university_id"=>40})
+SubjectSubjectType.create({"subject_id"=>56,"subject_type_id"=>6,"university_id"=>40})
+SubjectSubjectType.create({"subject_id"=>57,"subject_type_id"=>6,"university_id"=>40})
+SubjectSubjectType.create({"subject_id"=>58,"subject_type_id"=>6,"university_id"=>40})
+SubjectSubjectType.create({"subject_id"=>54,"subject_type_id"=>11,"university_id"=>40})
+SubjectSubjectType.create({"subject_id"=>59,"subject_type_id"=>11,"university_id"=>40})
+SubjectSubjectType.create({"subject_id"=>60,"subject_type_id"=>11,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>1,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>4,"subject_type_id"=>1,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>1,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>26,"subject_type_id"=>1,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>49,"subject_type_id"=>2,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>2,"university_id"=>1})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>1,"university_id"=>2})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>1,"university_id"=>2})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>1,"university_id"=>2})
+SubjectSubjectType.create({"subject_id"=>26,"subject_type_id"=>1,"university_id"=>2})
+SubjectSubjectType.create({"subject_id"=>61,"subject_type_id"=>1,"university_id"=>2})
+SubjectSubjectType.create({"subject_id"=>62,"subject_type_id"=>2,"university_id"=>2})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>2,"university_id"=>2})
+SubjectSubjectType.create({"subject_id"=>48,"subject_type_id"=>1,"university_id"=>4})
+SubjectSubjectType.create({"subject_id"=>16,"subject_type_id"=>1,"university_id"=>4})
+SubjectSubjectType.create({"subject_id"=>3,"subject_type_id"=>1,"university_id"=>4})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>1,"university_id"=>4})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>4})
+SubjectSubjectType.create({"subject_id"=>3,"subject_type_id"=>2,"university_id"=>4})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>2,"university_id"=>4})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>1,"university_id"=>3})
+SubjectSubjectType.create({"subject_id"=>49,"subject_type_id"=>1,"university_id"=>3})
+SubjectSubjectType.create({"subject_id"=>15,"subject_type_id"=>6,"university_id"=>3})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>1,"university_id"=>3})
+SubjectSubjectType.create({"subject_id"=>37,"subject_type_id"=>1,"university_id"=>3})
+SubjectSubjectType.create({"subject_id"=>62,"subject_type_id"=>2,"university_id"=>3})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>2,"university_id"=>3})
+SubjectSubjectType.create({"subject_id"=>4,"subject_type_id"=>1,"university_id"=>41})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>1,"university_id"=>41})
+SubjectSubjectType.create({"subject_id"=>3,"subject_type_id"=>1,"university_id"=>41})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>41})
+SubjectSubjectType.create({"subject_id"=>32,"subject_type_id"=>1,"university_id"=>41})
+SubjectSubjectType.create({"subject_id"=>3,"subject_type_id"=>2,"university_id"=>41})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>2,"university_id"=>41})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>1,"university_id"=>9})
+SubjectSubjectType.create({"subject_id"=>26,"subject_type_id"=>1,"university_id"=>9})
+SubjectSubjectType.create({"subject_id"=>63,"subject_type_id"=>1,"university_id"=>9})
+SubjectSubjectType.create({"subject_id"=>37,"subject_type_id"=>1,"university_id"=>9})
+SubjectSubjectType.create({"subject_id"=>40,"subject_type_id"=>1,"university_id"=>9})
+SubjectSubjectType.create({"subject_id"=>64,"subject_type_id"=>2,"university_id"=>9})
+SubjectSubjectType.create({"subject_id"=>65,"subject_type_id"=>2,"university_id"=>9})
+SubjectSubjectType.create({"subject_id"=>4,"subject_type_id"=>1,"university_id"=>5})
+SubjectSubjectType.create({"subject_id"=>8,"subject_type_id"=>1,"university_id"=>5})
+SubjectSubjectType.create({"subject_id"=>16,"subject_type_id"=>1,"university_id"=>5})
+SubjectSubjectType.create({"subject_id"=>66,"subject_type_id"=>1,"university_id"=>5})
+SubjectSubjectType.create({"subject_id"=>67,"subject_type_id"=>1,"university_id"=>5})
+SubjectSubjectType.create({"subject_id"=>8,"subject_type_id"=>2,"university_id"=>5})
+SubjectSubjectType.create({"subject_id"=>66,"subject_type_id"=>2,"university_id"=>5})
+SubjectSubjectType.create({"subject_id"=>68,"subject_type_id"=>6,"university_id"=>6})
+SubjectSubjectType.create({"subject_id"=>69,"subject_type_id"=>1,"university_id"=>6})
+SubjectSubjectType.create({"subject_id"=>70,"subject_type_id"=>6,"university_id"=>6})
+SubjectSubjectType.create({"subject_id"=>71,"subject_type_id"=>6,"university_id"=>6})
+SubjectSubjectType.create({"subject_id"=>72,"subject_type_id"=>6,"university_id"=>6})
+SubjectSubjectType.create({"subject_id"=>73,"subject_type_id"=>11,"university_id"=>6})
+SubjectSubjectType.create({"subject_id"=>74,"subject_type_id"=>11,"university_id"=>6})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>7})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>1,"university_id"=>7})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>1,"university_id"=>7})
+SubjectSubjectType.create({"subject_id"=>26,"subject_type_id"=>1,"university_id"=>7})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>1,"university_id"=>7})
+SubjectSubjectType.create({"subject_id"=>75,"subject_type_id"=>2,"university_id"=>7})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>2,"university_id"=>7})
+SubjectSubjectType.create({"subject_id"=>3,"subject_type_id"=>1,"university_id"=>8})
+SubjectSubjectType.create({"subject_id"=>6,"subject_type_id"=>1,"university_id"=>8})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>1,"university_id"=>8})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>8})
+SubjectSubjectType.create({"subject_id"=>48,"subject_type_id"=>6,"university_id"=>8})
+SubjectSubjectType.create({"subject_id"=>48,"subject_type_id"=>11,"university_id"=>8})
+SubjectSubjectType.create({"subject_id"=>66,"subject_type_id"=>2,"university_id"=>8})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>1,"university_id"=>10})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>1,"university_id"=>10})
+SubjectSubjectType.create({"subject_id"=>26,"subject_type_id"=>1,"university_id"=>10})
+SubjectSubjectType.create({"subject_id"=>61,"subject_type_id"=>1,"university_id"=>10})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>1,"university_id"=>10})
+SubjectSubjectType.create({"subject_id"=>48,"subject_type_id"=>11,"university_id"=>10})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>2,"university_id"=>10})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>42})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>1,"university_id"=>42})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>1,"university_id"=>42})
+SubjectSubjectType.create({"subject_id"=>16,"subject_type_id"=>6,"university_id"=>42})
+SubjectSubjectType.create({"subject_id"=>15,"subject_type_id"=>1,"university_id"=>42})
+SubjectSubjectType.create({"subject_id"=>62,"subject_type_id"=>2,"university_id"=>42})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>2,"university_id"=>42})
+SubjectSubjectType.create({"subject_id"=>16,"subject_type_id"=>6,"university_id"=>43})
+SubjectSubjectType.create({"subject_id"=>41,"subject_type_id"=>6,"university_id"=>43})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>1,"university_id"=>43})
+SubjectSubjectType.create({"subject_id"=>37,"subject_type_id"=>1,"university_id"=>43})
+SubjectSubjectType.create({"subject_id"=>15,"subject_type_id"=>1,"university_id"=>43})
+SubjectSubjectType.create({"subject_id"=>61,"subject_type_id"=>2,"university_id"=>43})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>2,"university_id"=>43})
+SubjectSubjectType.create({"subject_id"=>66,"subject_type_id"=>6,"university_id"=>44})
+SubjectSubjectType.create({"subject_id"=>4,"subject_type_id"=>1,"university_id"=>44})
+SubjectSubjectType.create({"subject_id"=>48,"subject_type_id"=>1,"university_id"=>44})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>1,"university_id"=>44})
+SubjectSubjectType.create({"subject_id"=>3,"subject_type_id"=>1,"university_id"=>44})
+SubjectSubjectType.create({"subject_id"=>48,"subject_type_id"=>2,"university_id"=>44})
+SubjectSubjectType.create({"subject_id"=>77,"subject_type_id"=>2,"university_id"=>44})
+SubjectSubjectType.create({"subject_id"=>78,"subject_type_id"=>6,"university_id"=>45})
+SubjectSubjectType.create({"subject_id"=>79,"subject_type_id"=>6,"university_id"=>45})
+SubjectSubjectType.create({"subject_id"=>80,"subject_type_id"=>6,"university_id"=>45})
+SubjectSubjectType.create({"subject_id"=>78,"subject_type_id"=>11,"university_id"=>45})
+SubjectSubjectType.create({"subject_id"=>79,"subject_type_id"=>11,"university_id"=>45})
+SubjectSubjectType.create({"subject_id"=>5,"subject_type_id"=>1,"university_id"=>46})
+SubjectSubjectType.create({"subject_id"=>51,"subject_type_id"=>1,"university_id"=>46})
+SubjectSubjectType.create({"subject_id"=>16,"subject_type_id"=>1,"university_id"=>46})
+SubjectSubjectType.create({"subject_id"=>81,"subject_type_id"=>1,"university_id"=>46})
+SubjectSubjectType.create({"subject_id"=>82,"subject_type_id"=>1,"university_id"=>46})
+SubjectSubjectType.create({"subject_id"=>5,"subject_type_id"=>2,"university_id"=>46})
+SubjectSubjectType.create({"subject_id"=>82,"subject_type_id"=>2,"university_id"=>46})
+SubjectSubjectType.create({"subject_id"=>49,"subject_type_id"=>1,"university_id"=>47})
+SubjectSubjectType.create({"subject_id"=>83,"subject_type_id"=>1,"university_id"=>47})
+SubjectSubjectType.create({"subject_id"=>84,"subject_type_id"=>1,"university_id"=>47})
+SubjectSubjectType.create({"subject_id"=>85,"subject_type_id"=>1,"university_id"=>47})
+SubjectSubjectType.create({"subject_id"=>86,"subject_type_id"=>1,"university_id"=>47})
+SubjectSubjectType.create({"subject_id"=>3,"subject_type_id"=>2,"university_id"=>47})
+SubjectSubjectType.create({"subject_id"=>87,"subject_type_id"=>2,"university_id"=>47})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>48})
+SubjectSubjectType.create({"subject_id"=>16,"subject_type_id"=>1,"university_id"=>48})
+SubjectSubjectType.create({"subject_id"=>47,"subject_type_id"=>1,"university_id"=>48})
+SubjectSubjectType.create({"subject_id"=>88,"subject_type_id"=>1,"university_id"=>48})
+SubjectSubjectType.create({"subject_id"=>89,"subject_type_id"=>1,"university_id"=>48})
+SubjectSubjectType.create({"subject_id"=>90,"subject_type_id"=>2,"university_id"=>48})
+SubjectSubjectType.create({"subject_id"=>91,"subject_type_id"=>2,"university_id"=>48})
+SubjectSubjectType.create({"subject_id"=>92,"subject_type_id"=>6,"university_id"=>49})
+SubjectSubjectType.create({"subject_id"=>93,"subject_type_id"=>6,"university_id"=>49})
+SubjectSubjectType.create({"subject_id"=>94,"subject_type_id"=>6,"university_id"=>49})
+SubjectSubjectType.create({"subject_id"=>92,"subject_type_id"=>11,"university_id"=>49})
+SubjectSubjectType.create({"subject_id"=>95,"subject_type_id"=>11,"university_id"=>49})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>50})
+SubjectSubjectType.create({"subject_id"=>15,"subject_type_id"=>1,"university_id"=>50})
+SubjectSubjectType.create({"subject_id"=>96,"subject_type_id"=>6,"university_id"=>50})
+SubjectSubjectType.create({"subject_id"=>26,"subject_type_id"=>1,"university_id"=>50})
+SubjectSubjectType.create({"subject_id"=>37,"subject_type_id"=>1,"university_id"=>50})
+SubjectSubjectType.create({"subject_id"=>97,"subject_type_id"=>2,"university_id"=>50})
+SubjectSubjectType.create({"subject_id"=>98,"subject_type_id"=>11,"university_id"=>50})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>51})
+SubjectSubjectType.create({"subject_id"=>15,"subject_type_id"=>1,"university_id"=>51})
+SubjectSubjectType.create({"subject_id"=>99,"subject_type_id"=>1,"university_id"=>51})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>1,"university_id"=>51})
+SubjectSubjectType.create({"subject_id"=>100,"subject_type_id"=>1,"university_id"=>51})
+SubjectSubjectType.create({"subject_id"=>5,"subject_type_id"=>2,"university_id"=>51})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>2,"university_id"=>51})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>1,"university_id"=>52})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>1,"university_id"=>52})
+SubjectSubjectType.create({"subject_id"=>101,"subject_type_id"=>1,"university_id"=>52})
+SubjectSubjectType.create({"subject_id"=>102,"subject_type_id"=>1,"university_id"=>52})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>1,"university_id"=>52})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>2,"university_id"=>52})
+SubjectSubjectType.create({"subject_id"=>15,"subject_type_id"=>2,"university_id"=>52})
+SubjectSubjectType.create({"subject_id"=>103,"subject_type_id"=>6,"university_id"=>53})
+SubjectSubjectType.create({"subject_id"=>104,"subject_type_id"=>6,"university_id"=>53})
+SubjectSubjectType.create({"subject_id"=>105,"subject_type_id"=>6,"university_id"=>53})
+SubjectSubjectType.create({"subject_id"=>106,"subject_type_id"=>6,"university_id"=>53})
+SubjectSubjectType.create({"subject_id"=>107,"subject_type_id"=>6,"university_id"=>53})
+SubjectSubjectType.create({"subject_id"=>108,"subject_type_id"=>11,"university_id"=>53})
+SubjectSubjectType.create({"subject_id"=>48,"subject_type_id"=>1,"university_id"=>54})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>54})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>1,"university_id"=>54})
+SubjectSubjectType.create({"subject_id"=>16,"subject_type_id"=>1,"university_id"=>54})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>1,"university_id"=>54})
+SubjectSubjectType.create({"subject_id"=>48,"subject_type_id"=>2,"university_id"=>54})
+SubjectSubjectType.create({"subject_id"=>109,"subject_type_id"=>2,"university_id"=>54})
+SubjectSubjectType.create({"subject_id"=>16,"subject_type_id"=>1,"university_id"=>55})
+SubjectSubjectType.create({"subject_id"=>110,"subject_type_id"=>1,"university_id"=>55})
+SubjectSubjectType.create({"subject_id"=>111,"subject_type_id"=>1,"university_id"=>55})
+SubjectSubjectType.create({"subject_id"=>16,"subject_type_id"=>2,"university_id"=>55})
+SubjectSubjectType.create({"subject_id"=>47,"subject_type_id"=>2,"university_id"=>55})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>1,"university_id"=>56})
+SubjectSubjectType.create({"subject_id"=>101,"subject_type_id"=>1,"university_id"=>56})
+SubjectSubjectType.create({"subject_id"=>102,"subject_type_id"=>1,"university_id"=>56})
+SubjectSubjectType.create({"subject_id"=>15,"subject_type_id"=>1,"university_id"=>56})
+SubjectSubjectType.create({"subject_id"=>26,"subject_type_id"=>1,"university_id"=>56})
+SubjectSubjectType.create({"subject_id"=>5,"subject_type_id"=>2,"university_id"=>56})
+SubjectSubjectType.create({"subject_id"=>112,"subject_type_id"=>2,"university_id"=>56})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>1,"university_id"=>57})
+SubjectSubjectType.create({"subject_id"=>15,"subject_type_id"=>1,"university_id"=>57})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>1,"university_id"=>57})
+SubjectSubjectType.create({"subject_id"=>61,"subject_type_id"=>1,"university_id"=>57})
+SubjectSubjectType.create({"subject_id"=>75,"subject_type_id"=>1,"university_id"=>57})
+SubjectSubjectType.create({"subject_id"=>113,"subject_type_id"=>2,"university_id"=>57})
+SubjectSubjectType.create({"subject_id"=>114,"subject_type_id"=>2,"university_id"=>57})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>58})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>1,"university_id"=>58})
+SubjectSubjectType.create({"subject_id"=>101,"subject_type_id"=>1,"university_id"=>58})
+SubjectSubjectType.create({"subject_id"=>15,"subject_type_id"=>1,"university_id"=>58})
+SubjectSubjectType.create({"subject_id"=>26,"subject_type_id"=>1,"university_id"=>58})
+SubjectSubjectType.create({"subject_id"=>115,"subject_type_id"=>2,"university_id"=>58})
+SubjectSubjectType.create({"subject_id"=>116,"subject_type_id"=>2,"university_id"=>58})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>1,"university_id"=>59})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>1,"university_id"=>59})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>1,"university_id"=>59})
+SubjectSubjectType.create({"subject_id"=>25,"subject_type_id"=>1,"university_id"=>59})
+SubjectSubjectType.create({"subject_id"=>37,"subject_type_id"=>1,"university_id"=>59})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>11,"university_id"=>59})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>11,"university_id"=>59})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>60})
+SubjectSubjectType.create({"subject_id"=>5,"subject_type_id"=>1,"university_id"=>60})
+SubjectSubjectType.create({"subject_id"=>48,"subject_type_id"=>1,"university_id"=>60})
+SubjectSubjectType.create({"subject_id"=>4,"subject_type_id"=>1,"university_id"=>60})
+SubjectSubjectType.create({"subject_id"=>3,"subject_type_id"=>1,"university_id"=>60})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>2,"university_id"=>60})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>11,"university_id"=>60})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>61})
+SubjectSubjectType.create({"subject_id"=>117,"subject_type_id"=>6,"university_id"=>61})
+SubjectSubjectType.create({"subject_id"=>118,"subject_type_id"=>6,"university_id"=>61})
+SubjectSubjectType.create({"subject_id"=>119,"subject_type_id"=>6,"university_id"=>61})
+SubjectSubjectType.create({"subject_id"=>16,"subject_type_id"=>6,"university_id"=>61})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>11,"university_id"=>61})
+SubjectSubjectType.create({"subject_id"=>120,"subject_type_id"=>11,"university_id"=>61})
+SubjectSubjectType.create({"subject_id"=>48,"subject_type_id"=>1,"university_id"=>62})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>62})
+SubjectSubjectType.create({"subject_id"=>55,"subject_type_id"=>1,"university_id"=>62})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>1,"university_id"=>62})
+SubjectSubjectType.create({"subject_id"=>41,"subject_type_id"=>1,"university_id"=>62})
+SubjectSubjectType.create({"subject_id"=>31,"subject_type_id"=>2,"university_id"=>62})
+SubjectSubjectType.create({"subject_id"=>121,"subject_type_id"=>2,"university_id"=>62})
+SubjectSubjectType.create({"subject_id"=>101,"subject_type_id"=>1,"university_id"=>63})
+SubjectSubjectType.create({"subject_id"=>102,"subject_type_id"=>1,"university_id"=>63})
+SubjectSubjectType.create({"subject_id"=>18,"subject_type_id"=>1,"university_id"=>63})
+SubjectSubjectType.create({"subject_id"=>26,"subject_type_id"=>1,"university_id"=>63})
+SubjectSubjectType.create({"subject_id"=>63,"subject_type_id"=>1,"university_id"=>63})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>2,"university_id"=>63})
+SubjectSubjectType.create({"subject_id"=>122,"subject_type_id"=>2,"university_id"=>63})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>1,"university_id"=>64})
+SubjectSubjectType.create({"subject_id"=>5,"subject_type_id"=>1,"university_id"=>64})
+SubjectSubjectType.create({"subject_id"=>123,"subject_type_id"=>6,"university_id"=>64})
+SubjectSubjectType.create({"subject_id"=>124,"subject_type_id"=>6,"university_id"=>64})
+SubjectSubjectType.create({"subject_id"=>125,"subject_type_id"=>6,"university_id"=>64})
+SubjectSubjectType.create({"subject_id"=>2,"subject_type_id"=>11,"university_id"=>64})
+SubjectSubjectType.create({"subject_id"=>126,"subject_type_id"=>11,"university_id"=>64})
+SubjectSubjectType.create({"subject_id"=>28,"subject_type_id"=>6,"university_id"=>65})
+SubjectSubjectType.create({"subject_id"=>127,"subject_type_id"=>6,"university_id"=>65})
+SubjectSubjectType.create({"subject_id"=>128,"subject_type_id"=>6,"university_id"=>65})
+SubjectSubjectType.create({"subject_id"=>129,"subject_type_id"=>6,"university_id"=>65})
+SubjectSubjectType.create({"subject_id"=>130,"subject_type_id"=>6,"university_id"=>65})
+SubjectSubjectType.create({"subject_id"=>128,"subject_type_id"=>11,"university_id"=>65})
+SubjectSubjectType.create({"subject_id"=>130,"subject_type_id"=>11,"university_id"=>65})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>6,"university_id"=>66})
+SubjectSubjectType.create({"subject_id"=>11,"subject_type_id"=>1,"university_id"=>66})
+SubjectSubjectType.create({"subject_id"=>12,"subject_type_id"=>1,"university_id"=>66})
+SubjectSubjectType.create({"subject_id"=>101,"subject_type_id"=>1,"university_id"=>66})
+SubjectSubjectType.create({"subject_id"=>26,"subject_type_id"=>1,"university_id"=>66})
+SubjectSubjectType.create({"subject_id"=>62,"subject_type_id"=>2,"university_id"=>66})
+SubjectSubjectType.create({"subject_id"=>1,"subject_type_id"=>11,"university_id"=>66})
 
 
 

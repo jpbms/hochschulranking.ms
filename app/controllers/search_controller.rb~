@@ -23,7 +23,7 @@ end
     	@hash = Gmaps4rails.build_markers(@classifieds) do |address, marker|
 	      	marker.lat address.latitude
 	      	marker.lng address.longitude
-		marker.infowindow "<a href=/universities/" + address.university.id.to_s + ">" + address.university.name + "</a>" + "</p>" + " " + "<p>" + address.street + "</p>" + address.postalcode 
+		marker.infowindow "<a href=/universities/" + address.university.id.to_s + ">" + address.university.name + "</a>" + "</p>" + " " + "<p>" + address.street + " " + address.street_number + ", " + address.postalcode 
 		marker.json({ :id => address.id })
 	end
   end
