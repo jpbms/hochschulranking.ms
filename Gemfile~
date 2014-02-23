@@ -29,8 +29,6 @@ gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-gem 'rspec-rails'
-gem 'factory_girl'
 gem 'devise'
 gem 'cancan'
 gem 'rolify', git: "https://github.com/EppO/rolify.git"
@@ -63,6 +61,8 @@ end
 group :development do
   gem "rails-erd"
   gem "sqlite3"
+gem 'rspec-rails'
+gem 'factory_girl'
 end
 
 group :development, :test do
