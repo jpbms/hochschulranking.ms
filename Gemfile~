@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'ruby' ,'2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -43,7 +44,6 @@ gem "letsrate"
 gem "opinio"
 gem 'acts_as_commentable'
 gem 'kaminari'
-gem "sqlite3"
 #gem 'protected_attributes'
 
 #for development
