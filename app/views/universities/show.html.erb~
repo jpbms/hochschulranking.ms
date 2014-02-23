@@ -1,6 +1,18 @@
+<%= javascript_include_tag 'application'%>           
+<%= yield :javascript_includes %>
 <% content_for :javascript_includes do %>
   <%= javascript_include_tag 'jquery.raty.js','letsrate.js'%>
 <% end %>
+
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+
+
+
 <div class="container" id="hochschule">
 			<div class="row">
 				<div class="span12">
@@ -11,14 +23,13 @@
 				</div>
 				
 				
-				<script>
-				  $(function() {
-				    $( "#tabs" ).tabs();
-				  });
-				</script>	
+					
+		
 
 
 				<div class="span8">
+
+
 					<div id="tabs">
 						<ul class="nav nav-tabs">
 						    <% @unicontent.each_with_index do |uni, i| %>
@@ -38,22 +49,29 @@
 						</div>
 						
 					</div>
-				</div>
-	
-					
+				</div>	
+
+
+<script>
+    $( "#tabs" ).tabs();
+  </script>
+
+
+
 				<div class="span4">
 					<div class="contact-info">
 						<h2  class="no-bottom-margin">Allgemeines</h2>
 						<hr class="fancy-hr">
 						<ul class="custom-icon-list">
-							<li><img src="http://ranking.zeit.de/che2013/images/logos/bhft_berlin.gif" /></li>
+							<li><img src="http://placehold.it/170x60" /></li>
 							<li><%= @university.address.street%> <%= @university.address.street_number%></li>
 							<li>D-<%= @university.address.postalcode%> <%= @university.address.city.name%></li>
-							<li><i class="icon-home"></i><%= link_to(@university.website, @university.website) %></li>
+							<li><i class="icon-home"></i><%= link_to(@university.name,@university.website) %></li>
 						</ul>
 					</div>
 	
 			</div>
+
 
 				<div class="span8">
 					<p>
@@ -66,20 +84,17 @@
 
 					  <tr>
 					    <td>Allgemeines</td>
-					    <%= javascript_include_tag 'application'%>           
-					    <%= yield :javascript_includes %>
+					    
 					    <td><%= rating_for @university, "allgemein", :star => 5%></td>
 					  </tr>
 <tr>
 					    <td>Professoren</td>
-					    <%= javascript_include_tag 'application'%>           
-					    <%= yield :javascript_includes %>
+					    
 					    <td><%= rating_for @university, "professoren", :star => 5%></td>
 					  </tr>
 <tr>
 					    <td>Tutoren</td>
-					    <%= javascript_include_tag 'application'%>           
-					    <%= yield :javascript_includes %>
+					          
 					    <td><%= rating_for @university, "tutoren", :star => 5%></td>
 					  </tr>
 

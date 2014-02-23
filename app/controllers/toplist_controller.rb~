@@ -1,6 +1,6 @@
 class ToplistController < ApplicationController
  def index
-          @unis = University.includes(:allgemein_average).order('rating_caches.avg DESC').limit(5)
+          @unis = University.includes(:allgemein_average).order('rating_caches.avg DESC').limit(20)
   end
 
   def ajaxsearch

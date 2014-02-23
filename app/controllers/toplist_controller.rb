@@ -6,7 +6,7 @@ class ToplistController < ApplicationController
   def ajaxsearch
   	search = "%"+params[:search]+"%"
   	@place = University.first.address.city.name
-  	@unis = University.where("Name like ?",search)
+  	@unis = University.where("Name like ?",search).limit(20)
   	render :layout => false
   end
 end

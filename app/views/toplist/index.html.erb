@@ -1,3 +1,5 @@
+<%= javascript_include_tag 'application'%>           
+<%= yield :javascript_includes %>  
 <% content_for :javascript_includes do %>
   <%= javascript_include_tag 'jquery.raty.js','letsrate.js'%>
 <% end %>
@@ -17,9 +19,7 @@
 						<tr> 
 							<td><%= i+1 %></td>
 							<td><%= link_to(uni.name, uni) %></td>
-							<td><%= uni.address.city.name %></td>
-							<%= javascript_include_tag 'application'%>           
-						    <%= yield :javascript_includes %>         
+							<td><%= uni.address.city.name %></td>       
 					    
 							<td><%= rating_for uni, "allgemein", :star => 5%></td>
 						</tr>

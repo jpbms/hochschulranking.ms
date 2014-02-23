@@ -28,7 +28,7 @@
 								<% @unis.each do |uni| %>
 									<div class="progress">
 						<div class="bar" style="width: <%=uni.avg_rates_in_percent%>%;">
-							<%= link_to(uni.name, uni) %>
+							<div style="width: 300px;"><%= link_to(uni.name, uni) %></div>
 							
 											</div>
 									</div>
