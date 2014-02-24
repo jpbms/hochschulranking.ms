@@ -30,7 +30,7 @@
 		<div style="float: left;"><h2><%= @profile.nickname %></h2></div>
 	    <%end%>
 	  <%else%>
-	    <div style="float: left;"><h2><%=current_user.email %></h2></div>
+	    <div style="float: left;"><h2><%=current_user.id %></h2></div>
 	  <% end %>
         </div> 
         <hr class="fancy-hr">
