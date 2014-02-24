@@ -721,7 +721,7 @@ Universitycontent.create({"title"=>"Mensa","content"=>"Die Mensa auf dem Campus 
 #---------------------------------------------------------------------------------
 # Subjects
 #---------------------------------------------------------------------------------
-Subject.create({"id"=>1,"name"=>"BWL"})
+Subject.create({"id"=>1,"name"=>"BWL - Betriebswirtschaftslehre"})
 Subject.create({"id"=>2,"name"=>"Wirtschaftsinformatik"})
 Subject.create({"id"=>3,"name"=>"Maschinenbau"})
 Subject.create({"id"=>4,"name"=>"Elektrotechnik"})
@@ -795,7 +795,7 @@ Subject.create({"id"=>71,"name"=>"Sportmanagement und Sportkommunikation"})
 Subject.create({"id"=>72,"name"=>"Sport, Erlebnis und Bewegung"})
 Subject.create({"id"=>73,"name"=>"Sport, Medien- und Kommunikationsforschung"})
 Subject.create({"id"=>74,"name"=>"Olympic Studies"})
-Subject.create({"id"=>75,"name"=>"Volkswirtschaftslehre"})
+Subject.create({"id"=>75,"name"=>"VWL - Volkswirtschaftslehre"})
 Subject.create({"id"=>76,"name"=>"Geeowissenschaften"})
 Subject.create({"id"=>77,"name"=>"Sales and Marketing"})
 Subject.create({"id"=>78,"name"=>"Kunsttherapie"})
