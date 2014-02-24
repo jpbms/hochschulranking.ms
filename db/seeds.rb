@@ -16,7 +16,7 @@
 Content.create({"content"=>"Hochschulranking", "page"=>"Index", "pageId" =>1})
 Content.create({"content"=>"Willkommen", "page"=>"Index", "pageId" =>2})
 Content.create({"content"=>"Herzlich Willkommen auf der neuen Hochschulranking Webseite für Studenten. Hier bewerten und
-kommentieren Studierende Vorteile und Nachteile ihrer aktuellen Hochschulen.
+kommentieren Studierende Vorteile und Nachteile ihrer aktuellen Hochschule.
 Informieren Sie sich über ihre aktuell favorisierte Universität oder finden Sie die bestbewertesten Hochschulen in ganz Deutschland.", "page"=>"Index", "pageId" =>3})
 Content.create({"content"=>"Features", "page"=>"Index", "pageId" =>4})
 Content.create({"content"=>"Lesen und finden Sie als Besucher bereits erstellte Kommentare/Bewertungen und die für Sie perfekte Universität.
@@ -25,7 +25,7 @@ Die Topliste verrät ihnen auf einen Blick die bestbewertesten Hochschulen auf u
 Suchen sie per Formular oder über eine Map ihre gewünschte Hochschule heraus.", "page"=>"Index", "pageId" =>5})
 Content.create({"content"=>"Content", "page"=>"Index", "pageId" =>6})
 Content.create({"content"=>"In der Rubrik Allgemeines erfahren Sie alles wichtige über die Hochschulen.
-Weiterhin werden Sie über die Lage und Angebote der Mensen in den Städten informiert.
+Weiterhin werden Sie über die Angebote der Mensen in den Städten informiert.
 Außerdem werden alle verfügbaren Studiengänge der ausgewählten Hochschule angezeigt. Ist Ihr favorisierter Studiengang dabei?
 Dann klicken Sie auf den Link, der direkt zur Homepage der Hochschule führt und den Studiengang näher erläutert.", "page"=>"Index", "pageId" =>7})
 
@@ -481,17 +481,6 @@ Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Technische Univ
 
 Sie gehört zu der Gruppierung TU9 und in ihren ingenieurwissenschaftlichen Kernfächern zu den TOP 9-Universitäten in Deutschland.","university_id"=>25})
 Universitycontent.create({"title"=>"Mensa","content"=>"Unsere neue Menü-Linie mensaVital ist speziell für Menschen entwickelt worden, die einer vorwiegend sitzenden Tätigkeit nachgehen und sich deshalb eine leichte und ausgewogene Ernährung wünschen. Speisen, die unter diesem Logo angeboten werden, sind besonders vitaminschonend und fettarm zubereitet. Alle Zutaten sind frisch und naturbelassen, auf Aromen und Geschmacksverstärker wird verzichtet. Frische Kräuter runden unsere neue Menü-Linie ab.","university_id"=>25})
-Universitycontent.create({"title"=>"Allgemeines","content"=>"Die 1974 gegründete Universität Osnabrück ist eine junge und lebendige Hochschule im Nordwesten Deutschlands und bekannt für ihre Forschung und Lehre in den Bereichen Geistes-, Sozial-, Natur-, Rechts- und Wirtschaftswissenschaften. Die über 11.000 Studierenden und Doktoranden finden optimale Lern- und Forschungsbedingungen vor. Sowohl die strukturierten Promotionsprogramme als auch die modularen Studienprogramme weisen hohe Standards auf, sind akkreditiert und führen zu international anerkannten Abschlüssen.
-
-Ein Merkmal der Universität Osnabrück ist die Verknüpfung verschiedener Wissenschaftsdisziplinen in Forschung und Lehre. Der Blick über den fachlichen Tellerrand wird in den interdisziplinären Instituten für Migrationsforschung, Kognitionswissenschaft, Frühe-Neuzeit-Forschung und in der Umweltsystemforschung gepflegt. Die Osnabrücker Biologie ist national und international mit ihrem Sonderforschungsbereich »Physiologie und Dynamik zellulärer Mikrokompartimente (SFB 944)« bekannt. Mit dem European Legal Studies Institute besitzt die Universität Osnabrück eine der wichtigsten Forschungseinrichtungen Europas in der Rechtsvergleichung und Rechtsvereinheitlichung. ","university_id"=>7})
-Universitycontent.create({"title"=>"Mensa","content"=>"Mit fantastischem Blick auf das ehemalige fürstbischöfliche Schloss (heute Sitz der Universität) und den Schlossgarten können Sie in dieser Mensa fürstlich schlemmen.
- 
-Küchenchefin Jutta Püschel und ihr Team haben sich der modernen und gesunden Küche verschrieben und freuen sich stets aufs Neue, ihre Kochkunst unter Beweis stellen zu können.
- 
-Studieren Sie auch unsere Speisepläne und besuchen Sie uns.","university_id"=>7})
-Universitycontent.create({"title"=>"Allgemeines","content"=>"Die Hochschule Osnabrück – bis 2010 Fachhochschule Osnabrück – bietet an ihren 4 Fakultäten und einem Institut insgesamt 99 Studiengänge, die nach einem straff und gut organisierten Studium mit integrierten Praxiszeiten innerhalb kurzer Studienzeiten zu den international anerkannten Abschlüssen Bachelor, Master und MBA führen. Ein intensiver Praxisbezug in Lehre und Forschung, enge Kooperationen mit der Wirtschaft und fächerübergreifende Hochschulprojekte sorgen dafür, dass die mehr als 12.000 Studierenden optimal auf die komplexen Anforderungen des Berufslebens vorbereitet werden.
-Die Hochschule Osnabrück pflegt internationale Beziehungen zu weit über 100 Partnerhochschulen. Die Gebäude und Einrichtungen der Hochschule Osnabrück sind in Osnabrück an den Standorten Westerberg und Haste gelegen. Die Fakultät Management, Kultur und Technik befindet sich im ungefähr 70 Kilometer entfernten Lingen.","university_id"=>8})
-Universitycontent.create({"title"=>"Mensa","content"=>"Für das leibliche Wohl wird gesorgt - in den Osnabrücker Mensen und Cafeterien des Studentenwerkes. Mehrfach preisgekrönt im Wettbewerb Mensa des Jahres des bundesweiten Campus-Magazins UNICUM sind die Mensen bekannt für ihr vielfältiges und qualitativ hochwertiges Angebot zu studentischen Preisen. Vom reichhaltigen Salatbuffet, Schnitzelwochen oder vegetarischer Kost bis hin zur Eis-Bar, für wirklich jeden ist das passende Menü dabei. In den gemütlichen Cafeterien kann man in netter Runde die ein oder andere Freistunde verbringen. ","university_id"=>8})
 Universitycontent.create({"title"=>"Allgemeines","content"=>"Mit Wissen Zukunft gestalten.
 1831 von dem Gelehrten Karl Karmarsch gegründet, startete die Höhere Gewerbeschule zu Hannover mit nur 64 Schülern. Heute sind es rund 24.000 Studierende in den Natur- und Ingenieurwissenschaften, den Geistes- und Sozialwissenschaften sowie den Rechts- und Wirtschaftswissenschaften. Und auch in Zukunft soll es Freude machen zu studieren, zu lehren und zu forschen, deshalb ist eines der erklärten Ziele der Leibniz Universität Hannover, die Qualität von Lehre und Forschung kontinuierlich zu verbessern. ","university_id"=>26})
 Universitycontent.create({"title"=>"Mensa","content"=>"An verschiedenen Hochschulstandorten bietet das Studentenwerk eine große Auswahl an leckerem und gesundem Essen zu günstigen Preisen an. Hier gibt's die aktuellen Mensaspeisepläne und alle Infos zu unseren gastronomischen Angeboten.
@@ -732,7 +721,7 @@ Universitycontent.create({"title"=>"Mensa","content"=>"Die Mensa auf dem Campus 
 #---------------------------------------------------------------------------------
 # Subjects
 #---------------------------------------------------------------------------------
-Subject.create({"id"=>1,"name"=>"BWL"})
+Subject.create({"id"=>1,"name"=>"BWL - Betriebswirtschaftslehre"})
 Subject.create({"id"=>2,"name"=>"Wirtschaftsinformatik"})
 Subject.create({"id"=>3,"name"=>"Maschinenbau"})
 Subject.create({"id"=>4,"name"=>"Elektrotechnik"})
@@ -806,7 +795,7 @@ Subject.create({"id"=>71,"name"=>"Sportmanagement und Sportkommunikation"})
 Subject.create({"id"=>72,"name"=>"Sport, Erlebnis und Bewegung"})
 Subject.create({"id"=>73,"name"=>"Sport, Medien- und Kommunikationsforschung"})
 Subject.create({"id"=>74,"name"=>"Olympic Studies"})
-Subject.create({"id"=>75,"name"=>"Volkswirtschaftslehre"})
+Subject.create({"id"=>75,"name"=>"VWL - Volkswirtschaftslehre"})
 Subject.create({"id"=>76,"name"=>"Geeowissenschaften"})
 Subject.create({"id"=>77,"name"=>"Sales and Marketing"})
 Subject.create({"id"=>78,"name"=>"Kunsttherapie"})
