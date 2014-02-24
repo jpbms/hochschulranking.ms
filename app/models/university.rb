@@ -1,11 +1,11 @@
 class University < ActiveRecord::Base
   paginates_per 5
-  has_one :picture
+  belongs_to :picture
   belongs_to :address
   has_many :users
   has_many :subject_subject_types
   has_many :universitycontents
-  DIMENSIONS = ["allgemein", "professoren", "tutoren"]
+  DIMENSIONS = ["allgemein", "professoren", "tutoren","hoersaele","mensa","bibliothek","fachschaft","ausstattung"]
   letsrate_rateable *DIMENSIONS
 DIMENSIONS.each do |dimension|
   has_one :"#{dimension}_average", :as => :cacheable, :class_name => "RatingCache", :dependent => :destroy, :conditions => {:dimension => dimension.to_s}

@@ -1,4 +1,4 @@
 class Picture < ActiveRecord::Base
-  belongs_to :university
+  has_one :university
   belongs_to :profile
 end

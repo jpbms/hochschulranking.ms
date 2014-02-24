@@ -30,7 +30,7 @@ Content.create({"content"=>"Lorem ipsum dolor sit amet, consetetur sadipscing el
 University.create({"id"=>1, "campus"=>true, "name"=>"Technische Universität Berlin", "website"=>"http://www.tu-berlin.de/", "hs_type"=>"Uni", "address_id"=> 1})
 University.create({"id"=>2, "campus"=>true, "name"=>"Freie Universität Berlin", "website"=>"http://www.fh-berlin.de/", "hs_type"=>"Uni", "address_id"=> 2})
 University.create({"id"=>3, "name"=>"Westfälische Wilhelms-Universität Münster", "website"=>"http://www.uni-muenster.de/de/", "hs_type"=>"Uni", "address_id"=> 3})
-University.create({"id"=>4, "campus"=>true, "name"=>"FH Münster", "website"=>"https://www.fh-muenster.de/index.php", "hs_type"=>"FH" , "address_id"=> 4})
+University.create({"id"=>4, "campus"=>true, "name"=>"FH Münster", "website"=>"https://www.fh-muenster.de/index.php", "hs_type"=>"FH" , "address_id"=> 4, "picture_id"=>1})
 University.create({"id"=>5, "name"=>"Fachhochschule Düsseldorf", "website"=>"http://www.fh-duesseldorf.de/a_fh", "hs_type"=>"FH" , "address_id"=> 5})
 University.create({"id"=>6, "campus"=>true, "name"=>"Deutsche Sporthochschule Köln", "website"=>"http://www.dshs-koeln.de/", "hs_type"=>"Uni" , "address_id"=> 6})
 University.create({"id"=>7, "name"=>"Universität Duisburg-Essen", "website"=>"https://www.uni-due.de/", "hs_type"=>"Uni" , "address_id"=> 7})
@@ -93,6 +93,10 @@ University.create({"id"=>63, "campus"=>true, "name"=>"Universität Trier", "webs
 University.create({"id"=>64, "campus"=>true, "name"=>"Fachhochschule Worms", "website"=>"http://www.fh-worms.de/", "hs_type"=>"FH" , "address_id"=> 64})
 University.create({"id"=>65, "campus"=>true, "name"=>"Hochschule der Bildenden Künste Saar", "website"=>"http://www.hbksaar.de/startseite/", "hs_type"=>"Uni" , "address_id"=> 65})
 University.create({"id"=>66, "campus"=>true, "name"=>"Universität des Saarlandes", "website"=>"http://www.uni-saarland.de/", "hs_type"=>"Uni" , "address_id"=> 66})
+#---------------------------------------------------------------------------------
+# Picture
+#---------------------------------------------------------------------------------
+Picture.create({"id"=>1,"url"=>"https://www.fh-muenster.de/img/logo_fh_muenster.gif"})
 #---------------------------------------------------------------------------------
 # City
 #---------------------------------------------------------------------------------

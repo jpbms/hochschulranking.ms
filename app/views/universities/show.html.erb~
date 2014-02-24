@@ -10,9 +10,6 @@
     $( "#tabs" ).tabs();
   });
   </script>
-
-
-
 <div class="container" id="hochschule">
 			<div class="row">
 				<div class="span12">
@@ -63,7 +60,7 @@
 						<h2  class="no-bottom-margin">Allgemeines</h2>
 						<hr class="fancy-hr">
 						<ul class="custom-icon-list">
-							<li><img src="http://placehold.it/170x60" /></li>
+							<li><img style="width:170px; height:80px;" src="<%=@university.picture.url%>" /></li>
 							<li><%= @university.address.street%> <%= @university.address.street_number%></li>
 							<li>D-<%= @university.address.postalcode%> <%= @university.address.city.name%></li>
 							<li><i class="icon-home"></i><%= link_to(@university.name,@university.website) %></li>
@@ -97,6 +94,31 @@
 					          
 					    <td><%= rating_for @university, "tutoren", :star => 5%></td>
 					  </tr>
+					  <tr>
+					    <td>H&ouml;rs&auml;le</td>
+					          
+					    <td><%= rating_for @university, "hoersaele", :star => 5%></td>
+					  </tr>
+					  <tr>
+					    <td>Mensa</td>
+					          
+					    <td><%= rating_for @university, "mensa", :star => 5%></td>
+					  </tr>
+					  <tr>
+					    <td>Bibliothek</td>
+					          
+					    <td><%= rating_for @university, "bibliothek", :star => 5%></td>
+					  </tr>
+				          <tr>
+					    <td>Fachschaft</td>
+					          
+					    <td><%= rating_for @university, "fachschaft", :star => 5%></td>
+					  </tr>
+					  <tr>
+					    <td>Ausstattung</td>
+					          
+					    <td><%= rating_for @university, "ausstattung", :star => 5%></td>
+					  </tr>
 
 					  
 					</table>
@@ -116,6 +138,7 @@
 						<%else%>
 						  <h3 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h3>
 						<% end %>
+						Geschrieben am: <%=unic.created_at%>
 						<hr class="fancy-hr no-top-margin no-bottom-margin">
 						<div class="clear"></div>
 						<p><%=unic.comment%></p>

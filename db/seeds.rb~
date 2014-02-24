@@ -94,6 +94,10 @@ University.create({"id"=>64, "campus"=>true, "name"=>"Fachhochschule Worms", "we
 University.create({"id"=>65, "campus"=>true, "name"=>"Hochschule der Bildenden Künste Saar", "website"=>"http://www.hbksaar.de/startseite/", "hs_type"=>"Uni" , "address_id"=> 65})
 University.create({"id"=>66, "campus"=>true, "name"=>"Universität des Saarlandes", "website"=>"http://www.uni-saarland.de/", "hs_type"=>"Uni" , "address_id"=> 66})
 #---------------------------------------------------------------------------------
+# Picture
+#---------------------------------------------------------------------------------
+Picture.create({"id"=>1,"url"=>"https://www.fh-muenster.de/img/logo_fh_muenster.gif"})
+#---------------------------------------------------------------------------------
 # City
 #---------------------------------------------------------------------------------
 City.create({"id"=>1, "name"=>"Berlin", "state_id"=>3})
