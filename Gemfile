@@ -60,13 +60,14 @@ end
 
 group :development do
   gem "rails-erd"
-  gem "sqlite3"
 gem 'rspec-rails'
 gem 'factory_girl'
 end
 
 group :development, :test do
   gem 'rspec-rails'
+  gem "capybara"
+  gem "sqlite3"
 end
 
 # Use ActiveModel has_secure_password
