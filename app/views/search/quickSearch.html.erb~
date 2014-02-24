@@ -10,8 +10,8 @@
 
 					<tr>
 					  <th><%= sort_link(@search, :name, "Hochschule") %></th>
-					  <th><%= sort_link(@search, @universities.address.city.name, "Stadt") %></th>
-					  <th><%= sort_link(@search, :address_city_state_name, "Bundesland") %></th>
+					  <th><%= sort_link(@search, :university_address_city_name, "Stadt") %></th>
+					  <th><%= sort_link(@search, :university_address_city_state_name, "Bundesland") %></th>
 					
 					</tr>
 

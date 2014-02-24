@@ -16,7 +16,7 @@
 Content.create({"content"=>"Hochschulranking", "page"=>"Index", "pageId" =>1})
 Content.create({"content"=>"Willkommen", "page"=>"Index", "pageId" =>2})
 Content.create({"content"=>"Herzlich Willkommen auf der neuen Hochschulranking Webseite für Studenten. Hier bewerten und
-kommentieren Studierende Vorteile und Nachteile ihrer aktuellen Hochschulen.
+kommentieren Studierende Vorteile und Nachteile ihrer aktuellen Hochschule.
 Informieren Sie sich über ihre aktuell favorisierte Universität oder finden Sie die bestbewertesten Hochschulen in ganz Deutschland.", "page"=>"Index", "pageId" =>3})
 Content.create({"content"=>"Features", "page"=>"Index", "pageId" =>4})
 Content.create({"content"=>"Lesen und finden Sie als Besucher bereits erstellte Kommentare/Bewertungen und die für Sie perfekte Universität.
@@ -25,7 +25,7 @@ Die Topliste verrät ihnen auf einen Blick die bestbewertesten Hochschulen auf u
 Suchen sie per Formular oder über eine Map ihre gewünschte Hochschule heraus.", "page"=>"Index", "pageId" =>5})
 Content.create({"content"=>"Content", "page"=>"Index", "pageId" =>6})
 Content.create({"content"=>"In der Rubrik Allgemeines erfahren Sie alles wichtige über die Hochschulen.
-Weiterhin werden Sie über die Lage und Angebote der Mensen in den Städten informiert.
+Weiterhin werden Sie über die Angebote der Mensen in den Städten informiert.
 Außerdem werden alle verfügbaren Studiengänge der ausgewählten Hochschule angezeigt. Ist Ihr favorisierter Studiengang dabei?
 Dann klicken Sie auf den Link, der direkt zur Homepage der Hochschule führt und den Studiengang näher erläutert.", "page"=>"Index", "pageId" =>7})
 
