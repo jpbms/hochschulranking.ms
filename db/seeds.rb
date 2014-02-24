@@ -9,6 +9,14 @@
 admin = User.create ({email: 'admin@hochschulranking.ms', password: "hochschule",
 password_confirmation: "hochschule" ,confirmation_sent_at: "2014-02-24 12:54:13" , confirmed_at: "2014-02-24 12:51:11"})
 admin.add_role :admin
+User.create ({email: 'eukalypto@web.de', password: "eukalypto",
+password_confirmation: "eukalypto" ,confirmation_sent_at: "2014-02-24 12:54:13" , confirmed_at: "2014-02-24 12:51:11"})
+User.create ({email: 'test@testy.de', password: "testtest",
+password_confirmation: "testtest" ,confirmation_sent_at: "2014-02-24 12:54:13" , confirmed_at: "2014-02-24 12:51:11"})
+User.create ({email: 'peter@hochschulranking.ms', password: "peter123",
+password_confirmation: "peter123" ,confirmation_sent_at: "2014-02-24 12:54:13" , confirmed_at: "2014-02-24 12:51:11"})
+User.create ({email: 'thomas@hochschulranking.ms', password: "thomas123",
+password_confirmation: "thomas123" ,confirmation_sent_at: "2014-02-24 12:54:13" , confirmed_at: "2014-02-24 12:51:11"})
 
 
 #---------------------------------------------------------------------------------
