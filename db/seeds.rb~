@@ -82,7 +82,7 @@ University.create({"id"=>34, "name"=>"Universität Potsdam", "website"=>"http://
 University.create({"id"=>35, "name"=>"Technische Universität Chemnitz", "website"=>"http://www.tu-chemnitz.de/", "hs_type"=>"Uni" , "address_id"=> 35, "picture_id"=>35})
 University.create({"id"=>36, "name"=>"Technische Universität Dresden", "website"=>"http://tu-dresden.de/", "hs_type"=>"Uni" , "address_id"=> 36, "picture_id"=>36})
 University.create({"id"=>37, "name"=>"Universität Leipzig", "website"=>"http://www.zv.uni-leipzig.de/", "hs_type"=>"Uni" , "address_id"=> 37, "picture_id"=>37})
-University.create({"id"=>38, "name"=>"Alice Salomon Hochschule Berlin", "website"=>"http://www.ash-berlin.eu/", "hs_type"=>"Uni" , "address_id"=> 38})
+University.create({"id"=>38, "name"=>"Alice Salomon Hochschule Berlin", "website"=>"http://www.ash-berlin.eu/", "hs_type"=>"Uni" , "address_id"=> 38, "picture_id"=>38})
 University.create({"id"=>39, "campus"=>true, "name"=>"Beuth Hochschule für Technik Berlin", "website"=>"http://www.beuth-hochschule.de/", "hs_type"=>"Uni" , "address_id"=> 39, "picture_id"=>39})
 University.create({"id"=>40, "campus"=>false, "name"=>"Hochschule für Kommunikation und Design Berlin", "website"=>"http://www.design-akademie-berlin.de/", "hs_type"=>"Uni" , "address_id"=> 40, "picture_id"=>40})
 University.create({"id"=>41, "campus"=>false, "name"=>"Fachhochschule Dortmund", "website"=>"http://www.fh-dortmund.de/de/index.php", "hs_type"=>"FH" , "address_id"=> 41, "picture_id"=>41})

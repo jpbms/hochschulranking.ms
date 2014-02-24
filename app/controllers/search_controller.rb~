@@ -12,7 +12,7 @@ end
   end
 
   def mapSearch
-	if (params[:location].present? && params[:distance].present?)
+	if (params[:location].!blank? && params[:distance].!blank?)
 	   @classifieds = Address.near(params[:location], params[:distance])
 	else
 	   @classifieds = Address.all
