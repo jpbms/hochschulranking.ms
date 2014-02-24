@@ -131,12 +131,12 @@
 						<img src='<%= Gravatar.new(User.find(unic.user_id).email).image_url%>' class="commentPic float-left" />
 						<% if User.find(unic.user_id).profile.nickname != nil %>
 						  <% if User.find(unic.user_id).profile.nickname == "" %>
-						    <h3 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h3>
+						    <h2 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h2>
 						  <% else %>
-						    <h3 class="no-bottom-margin"><%=User.find(unic.user_id).profile.nickname %></h3>
+						    <h2 class="no-bottom-margin"><%=User.find(unic.user_id).profile.nickname %></h2>
 						  <%end%>
 						<%else%>
-						  <h3 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h3>
+						  <h2 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h2>
 						<% end %>
 						Geschrieben am: <%=unic.created_at%>
 						<hr class="fancy-hr no-top-margin no-bottom-margin">
