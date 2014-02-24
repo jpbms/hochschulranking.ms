@@ -6,11 +6,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-#pass = Ad123
-#admin = User.create email: 'jb449388@fh-muenster.de', password: pass,
-#password_confirmation: pass
-#admin.add_role :admin
-#puts "Admin password is #{pass}"
+admin = User.create ({email: 'admin@hochschulranking.ms', password: "hochschule",
+password_confirmation: "hochschule" ,confirmation_sent_at: "2014-02-24 12:54:13" , confirmed_at: "2014-02-24 12:51:11"})
+admin.add_role :admin
+
 
 #---------------------------------------------------------------------------------
 # Content

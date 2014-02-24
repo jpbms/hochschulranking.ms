@@ -6,11 +6,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-#pass = Ad123
-#admin = User.create email: 'jb449388@fh-muenster.de', password: pass,
-#password_confirmation: pass
-#admin.add_role :admin
+admin = User.create ({email: 'test@test.de', password: "12345678",
+password_confirmation: "12345678" ,confirmation_sent_at: "2014-02-24 12:54:13" , confirmed_at: "2014-02-24 12:51:11"})
+admin.add_role :admin
 #puts "Admin password is #{pass}"
+
 
 #---------------------------------------------------------------------------------
 # Content
@@ -30,7 +30,7 @@ Content.create({"content"=>"Lorem ipsum dolor sit amet, consetetur sadipscing el
 University.create({"id"=>1, "campus"=>true, "name"=>"Technische Universität Berlin", "website"=>"http://www.tu-berlin.de/", "hs_type"=>"Uni", "address_id"=> 1})
 University.create({"id"=>2, "campus"=>true, "name"=>"Freie Universität Berlin", "website"=>"http://www.fh-berlin.de/", "hs_type"=>"Uni", "address_id"=> 2})
 University.create({"id"=>3, "name"=>"Westfälische Wilhelms-Universität Münster", "website"=>"http://www.uni-muenster.de/de/", "hs_type"=>"Uni", "address_id"=> 3})
-University.create({"id"=>4, "campus"=>true, "name"=>"FH Münster", "website"=>"https://www.fh-muenster.de/index.php", "hs_type"=>"FH" , "address_id"=> 4})
+University.create({"id"=>4, "campus"=>true, "name"=>"FH Münster", "website"=>"https://www.fh-muenster.de/index.php", "hs_type"=>"FH" , "address_id"=> 4, "picture_id"=>1})
 University.create({"id"=>5, "name"=>"Fachhochschule Düsseldorf", "website"=>"http://www.fh-duesseldorf.de/a_fh", "hs_type"=>"FH" , "address_id"=> 5})
 University.create({"id"=>6, "campus"=>true, "name"=>"Deutsche Sporthochschule Köln", "website"=>"http://www.dshs-koeln.de/", "hs_type"=>"Uni" , "address_id"=> 6})
 University.create({"id"=>7, "name"=>"Universität Duisburg-Essen", "website"=>"https://www.uni-due.de/", "hs_type"=>"Uni" , "address_id"=> 7})
