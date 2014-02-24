@@ -12,17 +12,17 @@
 						<div class="box-content">
 
 						<%= form_tag search_mapSearch_path, method: :get do %>
-						  <%= label :location, "Universitäten in der Nähe von : (Stadtname benötigt) " %>
-						  <%= text_field_tag :location, params[:location], :placeholder => "Stadt" %>
+						  <%= label :location, "Universitäten "%> im Umkreis von: 
+						  <%= text_field_tag :location, params[:location], :placeholder => "Stadt eingeben" %>
 						  
-						  <%= label :distance, "Distanz(in km) : " %>
+						  <%= label :distance, "Radius: " %>(in km)
 						  <%= text_field_tag :distance, params[:distance] %>
 
 						  <%= submit_tag "Search" %>
 
 						<% end %>
 						<% if @classifieds.blank? %>
-						<p>Keine Universitäten gefunden. Bitte neue Stadt oder größere Distanz eingeben</p>
+						<div style="font-weight: bold"><p>Keine Universitäten gefunden. Bitte neue Stadt oder größere Radius eingeben</p></div>
 						<% else %>
 						<% end %>
 						</div>
@@ -32,16 +32,18 @@
 				<div class="span8">
 					<div id="map" style=' height: 400px;'></div>
 				</div>
-
+				
 				<script type="text/javascript" >
 				$(document).ready(function() {
 				  handler = Gmaps.build('Google');
 				  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-			          
+			          <% if @classifieds.blank? %>
+				  handler.map.centerOn({ lat: 51.966667, lng: 7.633333 });
+				  <% else %>
 				  markers = handler.addMarkers(<%=raw @hash.to_json %>);
 				  handler.bounds.extendWith(markers);
 				  handler.fitMapToBounds();
-				  
+				  <% end %>
 				  });
 				});
 				</script>

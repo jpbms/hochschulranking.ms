@@ -361,7 +361,7 @@ $(document).ready(function() {
 			url: '/search/advancedSearch',
 			type: "POST",
 			data: ({
-			    name_cont: $("#hochschulSearch").val(),			    
+			    name_cont: $("#hochschulSearch").val()					    
 			}),
 
 			success: function(data) {
@@ -376,7 +376,7 @@ $(document).ready(function() {
                 url: '/search/advancedSearch',
                 type: "POST",
                 data: ({
-                    name_cont: $("#hochschulSearch").val(),		    
+                    name_cont: $("#hochschulSearch").val()	    
                 }),
 
                 success: function(data) {
@@ -389,7 +389,7 @@ $(document).ready(function() {
 		url: '/search/advancedSearch',
 		type: "POST",
 		data: ({
-		    name_cont: "",
+		    name_cont: ""
 		}),
 		success: function(data) {
 		    $("#list #innerlist").html(data);
