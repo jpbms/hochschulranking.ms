@@ -5,7 +5,7 @@ class University < ActiveRecord::Base
   has_many :users
   has_many :subject_subject_types
   has_many :universitycontents
-  DIMENSIONS = ["allgemein", "professoren", "tutoren"]
+  DIMENSIONS = ["allgemein", "professoren", "tutoren","hoersaele","mensa","bibliothek","fachschaft","ausstattung"]
   letsrate_rateable *DIMENSIONS
 DIMENSIONS.each do |dimension|
   has_one :"#{dimension}_average", :as => :cacheable, :class_name => "RatingCache", :dependent => :destroy, :conditions => {:dimension => dimension.to_s}
@@ -20,7 +20,9 @@ end
  # end
 
   def avg_rates_in_percent
-     Rate.where("rateable_id="+id.to_s+ " and dimension='allgemein'").sum(:stars) /  Rate.where("rateable_id="+id.to_s+ " and dimension='allgemein'").count * 100 / 5
+     rates = Rate.where("rateable_id="+id.to_s+ " and dimension='allgemein'").sum(:stars) /  Rate.where("rateable_id="+id.to_s+ " and dimension='allgemein'").count * 100 / 5
+      puts ("-------------------------------------")
+      puts(rates)
      #rates.sum(:stars).to_f / rates.count * 100 / 5
   end
   #end

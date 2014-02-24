@@ -1,3 +1,4 @@
+
 <% @unis.each_with_index do |uni, i| %>
 <tr> 
 	<td><%= i+1 %></td>
@@ -6,3 +7,7 @@
 	<td><%= rating_for uni, "allgemein", :star => 5%></td>
 </tr>
 <% end %>
+
+
+<%= javascript_include_tag 'application'%>           
+<%= yield :javascript_includes %>
