@@ -107,8 +107,8 @@ ActiveRecord::Schema.define(version: 20140221141633) do
   create_table "rating_caches", force: true do |t|
     t.integer  "cacheable_id"
     t.string   "cacheable_type"
-    t.float    "avg",            default: 0.0, null: false
-    t.integer  "qty",                          null: false
+    t.float    "avg",            null: false
+    t.integer  "qty",            null: false
     t.string   "dimension"
     t.datetime "created_at"
     t.datetime "updated_at"
