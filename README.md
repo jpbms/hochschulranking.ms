@@ -107,11 +107,55 @@ bundle install
   * gem "sqlite3"
 
 
+
+### Confirmation Mail
+
+Es besteht die Möglichkeit mit Devise die Funktion einer Confirmation Mail zu aktivieren.
+In der  'Production.rb'  gibt es ein kleines Gerüst zur Konfiguration des ActionMailers.
+
+```ruby
+ #Use for the mailer support for Registration a new Account
+  # Configure ActionMailer
+    #config.action_mailer.default_url_options = {:host => 'localhost:3000'}
+    #config.action_mailer.delivery_method = :smtp
+    #config.action_mailer.smtp_settings = {
+     # :address => "127.0.0.1",
+      #:port    => 25,
+      #:domain  => 'yourdomain.com'
+
+```
+Dort die Daten für den Mailserver für Heroku eintragen.
+
+
 ### Heroku
 
 Unsere Seite ist unter Heroku zu finden mit der URL
 
 http://hochschulranking.herokuapp.com/
+
+### Testdaten
+
+ Zum Testen der Webseite auf Heroku gibt es folgende Testuser:
+ 
+###### Admin:
+   * Email : admin@hochschulranking.ms
+   * Passwort : hochschule
+
+###### User mit Gravatar:
+   * Email : eukalypto@web.de
+   * Passwort : eukalypto
+   
+###### User ohne Gravatar:
+   * Email : test@testy.de
+   * Passwort : testtest
+   
+###### User ohne Gravatar:
+   * Email : peter@hochschulranking.ms
+   * Passwort : peter123
+    
+###### User ohne Gravatar:
+   * Email : thomas@hochschulranking.ms
+   * Passwort : thomas123
 
 
 ## License
