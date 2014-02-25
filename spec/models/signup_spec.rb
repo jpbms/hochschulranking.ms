@@ -11,5 +11,7 @@ it 'allows to sign up' do
 	fill_in "user_password", with: 'eukalypto'
 	fill_in "user_password_confirmation", with: 'eukalypto'
 	click_button 'Sign up'
+        page.should have_content 'test@web.de'
+	
  end
 end	

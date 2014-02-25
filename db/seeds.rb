@@ -7,7 +7,17 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
+Content.destroy_all
+User.destroy_all
+University.destroy_all
+Picture.destroy_all
+City.destroy_all
+Address.destroy_all
+State.destroy_all
+Universitycontent.destroy_all
+Subject.destroy_all
+SubjectType.destroy_all
+SubjectSubjectType.destroy_all
 
 #---------------------------------------------------------------------------------
 # Content

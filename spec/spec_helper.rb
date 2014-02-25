@@ -5,6 +5,9 @@ require 'rspec/rails'
 require 'rspec/autorun'
        require 'capybara'
        include Capybara::DSL
+def seed_data
+  require "#{Rails.root}/db/seeds.rb"
+end
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -15,6 +18,10 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 RSpec.configure do |config|
+
+  config.before(:suite) do
+    require "#{Rails.root}/db/seeds.rb"
+  end
   config.include Rails.application.routes.url_helpers
   # ## Mock Framework
   #

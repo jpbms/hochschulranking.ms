@@ -10,9 +10,8 @@ it 'allows to sign out' do
 	fill_in "user_email", with: 'eukalypto@web.de'
 	fill_in "user_password", with: 'eukalypto'
 	click_button 'Sign in'
+	page.should have_content 'Logout'
 	click_link 'Logout'
-       
-
-	#page.should have_content 'eukalypto@web.de'
+        page.should have_content 'Login'
  end
 end	
