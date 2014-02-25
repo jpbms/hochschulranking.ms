@@ -105,10 +105,6 @@ bundle install
   * gem "sqlite3"
 
 
-### Test helpers
-
-
-
 ### Heroku
 
 Unsere Seite ist unter Heroku zu finden mit der URL
@@ -121,6 +117,3 @@ http://hochschulranking.herokuapp.com/
 Copyright 2014 JoNiJaRi. 
 
 You are not granted rights or licenses to the trademarks of the Plataformatec, including without limitation the Devise name or logo.
-
-<tt>rake doc:app</tt>.
-
