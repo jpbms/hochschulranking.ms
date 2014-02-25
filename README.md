@@ -35,54 +35,14 @@ hochschulranking.ms ist eine Webseite zum Informieren und Bewerten von Hochschul
  
 ### Bug reports
 
-If you discover a problem with Devise, we would like to know about it. However, we ask that you please review these guidelines before submitting a bug report:
+Wenn Ihr Fehler und/oder Probleme auf der Seite findet, schreibt uns. 
+Dann können wir diese Probleme schnellst möglich beheben und die Fehlerfreie Funktion der Seite garantieren.
 
-https://github.com/plataformatec/devise/wiki/Bug-reports
-
-If you found a security bug, do *NOT* use the GitHub issue tracker. Send an email to opensource@plataformatec.com.br.
 
 ### Mailing list
 
-If you have any questions, comments, or concerns, please use the Google Group instead of the GitHub issue tracker:
+Falls Fragen oder ähnliches auftreten sollte,schreibt uns gerne an.
 
-https://groups.google.com/group/plataformatec-devise
-
-### RDocs
-
-You can view the Devise documentation in RDoc format here:
-
-http://rubydoc.info/github/plataformatec/devise/master/frames
-
-If you need to use Devise with previous versions of Rails, you can always run "gem server" from the command line after you install the gem to access the old documentation.
-
-### Example applications
-
-There are a few example applications available on GitHub that demonstrate various features of Devise with different versions of Rails. You can view them here:
-
-https://github.com/plataformatec/devise/wiki/Example-Applications
-
-### Extensions
-
-Our community has created a number of extensions that add functionality above and beyond what is included with Devise. You can view a list of available extensions and add your own here:
-
-https://github.com/plataformatec/devise/wiki/Extensions
-
-### Contributing
-
-We hope that you will consider contributing to Devise. Please read this short overview for some information about how to get started:
-
-https://github.com/plataformatec/devise/wiki/Contributing
-
-You will usually want to write tests for your changes.  To run the test suite, go into Devise's top-level directory and run "bundle install" and "rake".  For the tests to pass, you will need to have a MongoDB server (version 2.0 or newer) running on your system.
-
-## Starting with Rails?
-
-If you are building your first Rails application, we recommend you to *not* use Devise. Devise requires a good understanding of the Rails Framework. In such cases, we advise you to start a simple authentication system from scratch, today we have two resources:
-
-* Michael Hartl's online book: http://railstutorial.org/chapters/modeling-and-viewing-users-two#top
-* Ryan Bates' Railscast: http://railscasts.com/episodes/250-authentication-from-scratch
-
-Once you have solidified your understanding of Rails and authentication mechanisms, we assure you Devise will be very pleasant to work with. :)
 
 ## Getting started
 
@@ -450,47 +410,18 @@ current_admin
 admin_session
 ```
 
-Alternatively, you can simply run the Devise generator.
-
-Keep in mind that those models will have completely different routes. They **do not** and **cannot** share the same controller for sign in, sign out and so on. In case you want to have different roles sharing the same actions, we recommend you to use a role-based approach, by either providing a role column or using [CanCan](https://github.com/ryanb/cancan).
-
-### Other ORMs
-
-Devise supports ActiveRecord (default) and Mongoid. To choose other ORM, you just need to require it in the initializer file.
-
-## Additional information
-
 ### Heroku
 
-Using Devise on Heroku with Ruby on Rails 3.1 requires setting:
+Unsere Seite ist unter Heroku zu finden mit der URL
 
-```ruby
-config.assets.initialize_on_precompile = false
-```
+http://hochschulranking.herokuapp.com/
 
-Read more about the potential issues at http://guides.rubyonrails.org/asset_pipeline.html
-
-### Warden
-
-Devise is based on Warden, which is a general Rack authentication framework created by Daniel Neighman. We encourage you to read more about Warden here:
-
-https://github.com/hassox/warden
-
-### Contributors
-
-We have a long list of valued contributors. Check them all at:
-
-https://github.com/plataformatec/devise/graphs/contributors
 
 ## License
 
-MIT License. Copyright 2009-2014 Plataformatec. http://plataformatec.com.br
+Copyright 2014 JoNiJaRi. 
 
 You are not granted rights or licenses to the trademarks of the Plataformatec, including without limitation the Devise name or logo.
-
-
-
-
 
 <tt>rake doc:app</tt>.
 
