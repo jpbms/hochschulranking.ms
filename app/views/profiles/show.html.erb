@@ -21,41 +21,38 @@
 
         <div class="field">
           <div style="float: right;">
-            <a href="https://de.gravatar.com" alt="Your Gravatar"> <img src='<%= Gravatar.new(current_user.email).image_url%>'></a>
+            <img src='<%= Gravatar.new(User.find(@profile.id).email).image_url%>' />
           </div>
 	  <% if @profile.nickname != nil %>
 	    <% if @profile.nickname == "" %>
-		<div style="float: left;"><h2><%=current_user.email %></h2></div>
+		<div style="float: left;"><h2><%=User.find(@profile.id).email %></h2></div>
 	    <% else %>
 		<div style="float: left;"><h2><%= @profile.nickname %></h2></div>
 	    <%end%>
 	  <%else%>
-	    <div style="float: left;"><h2><%=current_user.id %></h2></div>
+	    <div style="float: left;"><h2><%=@profile.id %></h2></div>
 	  <% end %>
         </div>   
         <hr class="fancy-hr">
         <div class="field"><p>&nbsp;<p>&nbsp;<p>
           <%= f.label :nickname %><br>
-          <%= f.text_field :nickname %>
+          <%= f.text_field :nickname, :readonly => true %>
         </div>
          <div class="field">
           <%= f.label :first_name %><br>
-          <%= f.text_field :first_name %>
+          <%= f.text_field :first_name, :readonly => true%>
         </div>
         <div class="field">
           <%= f.label :last_name %><br>
-          <%= f.text_field :last_name %>
+          <%= f.text_field :last_name, :readonly => true%>
         </div>
         <div class="field">
           <%= f.label :phonenumber %><br>
-          <%= f.text_field :phonenumber %>
+          <%= f.text_field :phonenumber, :readonly => true %>
         </div>
         <div class="field">
           <%= f.label :city %><br>
-          <%= f.text_field :city %>
-        </div>
-        <div class="actions">
-          <%= f.submit %>
+          <%= f.text_field :city, :readonly => true %>
         </div>
       <% end %>
 

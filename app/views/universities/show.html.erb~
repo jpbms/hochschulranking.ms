@@ -60,7 +60,7 @@
 						<h2  class="no-bottom-margin">Allgemeines</h2>
 						<hr class="fancy-hr">
 						<ul class="custom-icon-list">
-							<li><img style="width:170px; height:80px;" src="<%=@university.picture.url%>" /></li>
+							<li><img style="width:200px; height:80px;" src="<%=@university.picture.url%>" /></li>
 							<li><%= @university.address.street%> <%= @university.address.street_number%></li>
 							<li>D-<%= @university.address.postalcode%> <%= @university.address.city.name%></li>
 							<li><i class="icon-home"></i><%= link_to(@university.name,@university.website) %></li>
@@ -131,12 +131,12 @@
 						<img src='<%= Gravatar.new(User.find(unic.user_id).email).image_url%>' class="commentPic float-left" />
 						<% if User.find(unic.user_id).profile.nickname != nil %>
 						  <% if User.find(unic.user_id).profile.nickname == "" %>
-						    <h2 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h2>
+						    <h2 class="no-bottom-margin"><%=link_to User.find(unic.user_id).email, profiles_path( User.find(unic.user_id),  User.find(unic.user_id).profile) %></h2>
 						  <% else %>
-						    <h2 class="no-bottom-margin"><%=User.find(unic.user_id).profile.nickname %></h2>
+						    <h2 class="no-bottom-margin"><%=link_to User.find(unic.user_id).profile.nickname, profiles_path(User.find(unic.user_id),  User.find(unic.user_id).profile) %></h2>
 						  <%end%>
 						<%else%>
-						  <h2 class="no-bottom-margin"><%=User.find(unic.user_id).email %></h2>
+						  <h2 class="no-bottom-margin"><%=link_to User.find(unic.user_id).email, profiles_path( User.find(unic.user_id),  User.find(unic.user_id).profile) %></h2>
 						<% end %>
 						Geschrieben am: <%=unic.created_at%>
 						<hr class="fancy-hr no-top-margin no-bottom-margin">
