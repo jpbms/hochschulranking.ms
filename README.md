@@ -105,10 +105,6 @@ bundle install
   * gem "sqlite3"
 
 
-### Test helpers
-
-
-
 ### Heroku
 
 Unsere Seite ist unter Heroku zu finden mit der URL
