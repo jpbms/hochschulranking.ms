@@ -46,18 +46,25 @@ Falls Fragen oder ähnliches auftreten sollte,schreibt uns gerne an.
 
 ## Getting started
 
-Devise 3.0 works with Rails 3.2 onwards. You can add it to your Gemfile with:
+hochschulranking.ms 1.0 arbeitet mit der Rails 4.x und der Ruby Version 1.9.3.
+Die Seite kann installiert werden mit
 
 ```ruby
-gem 'devise'
+rake db:create
+rake db:migrate
 ```
 
-Run the bundle command to install it.
+Um die vorgefertigten Inhalte hinzuzufügen
 
-After you install Devise and add it to your Gemfile, you need to run the generator:
+```ruby
+rake db:seed
+```
 
+nicht vergessen, die seeds anzupassen (User,Login...)
+
+Zum installieren aller benutzen gem's
 ```console
-rails generate devise:install
+bundle install
 ```
 
 The generator will install an initializer which describes ALL Devise's configuration options and you MUST take a look at it. When you are done, you are ready to add Devise to any of your models using the generator:
