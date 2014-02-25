@@ -5,6 +5,10 @@ hochschulranking.ms ist eine Webseite zum Informieren und Bewerten von Hochschul
 ##Information
 
 * Besucher können sich Registrieren und Kommentare / Informationen lesen
+* User können auf den Namen der andern User klicken um sich deren Profil anzuschauen
+* Die Toplist zeigt das Ranking der jeweiligen besten 20 Hochschulen an
+  * Die Liste kann nach belieben gefiltert werden 
+  
 * User können Kommentare zu den jeweiligen Hochschulen abgeben
 * Hochschulen können von Usern bewertet werden nach den Kriterien :
   * Allgemeines
@@ -20,7 +24,6 @@ hochschulranking.ms ist eine Webseite zum Informieren und Bewerten von Hochschul
   * Allgemeinen der Hochschule
   * den Mensen
   * den Studiengängen
-  
 * Jede Hochschule weisst ein Ranking auf die von den Usern vergeben wird
 * Besucher und User können nach Hochschulen suchen und diese Suche erweitern / filtern nach
   * Uni / FH
@@ -28,8 +31,7 @@ hochschulranking.ms ist eine Webseite zum Informieren und Bewerten von Hochschul
   * Bundesland
   * Studiengang
   * Bachelor / Master
-
-* Desweiteren existiert auch eine GoogleMaps suche um Hochschulen zu lokalisieren
+* Desweiteren existiert auch eine GoogleMaps (Map Search) suche um Hochschulen in dem gewählten Bereich zu lokalisieren
 
 
  
