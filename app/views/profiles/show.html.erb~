@@ -21,11 +21,11 @@
 
         <div class="field">
           <div style="float: right;">
-            <img src='<%= Gravatar.new(@profile.id).email).image_url%>' />
+            <img src='<%= Gravatar.new(User.find(@profile.id).email).image_url%>' />
           </div>
 	  <% if @profile.nickname != nil %>
 	    <% if @profile.nickname == "" %>
-		<div style="float: left;"><h2><%=current_user.email %></h2></div>
+		<div style="float: left;"><h2><%=User.find(@profile.id).email %></h2></div>
 	    <% else %>
 		<div style="float: left;"><h2><%= @profile.nickname %></h2></div>
 	    <%end%>
