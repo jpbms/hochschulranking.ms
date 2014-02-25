@@ -1,6 +1,6 @@
 #hochschulranking.ms
 
-hochschulranking.ms ist eine Webseite zum Informieren und Bewerten von Hochschulen aus ganz Deutschland
+hochschulranking.ms ist eine voll responsive Webseite zum Informieren und Bewerten von Hochschulen aus ganz Deutschland, deren Design für die Nutzung an Home und Mobil Geräten abgestimmt und optimiert ist.
 
 ##Information
 
@@ -137,7 +137,7 @@ http://hochschulranking.herokuapp.com/
 
  Zum Testen der Webseite auf Heroku gibt es folgende Testuser:
  
-###### Admin:
+###### Admin: ( Aus Sicherheitsgründen können Administratoren nur über die Seeds angelegt werden)
    * Email : admin@hochschulranking.ms
    * Passwort : hochschule
 
