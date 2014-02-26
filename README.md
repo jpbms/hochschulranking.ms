@@ -51,6 +51,11 @@ Falls Fragen oder ähnliches auftreten sollte,schreibt uns gerne an.
 hochschulranking.ms 1.0 arbeitet mit der Rails 4.0.2 und der Ruby Version 1.9.3.
 Die Seite kann installiert werden mit
 
+```console
+git remote add <euername> git@github.com:jpbms/hochschulranking.ms
+```
+
+
 ```ruby
 rake db:create
 rake db:migrate
